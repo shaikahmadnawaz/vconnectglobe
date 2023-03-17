@@ -13,9 +13,7 @@ function Header() {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             {/* Logo or brand name */}
-            <h1 className="text-lg font-bold">
-              One to One Mentorship to Study Abroad
-            </h1>
+            <h1 className="text-lg font-bold">Mentorship to Study Abroad</h1>
           </div>
           {/* Navigation menu */}
           <nav className="hidden ml-6 md:flex justify-around">

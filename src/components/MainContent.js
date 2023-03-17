@@ -9,7 +9,9 @@ function MainContent() {
         </h2>
         <ul className="list-disc ml-6 text-lg text-gray-700">
           <li className="mb-2">
-            <a href="#">Application Process & Tuition Fee</a>
+            <a className="" href="#">
+              Application Process & Tuition Fee
+            </a>
           </li>
           <li className="mb-2">
             <a href="#">Visa Experience & Tips</a>
