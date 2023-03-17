@@ -48,7 +48,7 @@ function Header() {
             </div>
             {/* Call-to-action button */}
             <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md px-4 py-2 mx-3">
-              Schedule a consultation
+              Schedule Appointment
             </button>
           </nav>
           <GiHamburgerMenu
