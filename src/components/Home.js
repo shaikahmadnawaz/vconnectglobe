@@ -11,7 +11,7 @@ const ContentCard = ({ icon, title, text }) => {
     <div className="bg-white shadow-lg rounded-lg overflow-hidden mx-4 my-8 md:my-0 md:mx-0 md:w-64">
       <div className="flex items-center justify-center p-4">
         {icon}
-        <h3 className="text-xl font-bold ml-2">{title}</h3>
+        <h3 className="text-xl font-semi-bold ml-2">{title}</h3>
       </div>
       <p className="text-gray-700 text-base px-4 py-2">{text}</p>
     </div>
@@ -21,38 +21,39 @@ const ContentCard = ({ icon, title, text }) => {
 const Home = () => {
   return (
     <div className="bg-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-8 md:my-16">
-        <h1 className="text-xl font-bold text-center text-black mb-8">
-          Get clarity on important topics from experienced people
+      <div className="container px-4 sm:px-6 lg:px-8 my-8 md:my-16">
+        <h1 className="text-2xl font-bold text-center text-black mb-8">
+        Get clarity on important topics from experienced people
+
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mx-auto gap-8 justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           <ContentCard
-            icon={<MdSchool className="text-3xl text-blue-500" />}
+            icon={<MdSchool className="text-5xl text-blue-500"/>}
             title="Course Work & Internship Opportunities"
             text="Discover a range of courses and internship opportunities at top universities."
           />
           <ContentCard
-            icon={<FaRegMoneyBillAlt className="text-3xl text-green-500" />}
+            icon={<FaRegMoneyBillAlt className="text-5xl text-green-500" />}
             title="Application Process & Tuition Fee"
             text="Get clarity on the application process, deadlines, and tuition fees for various universities."
           />
           <ContentCard
-            icon={<MdLocationOn className="text-3xl text-yellow-500" />}
+            icon={<MdLocationOn className="text-5xl text-yellow-500" />}
             title="Accommodation near Universities"
             text="Find the best accommodation options near universities and make your stay comfortable and convenient."
           />
           <ContentCard
-            icon={<FaRegHandshake className="text-3xl text-purple-500" />}
+            icon={<FaRegHandshake className="text-5xl text-purple-500" />}
             title="On-Off Campus Job Opportunities"
             text="Explore job opportunities both on and off campus to fund your education and gain valuable work experience."
           />
           <ContentCard
-            icon={<FaRegBuilding className="text-3xl text-red-500" />}
+            icon={<FaRegBuilding className="text-5xl text-red-500" />}
             title="Visa Experience & Tips"
             text="Learn about the visa process, documents required, and tips to ensure a smooth visa experience."
           />
           <ContentCard
-            icon={<FaRegMoneyBillAlt className="text-3xl text-green-500" />}
+            icon={<FaRegMoneyBillAlt className="text-5xl text-green-500" />}
             title="Scholarships in Universities"
             text="Discover various scholarship options offered by universities and organizations to fund your education."
           />

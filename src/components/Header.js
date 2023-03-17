@@ -1,62 +1,42 @@
-import React, { useState } from "react";
-import { FaPhoneAlt, FaUser, FaHome } from "react-icons/fa";
-import { GiHamburgerMenu } from "react-icons/gi";
-function Header() {
-  const [open, setMenu] = useState(false);
-  const toggleMenu = () => {
-    setMenu(!open);
-    console.log(open);
-  };
+import React, { useState } from 'react';
+
+const Header = () => {
+    let Links =[
+      {name:"Home",link:"/"},
+      {name:"About",link:"/"},
+      {name:"Contact",link:"/"}
+    ];
+    let [open,setOpen]=useState(false);
   return (
-    <header className="bg-white fixed top-0 left-0 w-full z-10 shadow">
-      <div className="container mx-auto px-2 md:px-4 ">
-        <div className="flex justify-between items-center py-4">
-          <div className="flex items-center">
-            {/* Logo or brand name */}
-            <h1 className="text-xl font-bold">Mentors</h1>
-          </div>
-          {/* Navigation menu */}
-          <nav className="hidden ml-6 md:flex justify-around">
-            <div className="flex items-center justify-between gap-1.5 mx-3">
-              <FaHome className="text-xl" />
-              <a
-                href="#"
-                className="text-gray-600 text-lg hover:text-gray-1200 pt-1 font-medium"
-              >
-                Home
-              </a>
-            </div>
-            <div className="flex items-center justify-between gap-1.5 mx-3">
-              <FaUser className="text-lg" />
-              <a
-                href="#"
-                className="text-gray-600 text-lg hover:text-gray-1200 pt-1 font-medium"
-              >
-                About
-              </a>
-            </div>
-            <div className="flex items-center justify-between gap-1.5 mx-3">
-              <FaPhoneAlt className="text-lg" />
-              <a
-                href="#"
-                className="text-gray-600 text-lg hover:text-gray-1200 pt-1 font-medium"
-              >
-                Contact
-              </a>
-            </div>
-            {/* Call-to-action button */}
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md px-4 py-2 mx-3">
-              Schedule Appointment
-            </button>
-          </nav>
-          <GiHamburgerMenu
-            className="mx-4 text-3xl mt-1 md:hidden"
-            onClick={toggleMenu}
-          />
-        </div>
+    <div className='shadow-md w-full fixed top-0 left-0'>
+      <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
+      <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
+      text-gray-800'>
+        <span className='text-3xl text-indigo-600 mr-1 pt-2'>
+        
+        </span>
+        Mentorship
       </div>
-    </header>
-  );
+      
+      <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
+      <ion-icon name={open ? 'close':'menu'}></ion-icon>
+      </div>
+
+      <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ':'top-[-490px]'}`}>
+        {
+          Links.map((link)=>(
+            <li key={link.name} className='md:ml-8 text-xl md:my-0 my-7'>
+              <a href={link.link} className='text-gray-800 hover:text-gray-400 duration-500'>{link.name}</a>
+            </li>
+          ))
+        }
+        <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md px-4 py-2 mx-3">
+              Schedule Appointment
+        </button>
+      </ul>
+      </div>
+    </div>
+  )
 }
 
-export default Header;
+export default Header
