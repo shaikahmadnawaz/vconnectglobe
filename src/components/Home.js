@@ -21,11 +21,11 @@ const ContentCard = ({ icon, title, text }) => {
 const Home = () => {
   return (
     <div className="bg-white">
-      <div className="container px-32 mx-auto my-8 md:my-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-8 md:my-16">
         <h1 className="text-xl font-bold text-center text-black mb-8">
           Get clarity on important topics from experienced people
         </h1>
-        <div className="grid grid-cols-3 mx-auto gap-8 justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mx-auto gap-8 justify-center">
           <ContentCard
             icon={<MdSchool className="text-3xl text-blue-500" />}
             title="Course Work & Internship Opportunities"
