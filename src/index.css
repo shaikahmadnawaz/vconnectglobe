@@ -13,3 +13,9 @@ li {
   cursor: pointer;
   position: relative;
 }
+
+@layer components{
+  .banner-bg{
+    background-image: url('./wecanhelp.png');
+  }
+}
