@@ -2,7 +2,7 @@ import React from "react";
 function Banner() {
   return (
     <div className="banner-bg bg-gradient-to-r from-cyan-500 to-blue-500 py-24">
-      <div className="container mx-auto px-4">
+      <div className="container mt-10 mx-auto px-4">
         <h1 className="text-4xl font-bold text-white mb-4">
           One to One Mentorship to Study Abroad
         </h1>

@@ -8,12 +8,12 @@ function Header() {
     console.log(open);
   };
   return (
-    <header className="bg-white shadow">
+    <header className="bg-white fixed top-0 left-0 w-full z-10 shadow">
       <div className="container mx-auto px-2 md:px-4 ">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             {/* Logo or brand name */}
-            <h1 className="text-lg font-bold">Mentorship to Study Abroad</h1>
+            <h1 className="text-xl font-bold">Mentors</h1>
           </div>
           {/* Navigation menu */}
           <nav className="hidden ml-6 md:flex justify-around">
