@@ -2,6 +2,7 @@ import React from "react";
 
 function MainContent() {
   return (
+    <div className="flex mb-10">
     <div className="container mx-auto px-4 py-8">
       <h2 className="text-2xl font-bold mb-4">
         Get clarity on important topics from experienced people
@@ -26,6 +27,10 @@ function MainContent() {
           <a href="#">Course Work & Internship Opportunities</a>
         </li>
       </ul>
+    </div>
+    <div className="pt-6 px-7">
+        <img src="image.jpg" alt=""/>
+      </div>
     </div>
   );
 }
