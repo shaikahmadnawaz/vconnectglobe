@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import {FaPhoneAlt ,FaUser,FaHome} from "react-icons/fa";
-import {GiHamburgerMenu} from "react-icons/gi";
+import { FaPhoneAlt, FaUser, FaHome } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
 function Header() {
-  const [open,setMenu] = useState(false);
+  const [open, setMenu] = useState(false);
   const toggleMenu = () => {
     setMenu(!open);
-    console.log(open);  
-  }
+    console.log(open);
+  };
   return (
     <header className="bg-white shadow">
       <div className="container mx-auto px-2 md:px-4 ">
@@ -19,39 +19,42 @@ function Header() {
           </div>
           {/* Navigation menu */}
           <nav className="hidden ml-6 md:flex justify-around">
-              <div className="flex items-center justify-between gap-1.5 mx-3">
-              <FaHome className="text-xl"/>
+            <div className="flex items-center justify-between gap-1.5 mx-3">
+              <FaHome className="text-xl" />
               <a
                 href="#"
                 className="text-gray-600 text-lg hover:text-gray-1200 pt-1 font-medium"
               >
-                 Home
+                Home
               </a>
-              </div>
-              <div className="flex items-center justify-between gap-1.5 mx-3">
-              <FaUser className="text-lg"/>
+            </div>
+            <div className="flex items-center justify-between gap-1.5 mx-3">
+              <FaUser className="text-lg" />
               <a
                 href="#"
                 className="text-gray-600 text-lg hover:text-gray-1200 pt-1 font-medium"
               >
-                 About
+                About
               </a>
-              </div>
-              <div className="flex items-center justify-between gap-1.5 mx-3">
-              <FaPhoneAlt className="text-lg"/>
+            </div>
+            <div className="flex items-center justify-between gap-1.5 mx-3">
+              <FaPhoneAlt className="text-lg" />
               <a
                 href="#"
                 className="text-gray-600 text-lg hover:text-gray-1200 pt-1 font-medium"
               >
-                 Contact
+                Contact
               </a>
-              </div>
+            </div>
             {/* Call-to-action button */}
             <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md px-4 py-2 mx-3">
               Schedule a consultation
             </button>
-            </nav>
-            <GiHamburgerMenu className="mx-4 text-3xl mt-1 md:hidden" onClick={toggleMenu}/>
+          </nav>
+          <GiHamburgerMenu
+            className="mx-4 text-3xl mt-1 md:hidden"
+            onClick={toggleMenu}
+          />
         </div>
       </div>
     </header>

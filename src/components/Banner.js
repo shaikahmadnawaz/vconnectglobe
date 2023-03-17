@@ -11,12 +11,11 @@ function Banner() {
         </p>
         <a
           href="#"
-          className="bg-white text-blue-500 text-xl py-2 px-4 rounded-lg font-medium hover:bg-blue-500 hover:text-white transition-all duration-300"
+          className="bg-white text-black text-xl py-2 px-4 rounded-lg font-medium hover:bg-blue-500 hover:text-white transition-all duration-300"
         >
           Schedule a Consultation
         </a>
       </div>
-      
     </div>
   );
 }
