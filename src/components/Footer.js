@@ -25,6 +25,13 @@ function Footer() {
           </div>
         </div>
       </div>
+      <div className="bg-gray-800 py-2">
+        <div className="container mx-auto px-4">
+          <p className="text-center text-gray-500 text-sm">
+            © 2023 One to One Mentorship to Study Abroad. All rights reserved.
+          </p>
+        </div>
+      </div>
     </footer>
   );
 }
