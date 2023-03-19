@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { handleScroll } from "./utils/handleScroll";
 
 const Navbar = () => {
   let Links = [
@@ -6,7 +7,7 @@ const Navbar = () => {
     { name: "About", link: "#about" },
     { name: "Mentors", link: "#mentors" },
     { name: "Testimonials", link: "#testimonials" },
-    { name: "Contact", link: "#contact" },
+    { name: "Contact", link: "#footer" },
   ];
   let [open, setOpen] = useState(false);
   return (
@@ -36,6 +37,7 @@ const Navbar = () => {
             <li key={link.name} className="md:ml-8  text-xl md:my-0 my-7">
               <a
                 href={link.link}
+                onClick={handleScroll}
                 className="text-black font-medium border-b-black hover:text-slate-700 duration-500"
               >
                 {link.name}

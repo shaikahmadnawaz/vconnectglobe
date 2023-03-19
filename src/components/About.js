@@ -15,7 +15,7 @@ const ContentCard = ({ icon, title, text }) => {
 
 const About = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div id="#about" className="container mx-auto px-4 py-8">
       <h2 className="text-2xl font-bold mb-8 text-center">
         Get clarity on important topics from experienced people
       </h2>

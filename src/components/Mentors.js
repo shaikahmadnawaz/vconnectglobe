@@ -3,7 +3,7 @@ import StarRating from "./StarRating";
 import mentorsData from "../Data/mentorsData";
 const Mentors = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <section id="mentors" className="container mx-auto px-4 py-8">
       <h2 className="text-2xl font-bold mb-8 text-center">Our Mentors</h2>
       <div className="grid lg:gap-x-9 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-32 gap-y-20 mx-4">
         {mentorsData.map((mentor) => {
@@ -47,7 +47,7 @@ const Mentors = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 
