@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Mentors from "./components/Mentors";
 import Footer from "./components/Footer";
-import Home from "./components/Home";
+import About from "./components/About";
 import Testimonials from "./components/Testimonials";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     <main className="App">
       <Navbar />
       <Hero />
-      <Home />
+      <About />
       <Mentors />
       <Testimonials />
       <Footer />

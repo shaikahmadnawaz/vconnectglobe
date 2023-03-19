@@ -1,5 +1,5 @@
 import {FaStar,FaStarHalfAlt,FaRegStar} from "react-icons/fa";
-const StarRating = ({ rating }) => {
+const StarRating = ({ rating,count }) => {
   const stars = [];
   for (let i = 1; i <= 5; i++) {
     if (i <= rating) {
@@ -11,7 +11,7 @@ const StarRating = ({ rating }) => {
     }
   }
   console.log(stars);
-  return <div className="flex gap-0.5">{stars}&nbsp; ({rating}/5)</div>;
+  return <div className="flex gap-0.5">{stars}&nbsp;&nbsp;{count}&nbsp;Students&nbsp;&nbsp;({rating}/5)</div>;
 };
 
 export default StarRating;
