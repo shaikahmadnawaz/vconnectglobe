@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Header = () => {
+const Navbar = () => {
   let Links = [
     { name: "Home", link: "#home" },
     { name: "About", link: "#about" },
@@ -48,4 +48,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;
