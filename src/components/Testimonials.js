@@ -23,7 +23,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="bg-gray-100 py-16">
+    <div className="bg-white py-16">
       <div className="container mx-auto px-4">
         <h2 className="text-2xl text-center font-bold mb-8">
           What people are saying

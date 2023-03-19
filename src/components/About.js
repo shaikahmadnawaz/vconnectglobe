@@ -19,16 +19,16 @@ const About = () => {
       <h2 className="text-2xl font-bold mb-8 text-center">
         Get clarity on important topics from experienced people
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-          {topicsData.map((topic) => {
-            return (
-              <ContentCard
-                icon={topic.icon}
-                title={topic.title}
-                text={topic.text}
-              />
-            );
-          })}
+      <div className="grid lg:gap-y-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        {topicsData.map((topic) => {
+          return (
+            <ContentCard
+              icon={topic.icon}
+              title={topic.title}
+              text={topic.text}
+            />
+          );
+        })}
       </div>
     </div>
   );
