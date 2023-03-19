@@ -18,9 +18,9 @@ function Footer() {
             Connect with us on social media
           </p>
           <div className="flex justify-between mt-3">
-            <FaTwitter className="text-3xl"/>
-            <FaYoutube className="text-3xl"/>
-            <FaInstagram className="text-3xl"/>
+            <FaTwitter className="text-3xl" />
+            <FaYoutube className="text-3xl" />
+            <FaInstagram className="text-3xl" />
           </div>
         </div>
       </div>

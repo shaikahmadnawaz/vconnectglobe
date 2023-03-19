@@ -10,7 +10,7 @@ const Navbar = () => {
   ];
   let [open, setOpen] = useState(false);
   return (
-    <div className="shadow-md w-full fixed top-0 left-0">
+    <div className="shadow-md w-full z-50 fixed top-0 left-0">
       <div className="md:flex mx-auto items-center justify-between bg-white py-4 md:px-14 px-7">
         <div
           className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
