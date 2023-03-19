@@ -3,7 +3,7 @@ export const handleScroll = (e) => {
   const target = e.target.getAttribute("href");
   const offsetTop = document.querySelector(target).offsetTop;
   window.scroll({
-    top: offsetTop,
+    top: offsetTop - 50,
     behavior: "smooth",
   });
 };

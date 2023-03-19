@@ -29,8 +29,11 @@ const Testimonials = () => {
           What people are saying
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8">
-          {testimonials.map((testimonial) => (
-            <div className="bg-white hover:scale-105 duration-500 rounded-lg shadow-lg p-6">
+          {testimonials.map((testimonial, index) => (
+            <div
+              key={index}
+              className="bg-white hover:scale-105 duration-500 rounded-lg shadow-lg p-6"
+            >
               <p className="text-lg font-medium mb-4">
                 {testimonial.testimonial}
               </p>

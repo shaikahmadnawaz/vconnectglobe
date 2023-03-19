@@ -7,10 +7,10 @@ function Hero() {
     <section className="flex w-full flex-wrap bg-gradient-to-r from-blue-500 to-cyan-500 h-full mx-auto mt-0 pt-12">
       <div className="w-full md:w-1/2">
         <div
-          id="#home"
-          className="container flex justify-center items-center flex-col text-center mx-auto lg:p-40 pt-24 px-4"
+          id="home"
+          className="container flex justify-center items-center flex-col text-center mx-auto lg:py-40 lg:px-32 pt-24 px-4"
         >
-          <h1 className="lg:text-4xl md:text-3xl sm:text-2xl font-semibold text-white mb-4">
+          <h1 className="lg:text-4xl md:text-3xl text-2xl font-semibold text-white mb-4">
             Learn and grow with help from mentors
           </h1>
           <p className="text-lg text-white mb-4">

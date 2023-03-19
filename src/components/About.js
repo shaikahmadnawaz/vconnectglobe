@@ -15,14 +15,15 @@ const ContentCard = ({ icon, title, text }) => {
 
 const About = () => {
   return (
-    <div id="#about" className="container mx-auto px-4 py-8">
+    <div id="about" className="container mx-auto px-4 py-8">
       <h2 className="text-2xl font-bold mb-8 text-center">
         Get clarity on important topics from experienced people
       </h2>
       <div className="grid lg:gap-y-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-        {topicsData.map((topic) => {
+        {topicsData.map((topic, index) => {
           return (
             <ContentCard
+              key={index}
               icon={topic.icon}
               title={topic.title}
               text={topic.text}
