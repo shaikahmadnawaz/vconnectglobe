@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import CardsSection from "./components/CardsSection";
+import Mentors from "./components/Mentors";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Testimonials from "./components/Testimonials";
@@ -12,8 +13,8 @@ function App() {
       <Navbar />
       <Hero />
       <Home />
-      <CardsSection />
       <Testimonials />
+      <Mentors />
       <Footer />
     </div>
   );
