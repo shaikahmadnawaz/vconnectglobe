@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import Banner from "./components/Banner";
-import CardsSection from "./components/CardsSection";
+import Mentors from "./components/Mentors";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 
@@ -12,9 +12,8 @@ function App() {
       <Banner />
       <Home />
       {/* <MainContent /> */}
-      <CardsSection />
+      <Mentors />
       <Footer />
-      {/* <Card/> */}
     </div>
   );
 }

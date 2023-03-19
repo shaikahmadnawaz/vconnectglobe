@@ -11,7 +11,7 @@ const StarRating = ({ rating }) => {
     }
   }
   console.log(stars);
-  return <div className="flex gap-0.5">{stars}</div>;
+  return <div className="flex gap-0.5">{stars}&nbsp; ({rating}/5)</div>;
 };
 
 export default StarRating;

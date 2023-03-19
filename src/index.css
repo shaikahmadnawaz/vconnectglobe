@@ -14,8 +14,3 @@ li {
   position: relative;
 }
 
-@layer components{
-  .banner-bg{
-    background-image: url('./wecanhelp.png');
-  }
-}
