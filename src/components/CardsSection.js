@@ -4,7 +4,7 @@ function CardsSection() {
   return (
     <div className="container mx-auto px-4 py-8">
       <h2 className="text-2xl font-bold mb-4 text-center">Our Mentors</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ml-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ml-5">
         <div className="bg-white rounded-lg shadow-xl">
           <img
             src="./mentor.png"
