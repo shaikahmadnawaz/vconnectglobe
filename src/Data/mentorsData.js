@@ -12,7 +12,7 @@ const mentorsData = [
     name: "Karthik reddy Maram",
     education: "Civil Enginnering",
     university: "university of new haven, Connecticut(CT)",
-    image: "./mentors/karthikreddy.JPEG",
+    image: "./mentors/karthikReddy.jpeg",
     studentsCount: 1200,
     rating: 4.5,
     languages: "Telugu, English, Hindi",
