@@ -12,11 +12,10 @@ const Mentors = () => {
     if (event.target.value === "All") {
       setSelectedState("All");
       setFilteredData(mentorsData);
-    }else if(event.target.value === ""){
+    } else if (event.target.value === "") {
       setSelectedState("");
-      setFilteredData(defaultMentors.slice(0,9));
-    } 
-    else {
+      setFilteredData(defaultMentors.slice(0, 9));
+    } else {
       setSelectedState(event.target.value);
       const data = mentorsData.filter((mentor) => {
         return mentor.state === event.target.value ? mentor : "";
@@ -27,15 +26,17 @@ const Mentors = () => {
 
   return (
     <section id="mentors" className="container mx-auto px-4 py-8">
-      <h2 className="text-2xl font-bold mb-5 text-center">Our Featured Mentors</h2>
+      <h2 className="text-2xl font-bold mb-5 text-center">
+        Our Featured Mentors
+      </h2>
       <div className="flex items-center justify-center mb-10">
-        <label className="mr-2 font-medium">Filter by state:</label>
+        <label className="mr-2 font-medium">Filter by:</label>
         <select
           className="border rounded-md px-2 py-1"
           value={selectedState}
           onChange={handleChange}
         >
-          <option value=""></option>
+          <option value="">State</option>
           <option value="Texas(TX)">Texas(TX)</option>
           <option value="Kansas(KS)">Kansas(KS)</option>
           <option value="Connecticut(CT)">Connecticut(CT)</option>
