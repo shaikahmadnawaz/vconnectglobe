@@ -1,12 +1,45 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import StarRating from "./StarRating";
 import mentorsData from "../Data/mentorsData";
+
 const Mentors = () => {
+  const [selectedState, setSelectedState] = useState("");
+  const defaultMentors = mentorsData.sort((mentor1, mentor2) => {
+    return mentor2.rating - mentor1.rating;
+  });
+  const [filteredData, setFilteredData] = useState(defaultMentors.slice(0, 10));
+  const handleChange = (event) => {
+    if (event.target.value === "") {
+      setFilteredData(defaultMentors.slice(0, 10));
+    } else {
+      setSelectedState(event.target.value);
+      const data = mentorsData.filter((mentor) => {
+        return mentor.state === event.target.value ? mentor : "";
+      });
+      setFilteredData(data);
+    }
+  };
   return (
     <section id="mentors" className="container mx-auto px-4 py-8">
-      <h2 className="text-2xl font-bold mb-8 text-center">Our Mentors</h2>
+      <h2 className="text-2xl font-bold mb-5 text-center">Our Mentors</h2>
+      <div className="flex items-center justify-center mb-10">
+        <label className="mr-2 font-medium">Filter by state:</label>
+        <select
+          className="border rounded-md px-2 py-1"
+          value={selectedState}
+          onChange={handleChange}
+        >
+          <option value="" defaultChecked>
+            All
+          </option>
+          <option value="Texas(TX)">Texas(TX)</option>
+          <option value="Kansas(KS)">Kansas(KS)</option>
+          <option value="Connecticut(CT)">Connecticut(CT)</option>
+          <option value="Missouri(MO)">Missouri(MO)</option>
+        </select>
+      </div>
       <div className="grid lg:gap-x-9 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-32 gap-y-20 mx-4">
-        {mentorsData.map((mentor, index) => {
+        {filteredData.map((mentor, index) => {
           return (
             <div
               key={index}
