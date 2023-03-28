@@ -18,7 +18,7 @@ const Navbar = () => {
       text-gray-800"
         >
           <span className="text-3xl text-indigo-600 mr-1 pt-2"></span>
-          Mentorship
+          VConnectGloble
         </div>
 
         <div

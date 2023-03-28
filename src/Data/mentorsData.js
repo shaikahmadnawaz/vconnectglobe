@@ -89,6 +89,6 @@ const mentorsData = [
     rating: 4.5,
     languages: "Telugu/Hindi/English",
     state: "Missouri(MO)",
-  },
+  }
 ];
 export default mentorsData;
