@@ -55,7 +55,7 @@ const Mentors = () => {
                 <img
                   src={mentor.image}
                   alt={mentor.name}
-                  className="w-56 h-56 object-fill rounded-full"
+                  className="w-56 h-56 object-cover rounded-full"
                 />
               </div>
               <div className="px-6 py-4">

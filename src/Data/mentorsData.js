@@ -2,7 +2,7 @@ const mentorsData = [
   {
     name: "Mr. Srinivasa Reddy",
     education: "Civil Engineering(Structures)",
-    university: "University of Houston, MCTX",
+    university: "University of Houston, MC (TX)",
     image: "./mentors/srinivasaReddy.jpg",
     studentsCount: 1200,
     rating: 5,
@@ -12,7 +12,7 @@ const mentorsData = [
   {
     name: "Mr. Karthik Reddy",
     education: "Civil Enginnering",
-    university: "university of New Haven, CT",
+    university: "University of New Haven, CT",
     image: "./mentors/karthikReddy.jpeg",
     studentsCount: 1200,
     rating: 4.5,
@@ -27,7 +27,7 @@ const mentorsData = [
     studentsCount: 1200,
     rating: 4,
     languages: "Telugu, English, Hindi",
-    state: "Texas(TX)",
+    state: "Kansas(KS)",
   },
   {
     name: "Mr. Muneswara Rao",
@@ -41,7 +41,7 @@ const mentorsData = [
   },
   {
     name: "Mr. Pushyamithra",
-    education: "Masters in Engineering management",
+    education: "Engineering management ",
     university: "Wichita State University, KS",
     image: "./mentors/PushyamithraPabbaraju.jpg",
     studentsCount: 1200,
@@ -89,6 +89,7 @@ const mentorsData = [
     rating: 4.5,
     languages: "Telugu/Hindi/English",
     state: "Missouri(MO)",
-  }
+    Country: "USA",
+  },
 ];
 export default mentorsData;
