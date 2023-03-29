@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import StarRating from "./StarRating";
 import mentorsData from "../Data/mentorsData";
 

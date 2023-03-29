@@ -13,14 +13,14 @@ const Navbar = () => {
   let [open, setOpen] = useState(false);
   return (
     <div className="shadow-md w-full z-50 fixed top-0 left-0">
-      <div className="md:flex mx-auto items-center justify-between bg-white md:px-14 px-7">
+      <div className="md:flex mx-auto items-center  justify-between bg-white md:px-14 px-7">
         <div className="text-md py-0  cursor-pointer flex items-center">
           <img src={Logo} alt="vconnectglobal" className="w-44 h-20 py-2" />
         </div>
 
         <div
           onClick={() => setOpen(!open)}
-          className="text-3xl absolute right-8 top-[1.1rem] cursor-pointer md:hidden"
+          className="text-3xl absolute right-8 top-7 cursor-pointer md:hidden"
         >
           <ion-icon name={open ? "close" : "menu"}></ion-icon>
         </div>
