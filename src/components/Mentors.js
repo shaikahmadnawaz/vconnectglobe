@@ -26,9 +26,8 @@ const Mentors = () => {
       if (event.target.value === "") {
         setFilteredData(defaultMentors);
       }
-      if(event.target.value === "all")
-      {
-        const data = mentorsData.filter((mentor)=>{
+      if (event.target.value === "all") {
+        const data = mentorsData.filter((mentor) => {
           return mentor.country === selectedCountry ? mentor : "";
         });
         setFilteredData(data);
@@ -65,7 +64,9 @@ const Mentors = () => {
           onChange={handleChange}
           name="country"
         >
-          <option value="" disabled>Country</option>
+          <option value="" disabled>
+            Country
+          </option>
           {countries.map((country, index) => (
             <option key={index} value={country}>
               {country}
@@ -78,7 +79,9 @@ const Mentors = () => {
           onChange={handleChange}
           name="state"
         >
-          <option value="" disabled>State</option>
+          <option value="" disabled>
+            State
+          </option>
           {states.map((state, index) => (
             <option key={index} value={state}>
               {state}
@@ -122,7 +125,7 @@ const Mentors = () => {
                   </div>
                 </div>
                 <a
-                  href="#"
+                  href={mentor.appointmentLink}
                   className="block my-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md px-4 py-2 text-center"
                 >
                   Schedule Appointment
