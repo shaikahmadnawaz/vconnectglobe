@@ -6,7 +6,6 @@ const Navbar = () => {
     { name: "Home", link: "#home" },
     { name: "About", link: "#about" },
     { name: "Mentors", link: "#mentors" },
-    { name: "Testimonials", link: "#testimonials" },
     { name: "Contact", link: "#footer" },
   ];
   let [open, setOpen] = useState(false);
