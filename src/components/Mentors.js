@@ -50,10 +50,10 @@ const Mentors = () => {
       <h2 className="text-2xl font-bold mb-5 text-center">
         Our Featured Mentors
       </h2>
-      <div className="flex items-center justify-center mb-10">
-        <label className="mr-2 font-medium">Filter by:</label>
+      <div class="flex flex-col md:flex-row items-center justify-center mb-10">
+        <label class="mr-2 font-medium">Filter by:</label>
         <select
-          className="border rounded-md px-2 py-1 mr-4"
+          class="border rounded-md px-2 py-1 mr-4 mb-2 md:mb-0 md:mr-8"
           value={selectedCountry}
           onChange={handleChange}
           name="country"
@@ -66,7 +66,7 @@ const Mentors = () => {
           ))}
         </select>
         <select
-          className="border rounded-md px-2 py-1"
+          class="border rounded-md px-2 py-1"
           value={selectedState}
           onChange={handleChange}
           name="state"
@@ -79,6 +79,7 @@ const Mentors = () => {
           ))}
         </select>
       </div>
+
       <div className="grid lg:gap-x-9 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-32 gap-y-20 mx-4">
         {filteredData.map((mentor, index) => {
           return (
