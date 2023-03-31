@@ -1,28 +1,28 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import StarRating from "./StarRating";
 import mentorsData from "../Data/mentorsData";
+import data from "../Data/filterOptions";
 
 const Mentors = () => {
-  const [selectedState, setSelectedState] = useState("");
+  const countries = Object.keys(data);
+  const [filter,setFilter] = useState({
+    selectedCountry : "",
+    selectedState : ""
+  });
+
   const defaultMentors = mentorsData.sort((mentor1, mentor2) => {
     return mentor2.rating - mentor1.rating;
   });
+
   const [filteredData, setFilteredData] = useState(defaultMentors.slice(0, 9));
-  const handleChange = (event) => {
-    if (event.target.value === "All") {
-      setSelectedState("All");
-      setFilteredData(mentorsData);
-    } else if (event.target.value === "") {
-      setSelectedState("");
-      setFilteredData(defaultMentors.slice(0, 9));
-    } else {
-      setSelectedState(event.target.value);
-      const data = mentorsData.filter((mentor) => {
-        return mentor.state === event.target.value ? mentor : "";
-      });
-      setFilteredData(data);
-    }
-  };
+
+  const handleFilter = () => {
+    console.log(filter);
+    const filteredMentors = mentorsData.filter((mentor) => {
+      return mentor.country === filter.selectedCountry && mentor.state === filter.selectedState;
+    });
+    setFilteredData(filteredMentors)
+  }
 
   return (
     <section id="mentors" className="container mx-auto px-4 py-8">
@@ -31,18 +31,36 @@ const Mentors = () => {
       </h2>
       <div className="flex items-center justify-center mb-10">
         <label className="mr-2 font-medium">Filter by:</label>
+
         <select
-          className="border rounded-md px-2 py-1"
-          value={selectedState}
-          onChange={handleChange}
+          className="border rounded-md px-2 py-1 mx-2"
+          name = "selectedCountry"
+          value={filter.selectedCountry}
+          onChange={(e)=>setFilter({...filter,[e.target.name]:e.target.value})}
         >
-          <option value="">State</option>
-          <option value="Texas(TX)">Texas(TX)</option>
-          <option value="Kansas(KS)">Kansas(KS)</option>
-          <option value="Connecticut(CT)">Connecticut(CT)</option>
-          <option value="Missouri(MO)">Missouri(MO)</option>
-          <option value="All">All</option>
+          <option value={""} disabled>
+            Country
+          </option>
+          {countries.map((country, index) => {
+            return <option value={country}>{country}</option>;
+          })}
         </select>
+
+        {filter.selectedCountry && (
+          <select
+            className="border rounded-md px-2 py-1"
+            name="selectedState"
+            value={filter.selectedState}
+            onChange={async(e)=>{await setFilter({...filter,[e.target.name]:e.target.value});handleFilter(e)}}
+          >
+            <option value={""} disabled>
+              State
+            </option>
+            {data[filter.selectedCountry].map((state, index) => {
+              return <option value={state}>{state}</option>;
+            })}
+          </select>
+        )}
       </div>
       <div className="grid lg:gap-x-9 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-32 gap-y-20 mx-4">
         {filteredData.map((mentor, index) => {
@@ -78,7 +96,8 @@ const Mentors = () => {
                   </div>
                 </div>
                 <a
-                  href="#"
+                  href={mentor.appointmentLink}
+                  target="_blank"
                   className="block my-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md px-4 py-2 text-center"
                 >
                   Schedule Appointment
@@ -93,3 +112,46 @@ const Mentors = () => {
 };
 
 export default Mentors;
+
+// const handleChange = (event) => {
+//   if (event.target.value === "All") {
+//     setSelectedState("All");
+//     setFilteredData(mentorsData);
+//   } else if (event.target.value === "") {
+//     setSelectedState("");
+//     setFilteredData(defaultMentors.slice(0, 9));
+//   } else {
+//     setSelectedState(event.target.value);
+//     const data = mentorsData.filter((mentor) => {
+//       return mentor.state === event.target.value ? mentor : "";
+//     });
+//     setFilteredData(data);
+//   }
+// };
+
+// const countries = Object.keys(data);
+//   const [selectedCountry, setSelectedCountry] = useState("");
+//   const [selectedState, setSelectedState] = useState("");
+
+//   const defaultMentors = mentorsData.sort((mentor1, mentor2) => {
+//     return mentor2.rating - mentor1.rating;
+//   });
+
+//   const [filteredData, setFilteredData] = useState(defaultMentors.slice(0, 9));
+
+//   const handleCountryChange = (e) => {
+//     e.preventDefault();
+//     setSelectedCountry(e.target.value);
+//     const filteredMentors = mentorsData.filter((mentor) => {
+//       return mentor.country === selectedCountry ? mentor : "";
+//     });
+//     setFilteredData(filteredMentors);
+//   };
+
+//   const handleStateChange = (e) => {
+//     setSelectedState(e.target.value);
+//     const filteredMentors = filteredData.filter((mentor) => {
+//       return mentor.state === selectedState ? mentor : "";
+//     });
+//     setFilteredData(filteredMentors);
+//   };
