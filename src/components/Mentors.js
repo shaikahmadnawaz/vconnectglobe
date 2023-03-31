@@ -126,6 +126,8 @@ const Mentors = () => {
                 </div>
                 <a
                   href={mentor.appointmentLink}
+                  target="_blank"
+                  rel="noreferrer"
                   className="block my-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md px-4 py-2 text-center"
                 >
                   Schedule Appointment
