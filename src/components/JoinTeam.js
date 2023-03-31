@@ -17,7 +17,7 @@ const JoinTeam = () => {
           <h2 className="text-xl md:text-2xl font-medium text-gray-900 mb-3">
             Our Team
           </h2>
-          <p className="text-left md:text-base text-gray-600 mb-5">
+          <p className="text-center md:text-base text-gray-600 mb-5">
             We are a passionate group of individuals dedicated to making a
             difference in our community. Our team consists of volunteers from
             all walks of life, who share a common goal of helping those in need.
