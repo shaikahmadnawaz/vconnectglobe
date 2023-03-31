@@ -14,22 +14,29 @@ const Mentors = () => {
       setSelectedCountry(event.target.value);
       setSelectedState("");
       if (event.target.value === "All") {
-        setFilteredData(defaultMentors.slice(0, 9));
+        setFilteredData(defaultMentors);
       } else {
         const data = mentorsData.filter((mentor) => {
           return mentor.country === event.target.value ? mentor : "";
         });
-        setFilteredData(data.slice(0, 9));
+        setFilteredData(data);
       }
     } else if (event.target.name === "state") {
       setSelectedState(event.target.value);
       if (event.target.value === "") {
-        setFilteredData(defaultMentors.slice(0, 9));
+        setFilteredData(defaultMentors);
+      }
+      if(event.target.value === "all")
+      {
+        const data = mentorsData.filter((mentor)=>{
+          return mentor.country === selectedCountry ? mentor : "";
+        });
+        setFilteredData(data);
       } else {
         const data = mentorsData.filter((mentor) => {
           return mentor.state === event.target.value ? mentor : "";
         });
-        setFilteredData(data.slice(0, 9));
+        setFilteredData(data);
       }
     }
   };
@@ -58,7 +65,7 @@ const Mentors = () => {
           onChange={handleChange}
           name="country"
         >
-          <option value="">Country</option>
+          <option value="" disabled>Country</option>
           {countries.map((country, index) => (
             <option key={index} value={country}>
               {country}
@@ -71,12 +78,13 @@ const Mentors = () => {
           onChange={handleChange}
           name="state"
         >
-          <option value="">State</option>
+          <option value="" disabled>State</option>
           {states.map((state, index) => (
             <option key={index} value={state}>
               {state}
             </option>
           ))}
+          <option value={"all"}>All</option>
         </select>
       </div>
       <div className="grid lg:gap-x-9 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-32 gap-y-20 mx-4">
