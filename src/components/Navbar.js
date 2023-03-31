@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { handleScroll } from "./utils/handleScroll";
-import Logo from "../assets/Logo.png";
 
 const Navbar = () => {
   let Links = [
