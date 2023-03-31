@@ -6,9 +6,7 @@ function Footer() {
     <footer id="footer" className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-8 flex flex-wrap justify-between items-center">
         <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0">
-          <a href="#" className="p-3 bg-gray-700 text-white rounded-lg">
-            Join our team
-          </a>
+          <h1 className="text-2xl font-bold mb-2">VConnectGlobe</h1>
           <p className="mt-4 text-gray-500 text-sm">
             Get clarification on study abroad topics from experienced people
           </p>
@@ -27,7 +25,7 @@ function Footer() {
       <div className="bg-gray-800 py-2">
         <div className="container mx-auto px-4">
           <p className="text-center text-gray-500 text-sm">
-            © 2023 Mentors. All rights reserved.
+            © {new Date().getFullYear()} VConnectGlobe. All rights reserved.
           </p>
         </div>
       </div>
