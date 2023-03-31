@@ -14,22 +14,28 @@ const Mentors = () => {
       setSelectedCountry(event.target.value);
       setSelectedState("");
       if (event.target.value === "All") {
-        setFilteredData(defaultMentors.slice(0, 9));
+        setFilteredData(defaultMentors);
       } else {
         const data = mentorsData.filter((mentor) => {
           return mentor.country === event.target.value ? mentor : filteredData;
         });
-        setFilteredData(data.slice(0, 9));
+        setFilteredData(data);
       }
     } else if (event.target.name === "state") {
       setSelectedState(event.target.value);
       if (event.target.value === "") {
-        setFilteredData(defaultMentors.slice(0, 9));
+        setFilteredData(defaultMentors);
+      }
+      if (event.target.value === "all") {
+        const data = mentorsData.filter((mentor) => {
+          return mentor.country === selectedCountry ? mentor : "";
+        });
+        setFilteredData(data);
       } else {
         const data = mentorsData.filter((mentor) => {
           return mentor.state === event.target.value ? mentor : "";
         });
-        setFilteredData(data.slice(0, 9));
+        setFilteredData(data);
       }
     }
   };
@@ -50,15 +56,17 @@ const Mentors = () => {
       <h2 className="text-2xl font-bold mb-5 text-center">
         Our Featured Mentors
       </h2>
-      <div className="flex items-center justify-center mb-10">
-        <label className="mr-2 font-medium">Filter by:</label>
+      <div class="flex flex-col md:flex-row items-center justify-center mb-10">
+        <label class="mr-2 font-medium">Filter by:</label>
         <select
-          className="border rounded-md px-2 py-1 mr-4"
+          class="border rounded-md px-2 py-1 mr-4 mb-2 md:mb-0 md:mr-8"
           value={selectedCountry}
           onChange={handleChange}
           name="country"
         >
-          <option value="">Country</option>
+          <option value="" disabled>
+            Country
+          </option>
           {countries.map((country, index) => (
             <option key={index} value={country}>
               {country}
@@ -66,19 +74,23 @@ const Mentors = () => {
           ))}
         </select>
         <select
-          className="border rounded-md px-2 py-1"
+          class="border rounded-md px-2 py-1"
           value={selectedState}
           onChange={handleChange}
           name="state"
         >
-          <option value="">State</option>
+          <option value="" disabled>
+            State
+          </option>
           {states.map((state, index) => (
             <option key={index} value={state}>
               {state}
             </option>
           ))}
+          <option value={"all"}>All</option>
         </select>
       </div>
+
       <div className="grid lg:gap-x-9 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-32 gap-y-20 mx-4">
         {filteredData.map((mentor, index) => {
           return (
@@ -113,7 +125,9 @@ const Mentors = () => {
                   </div>
                 </div>
                 <a
-                  href="#"
+                  href={mentor.appointmentLink}
+                  target="_blank"
+                  rel="noreferrer"
                   className="block my-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md px-4 py-2 text-center"
                 >
                   Schedule Appointment

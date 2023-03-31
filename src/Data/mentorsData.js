@@ -9,58 +9,59 @@ const mentorsData = [
     languages: "Telugu/English",
     state: "Texas(TX)",
     country: "USA",
-    appointmentLink : "https://vconnectglobe.com/booking/srinivasa-reddy/"
+    appointmentLink: "https://vconnectglobe.com/booking/srinivasa-reddy/",
   },
 
   {
     name: "Mr.Ajaybhaskar Reddy",
     university: "Sacred Heart University, (CT)",
     education: "Computer Science",
-    image: "./mentors/cartoon-illustration.jpg",
+    image: "./mentors/ajaybhaskarreddy.jpg",
     studentsCount: 1200,
     rating: 4.5,
     languages: "Telugu/English",
     state: "Connecticut(CT)",
     country: "USA",
-    appointmentLink : "https://vconnectglobe.com/booking/ajaybhaskar-reddy/"
+    appointmentLink: "https://vconnectglobe.com/booking/ajaybhaskar-reddy/",
   },
 
   {
     name: "Mr.Kowshik",
     university: "University of North Texas, (TX)",
     education: "Computer Science",
-    image: "./mentors/cartoon-illustration.jpg",
+    image: "./mentors/kowshik.jpg",
     studentsCount: 1200,
     rating: 4.5,
     languages: "Telugu/English/Hindi",
     state: "Texas (TX)",
     country: "USA",
-    appointmentLink : "https://vconnectglobe.com/booking/kowshik-gondala/"
+    appointmentLink: "https://vconnectglobe.com/booking/kowshik-gondala/",
   },
   {
     name: "Mr.Balaji Charan",
     university: "University of Alabama at Birmingham, (AL)",
     education: "Construction Management",
-    image: "./mentors/cartoon-illustration.jpg",
+    image: "./mentors/balajicharan.jpg",
     studentsCount: 1200,
     rating: 4.5,
     languages: "Telugu/English/Hindi",
     state: "Alabama(AL)",
     country: "USA",
-    appointmentLink : "https://vconnectglobe.com/booking/balaji-charan-chadalavada/"
+    appointmentLink:
+      "https://vconnectglobe.com/booking/balaji-charan-chadalavada/",
   },
 
   {
     name: "Ms.Ushash Reddy",
     university: "University of New Haven, (CT)",
     education: "Cell and Molecular Biology",
-    image: "./mentors/cartoon-illustration.jpg",
+    image: "./mentors/ushashreddy.jpg",
     studentsCount: 1200,
     rating: 4.5,
     languages: "Telugu/English",
     state: "Connecticut(CT)",
     country: "USA",
-    appointmentLink : "https://vconnectglobe.com/booking/ushash-reddy/"
+    appointmentLink: "https://vconnectglobe.com/booking/ushash-reddy/",
   },
 
   {
@@ -73,7 +74,8 @@ const mentorsData = [
     languages: "Telugu/English/Hindi",
     state: "Kansas(KS)",
     country: "USA",
-    appointmentLink : "https://vconnectglobe.com/booking/satyasandeep-pulletikurthi/"
+    appointmentLink:
+      "https://vconnectglobe.com/booking/satyasandeep-pulletikurthi/",
   },
 
   {
@@ -86,7 +88,7 @@ const mentorsData = [
     languages: "Telugu/English",
     state: "Kansas(KS)",
     country: "USA",
-    appointmentLink : "https://vconnectglobe.com/booking/muneswara-rao-potti/"
+    appointmentLink: "https://vconnectglobe.com/booking/muneswara-rao-potti/",
   },
 
   {
@@ -99,33 +101,34 @@ const mentorsData = [
     languages: "Telugu/English/Hindi",
     state: "Connecticut(CT)",
     country: "USA",
-    appointmentLink : "https://vconnectglobe.com/booking/karthik-reddy-maram/"
+    appointmentLink: "https://vconnectglobe.com/booking/karthik-reddy-maram/",
   },
 
   {
     name: "Mr.Avinash Reddy",
     university: "University of New Haven, (CT)",
     education: "Data Science",
-    image: "./mentors/cartoon-illustration.jpg",
+    image: "./mentors/avinash.jpg",
     studentsCount: 1200,
     rating: 4.5,
     languages: "Telugu/English",
     state: "Connecticut(CT)",
     country: "USA",
-    appointmentLink : "https://vconnectglobe.com/booking/avinash-reddy-bhavanam/"
+    appointmentLink:
+      "https://vconnectglobe.com/booking/avinash-reddy-bhavanam/",
   },
 
   {
     name: "Mr.Dinesh",
     university: "Oklahoma Christian University, (OK)",
     education: "MSE(Computer Engineering)",
-    image: "./mentors/cartoon-illustration.jpg",
+    image: "./mentors/dinesh.jpg",
     studentsCount: 1200,
     rating: 4.5,
     languages: "Telugu/English/Hindi",
     state: "Oklahoma(OK)",
     country: "USA",
-    appointmentLink : "https://vconnectglobe.com/booking/dinesh/"
+    appointmentLink: "https://vconnectglobe.com/booking/dinesh/",
   },
 
   {
@@ -138,20 +141,21 @@ const mentorsData = [
     languages: "Telugu/English/Hindi",
     state: "Ohio(OH)",
     country: "USA",
-    appointmentLink : "https://vconnectglobe.com/booking/sahith"
+    appointmentLink: "https://vconnectglobe.com/booking/sahith",
   },
 
   {
     name: "Mr.Ajendar Kumar",
     university: "California State University,LB, CA)",
     education: "Geographical Information Science",
-    image: "./mentors/cartoon-illustration.jpg",
+    image: "./mentors/ajendra.jpg",
     studentsCount: 1200,
     rating: 4.5,
     languages: "Telugu/English/Hindi",
     state: "California(CA)",
     country: "USA",
-    appointmentLink : "https://vconnectglobe.com/booking/ajendar-kumar-mamindla/"
+    appointmentLink:
+      "https://vconnectglobe.com/booking/ajendar-kumar-mamindla/",
   },
 
   {
@@ -164,7 +168,7 @@ const mentorsData = [
     languages: "Telugu/English/Hindi",
     state: "Texas(TX)",
     country: "USA",
-    appointmentLink : "https://vconnectglobe.com/booking/bhanurekha-yarava"
+    appointmentLink: "https://vconnectglobe.com/booking/bhanurekha-yarava",
   },
 
   {
@@ -177,7 +181,8 @@ const mentorsData = [
     languages: "Telugu/English/Hindi",
     state: "Kansas(KS)",
     country: "USA",
-    appointmentLink : "https://vconnectglobe.com/booking/pushyamithra-pabbaraju/"
+    appointmentLink:
+      "https://vconnectglobe.com/booking/pushyamithra-pabbaraju/",
   },
 
   {
@@ -190,7 +195,7 @@ const mentorsData = [
     languages: "Telugu/English",
     state: "Connecticut(CT)",
     country: "USA",
-    appointmentLink : "https://vconnectglobe.com/booking/nichith-kondepu"
+    appointmentLink: "https://vconnectglobe.com/booking/nichith-kondepu",
   },
 
   {
@@ -203,7 +208,7 @@ const mentorsData = [
     languages: "Telugu/English",
     state: "Texas (TX)",
     country: "USA",
-    appointmentLink : "https://vconnectglobe.com/booking/ajay-babu-paruchuri"
+    appointmentLink: "https://vconnectglobe.com/booking/ajay-babu-paruchuri",
   },
 
   {
@@ -216,20 +221,20 @@ const mentorsData = [
     languages: "Telugu/English/Hindi",
     state: "Texas (TX)",
     country: "USA",
-    appointmentLink : "https://vconnectglobe.com/booking/sai-sandeep-koritala"
+    appointmentLink: "https://vconnectglobe.com/booking/sai-sandeep-koritala",
   },
 
   {
     name: "Ms. Likhitha",
     university: "University of Houston, (TX)",
     education: "Computer Science",
-    image: "./mentors/cartoon-illustration.jpg",
+    image: "./mentors/likithvarma.jpg",
     studentsCount: 1200,
     rating: 4.5,
     languages: "Telugu/English/Hindi",
     state: "Texas(TX)",
     country: "USA",
-    appointmentLink : "https://vconnectglobe.com/booking/likhitha-mandapati/"
+    appointmentLink: "https://vconnectglobe.com/booking/likhitha-mandapati/",
   },
 
   {
@@ -242,7 +247,8 @@ const mentorsData = [
     languages: "Telugu/English/Hindi",
     state: "Missouri(MO)",
     country: "USA",
-    appointmentLink : "https://vconnectglobe.com/booking/nikhil-varma-pakalapati/"
+    appointmentLink:
+      "https://vconnectglobe.com/booking/nikhil-varma-pakalapati/",
   },
 
   {
@@ -255,20 +261,20 @@ const mentorsData = [
     languages: "Telugu/English",
     state: "Texas (TX)",
     country: "USA",
-    appointmentLink : "https://vconnectglobe.com/booking/sai-bhaskar/"
+    appointmentLink: "https://vconnectglobe.com/booking/sai-bhaskar/",
   },
 
   {
     name: "Mr.Mani Chandu",
     university: "Sacred Heart University, (CT)",
     education: "Computer Science",
-    image: "./mentors/cartoon-illustration.jpg",
+    image: "./mentors/manichandu.jpeg",
     studentsCount: 1200,
     rating: 4.5,
     languages: "Telugu/English/Hindi",
     state: "Connecticut(CT)",
     country: "USA",
-    appointmentLink : "https://vconnectglobe.com/booking/mani-chandu-sakhamuri/"
+    appointmentLink: "https://vconnectglobe.com/booking/mani-chandu-sakhamuri/",
   },
 
   {
@@ -281,7 +287,7 @@ const mentorsData = [
     languages: "Telugu/English",
     state: "Texas(TX)",
     country: "USA",
-    appointmentLink : "https://vconnectglobe.com/booking/sunal-sathvik-batchu/"
+    appointmentLink: "https://vconnectglobe.com/booking/sunal-sathvik-batchu/",
   },
 
   {
@@ -294,7 +300,7 @@ const mentorsData = [
     languages: "Telugu/English/Hindi",
     state: "Texas(TX)",
     country: "USA",
-    appointmentLink : "https://vconnectglobe.com/booking/sufiyan-mohammed/"
+    appointmentLink: "https://vconnectglobe.com/booking/sufiyan-mohammed/",
   },
 
   {
@@ -307,19 +313,20 @@ const mentorsData = [
     languages: "Telugu/English/Hindi",
     state: "New York(NY)",
     country: "USA",
-    appointmentLink : "https://vconnectglobe.com/booking/karthikeya-thota/"
+    appointmentLink: "https://vconnectglobe.com/booking/karthikeya-thota/",
   },
   {
     name: "Mr.Tarun Sai Narayan",
     university: "University of North Carolina, (NC)",
     education: "Engineering Management",
-    image: "./mentors/cartoon-illustration.jpg",
+    image: "./mentors/tarun.jpg",
     studentsCount: 1200,
     rating: 4.5,
     languages: "Telugu/English/Hindi",
     state: "North Carolina(NC)",
     country: "USA",
-    appointmentLink : "https://vconnectglobe.com/booking/tarun-sai-narayan-gurram"
+    appointmentLink:
+      "https://vconnectglobe.com/booking/tarun-sai-narayan-gurram",
   },
 ];
 export default mentorsData;
