@@ -9,6 +9,7 @@ const mentorsData = [
     languages: "Telugu/English",
     state: "Texas(TX)",
     country: "USA",
+    appointmentLink : "https://vconnectglobe.com/booking/srinivasa-reddy/"
   },
 
   {
@@ -21,6 +22,7 @@ const mentorsData = [
     languages: "Telugu/English",
     state: "Connecticut(CT)",
     country: "USA",
+    appointmentLink : "https://vconnectglobe.com/booking/ajaybhaskar-reddy/"
   },
 
   {
@@ -33,6 +35,7 @@ const mentorsData = [
     languages: "Telugu/English/Hindi",
     state: "Texas (TX)",
     country: "USA",
+    appointmentLink : "https://vconnectglobe.com/booking/kowshik-gondala/"
   },
   {
     name: "Mr.Balaji Charan",
@@ -44,6 +47,7 @@ const mentorsData = [
     languages: "Telugu/English/Hindi",
     state: "Alabama(AL)",
     country: "USA",
+    appointmentLink : "https://vconnectglobe.com/booking/balaji-charan-chadalavada/"
   },
 
   {
@@ -56,6 +60,7 @@ const mentorsData = [
     languages: "Telugu/English",
     state: "Connecticut(CT)",
     country: "USA",
+    appointmentLink : "https://vconnectglobe.com/booking/ushash-reddy/"
   },
 
   {
@@ -68,6 +73,7 @@ const mentorsData = [
     languages: "Telugu/English/Hindi",
     state: "Kansas(KS)",
     country: "USA",
+    appointmentLink : "https://vconnectglobe.com/booking/satyasandeep-pulletikurthi/"
   },
 
   {
@@ -80,6 +86,7 @@ const mentorsData = [
     languages: "Telugu/English",
     state: "Kansas(KS)",
     country: "USA",
+    appointmentLink : "https://vconnectglobe.com/booking/muneswara-rao-potti/"
   },
 
   {
@@ -92,6 +99,7 @@ const mentorsData = [
     languages: "Telugu/English/Hindi",
     state: "Connecticut(CT)",
     country: "USA",
+    appointmentLink : "https://vconnectglobe.com/booking/karthik-reddy-maram/"
   },
 
   {
@@ -104,6 +112,7 @@ const mentorsData = [
     languages: "Telugu/English",
     state: "Connecticut(CT)",
     country: "USA",
+    appointmentLink : "https://vconnectglobe.com/booking/avinash-reddy-bhavanam/"
   },
 
   {
@@ -116,6 +125,7 @@ const mentorsData = [
     languages: "Telugu/English/Hindi",
     state: "Oklahoma(OK)",
     country: "USA",
+    appointmentLink : "https://vconnectglobe.com/booking/dinesh/"
   },
 
   {
@@ -128,6 +138,7 @@ const mentorsData = [
     languages: "Telugu/English/Hindi",
     state: "Ohio(OH)",
     country: "USA",
+    appointmentLink : "https://vconnectglobe.com/booking/sahith"
   },
 
   {
@@ -140,6 +151,7 @@ const mentorsData = [
     languages: "Telugu/English/Hindi",
     state: "California(CA)",
     country: "USA",
+    appointmentLink : "https://vconnectglobe.com/booking/ajendar-kumar-mamindla/"
   },
 
   {
@@ -152,6 +164,7 @@ const mentorsData = [
     languages: "Telugu/English/Hindi",
     state: "Texas(TX)",
     country: "USA",
+    appointmentLink : "https://vconnectglobe.com/booking/bhanurekha-yarava"
   },
 
   {
@@ -164,6 +177,7 @@ const mentorsData = [
     languages: "Telugu/English/Hindi",
     state: "Kansas(KS)",
     country: "USA",
+    appointmentLink : "https://vconnectglobe.com/booking/pushyamithra-pabbaraju/"
   },
 
   {
@@ -176,6 +190,7 @@ const mentorsData = [
     languages: "Telugu/English",
     state: "Connecticut(CT)",
     country: "USA",
+    appointmentLink : "https://vconnectglobe.com/booking/nichith-kondepu"
   },
 
   {
@@ -188,6 +203,7 @@ const mentorsData = [
     languages: "Telugu/English",
     state: "Texas (TX)",
     country: "USA",
+    appointmentLink : "https://vconnectglobe.com/booking/ajay-babu-paruchuri"
   },
 
   {
@@ -200,6 +216,7 @@ const mentorsData = [
     languages: "Telugu/English/Hindi",
     state: "Texas (TX)",
     country: "USA",
+    appointmentLink : "https://vconnectglobe.com/booking/sai-sandeep-koritala"
   },
 
   {
@@ -212,6 +229,7 @@ const mentorsData = [
     languages: "Telugu/English/Hindi",
     state: "Texas(TX)",
     country: "USA",
+    appointmentLink : "https://vconnectglobe.com/booking/likhitha-mandapati/"
   },
 
   {
@@ -224,6 +242,7 @@ const mentorsData = [
     languages: "Telugu/English/Hindi",
     state: "Missouri(MO)",
     country: "USA",
+    appointmentLink : "https://vconnectglobe.com/booking/nikhil-varma-pakalapati/"
   },
 
   {
@@ -236,6 +255,7 @@ const mentorsData = [
     languages: "Telugu/English",
     state: "Texas (TX)",
     country: "USA",
+    appointmentLink : "https://vconnectglobe.com/booking/sai-bhaskar/"
   },
 
   {
@@ -248,6 +268,7 @@ const mentorsData = [
     languages: "Telugu/English/Hindi",
     state: "Connecticut(CT)",
     country: "USA",
+    appointmentLink : "https://vconnectglobe.com/booking/mani-chandu-sakhamuri/"
   },
 
   {
@@ -260,6 +281,7 @@ const mentorsData = [
     languages: "Telugu/English",
     state: "Texas(TX)",
     country: "USA",
+    appointmentLink : "https://vconnectglobe.com/booking/sunal-sathvik-batchu/"
   },
 
   {
@@ -272,6 +294,7 @@ const mentorsData = [
     languages: "Telugu/English/Hindi",
     state: "Texas(TX)",
     country: "USA",
+    appointmentLink : "https://vconnectglobe.com/booking/sufiyan-mohammed/"
   },
 
   {
@@ -284,6 +307,7 @@ const mentorsData = [
     languages: "Telugu/English/Hindi",
     state: "New York(NY)",
     country: "USA",
+    appointmentLink : "https://vconnectglobe.com/booking/karthikeya-thota/"
   },
   {
     name: "Mr.Tarun Sai Narayan",
@@ -295,6 +319,7 @@ const mentorsData = [
     languages: "Telugu/English/Hindi",
     state: "North Carolina(NC)",
     country: "USA",
+    appointmentLink : "https://vconnectglobe.com/booking/tarun-sai-narayan-gurram"
   },
 ];
 export default mentorsData;

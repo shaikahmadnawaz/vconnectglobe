@@ -3,26 +3,47 @@ import StarRating from "./StarRating";
 import mentorsData from "../Data/mentorsData";
 
 const Mentors = () => {
+  const [selectedCountry, setSelectedCountry] = useState("");
   const [selectedState, setSelectedState] = useState("");
   const defaultMentors = mentorsData.sort((mentor1, mentor2) => {
     return mentor2.rating - mentor1.rating;
   });
   const [filteredData, setFilteredData] = useState(defaultMentors.slice(0, 9));
   const handleChange = (event) => {
-    if (event.target.value === "All") {
-      setSelectedState("All");
-      setFilteredData(mentorsData);
-    } else if (event.target.value === "") {
+    if (event.target.name === "country") {
+      setSelectedCountry(event.target.value);
       setSelectedState("");
-      setFilteredData(defaultMentors.slice(0, 9));
-    } else {
+      if (event.target.value === "All") {
+        setFilteredData(defaultMentors.slice(0, 9));
+      } else {
+        const data = mentorsData.filter((mentor) => {
+          return mentor.country === event.target.value ? mentor : "";
+        });
+        setFilteredData(data.slice(0, 9));
+      }
+    } else if (event.target.name === "state") {
       setSelectedState(event.target.value);
-      const data = mentorsData.filter((mentor) => {
-        return mentor.state === event.target.value ? mentor : "";
-      });
-      setFilteredData(data);
+      if (event.target.value === "") {
+        setFilteredData(defaultMentors.slice(0, 9));
+      } else {
+        const data = mentorsData.filter((mentor) => {
+          return mentor.state === event.target.value ? mentor : "";
+        });
+        setFilteredData(data.slice(0, 9));
+      }
     }
   };
+
+  const countries = [...new Set(mentorsData.map((mentor) => mentor.country))];
+  const states = [
+    ...new Set(
+      mentorsData
+        .filter((mentor) => {
+          return mentor.country === selectedCountry;
+        })
+        .map((mentor) => mentor.state)
+    ),
+  ];
 
   return (
     <section id="mentors" className="container mx-auto px-4 py-8">
@@ -32,16 +53,30 @@ const Mentors = () => {
       <div className="flex items-center justify-center mb-10">
         <label className="mr-2 font-medium">Filter by:</label>
         <select
+          className="border rounded-md px-2 py-1 mr-4"
+          value={selectedCountry}
+          onChange={handleChange}
+          name="country"
+        >
+          <option value="">Country</option>
+          {countries.map((country, index) => (
+            <option key={index} value={country}>
+              {country}
+            </option>
+          ))}
+        </select>
+        <select
           className="border rounded-md px-2 py-1"
           value={selectedState}
           onChange={handleChange}
+          name="state"
         >
           <option value="">State</option>
-          <option value="Texas(TX)">Texas(TX)</option>
-          <option value="Kansas(KS)">Kansas(KS)</option>
-          <option value="Connecticut(CT)">Connecticut(CT)</option>
-          <option value="Missouri(MO)">Missouri(MO)</option>
-          <option value="All">All</option>
+          {states.map((state, index) => (
+            <option key={index} value={state}>
+              {state}
+            </option>
+          ))}
         </select>
       </div>
       <div className="grid lg:gap-x-9 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-32 gap-y-20 mx-4">
