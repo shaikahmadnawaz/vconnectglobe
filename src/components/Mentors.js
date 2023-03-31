@@ -3,8 +3,8 @@ import StarRating from "./StarRating";
 import mentorsData from "../Data/mentorsData";
 
 const Mentors = () => {
-  const [selectedCountry, setSelectedCountry] = useState("");
-  const [selectedState, setSelectedState] = useState("");
+  const [selectedCountry, setSelectedCountry] = useState([]);
+  const [selectedState, setSelectedState] = useState([]);
   const defaultMentors = mentorsData.sort((mentor1, mentor2) => {
     return mentor2.rating - mentor1.rating;
   });
@@ -17,7 +17,7 @@ const Mentors = () => {
         setFilteredData(defaultMentors.slice(0, 9));
       } else {
         const data = mentorsData.filter((mentor) => {
-          return mentor.country === event.target.value ? mentor : "";
+          return mentor.country === event.target.value ? mentor : filteredData;
         });
         setFilteredData(data.slice(0, 9));
       }
