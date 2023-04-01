@@ -12,7 +12,6 @@ const Mentors = () => {
   const [filteredData, setFilteredData] = useState(defaultMentors);
 
   const handleChange = (event) => {
-
     if (event.target.name === "country") {
       setSelectedCountry(event.target.value);
       setSelectedState("");
@@ -20,8 +19,7 @@ const Mentors = () => {
         return mentor.country === event.target.value ? mentor : filteredData;
       });
       setFilteredData(sortMentors(data));
-    } 
-    else if (event.target.name === "state") {
+    } else if (event.target.name === "state") {
       setSelectedState(event.target.value);
       if (event.target.value === "") {
         setFilteredData(defaultMentors);
@@ -32,8 +30,7 @@ const Mentors = () => {
           return mentor.country === selectedCountry ? mentor : "";
         });
         setFilteredData(sortMentors(data));
-    }
-    else {
+      } else {
         const data = mentorsData.filter((mentor) => {
           return mentor.state === event.target.value ? mentor : "";
         });
@@ -55,14 +52,14 @@ const Mentors = () => {
   ].sort();
 
   return (
-    <section id="mentors" className="container mx-auto px-4 py-8">
+    <section id="mentors" className="container md:px-14 mx-auto px-4 py-8">
       <h2 className="text-2xl font-bold mb-5 text-center">
         Our Featured Mentors
       </h2>
       <div class="flex flex-col md:flex-row items-center justify-center mb-10">
-        <label class="mr-2 font-medium">Filter by :</label>
+        <label class="mr-2 mb-2 md:mb-0 font-medium">Filter by :</label>
         <select
-          class="border rounded-md px-5 py-1 mr-4 mb-2 md:mb-0 md:mr-8"
+          class="border rounded-md px-5 py-1 mr-4 mb-2 md:mb-0 md:mr-4"
           value={selectedCountry}
           onChange={handleChange}
           name="country"
@@ -78,8 +75,11 @@ const Mentors = () => {
         </select>
 
         <select
-          disabled = {selectedCountry ? false : true}
-          className={"border rounded-md px-5 py-1 mr-4 mb-2 md:mb-0 md:mr-8 " + (selectedCountry ? "cursor-default" :"cursor-no-drop")}
+          disabled={selectedCountry ? false : true}
+          className={
+            "border rounded-md px-5 py-1 mr-4 mb-2 md:mb-0 md:mr-8 " +
+            (selectedCountry ? "cursor-default" : "cursor-no-drop")
+          }
           value={selectedState}
           onChange={handleChange}
           name="state"
@@ -94,7 +94,6 @@ const Mentors = () => {
           ))}
           <option value={"all"}>All</option>
         </select>
-
       </div>
 
       <div className="grid lg:gap-x-9 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-32 gap-y-20 mx-4">
