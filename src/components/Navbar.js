@@ -13,11 +13,11 @@ const Navbar = () => {
     <div className="shadow-md w-full z-50 fixed top-0 left-0">
       <div className="md:flex mx-auto items-center  justify-between bg-white md:px-14 px-7">
         <div class="text-md py-0 cursor-pointer flex items-center">
-          <img
+          <a href="#"><img
             src="/vconnectglobal.png"
             alt="vconnectglobal"
             class="w-40 md:w-56"
-          />
+          /></a>
         </div>
 
         <div

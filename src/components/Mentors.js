@@ -1,46 +1,49 @@
 import React, { useState } from "react";
 import StarRating from "./StarRating";
 import mentorsData from "../Data/mentorsData";
+import sortMentors from "./utils/sortMentors";
 
 const Mentors = () => {
-  const [selectedCountry, setSelectedCountry] = useState([]);
-  const [selectedState, setSelectedState] = useState([]);
-  const defaultMentors = mentorsData.sort((mentor1, mentor2) => {
-    return mentor2.rating - mentor1.rating;
-  });
-  const [filteredData, setFilteredData] = useState(defaultMentors.slice(0, 9));
+  const [selectedCountry, setSelectedCountry] = useState("");
+  const [selectedState, setSelectedState] = useState("");
+
+  const defaultMentors = sortMentors(mentorsData).slice(0, 9);
+
+  const [filteredData, setFilteredData] = useState(defaultMentors);
+
   const handleChange = (event) => {
+
     if (event.target.name === "country") {
       setSelectedCountry(event.target.value);
       setSelectedState("");
-      if (event.target.value === "All") {
-        setFilteredData(defaultMentors);
-      } else {
-        const data = mentorsData.filter((mentor) => {
-          return mentor.country === event.target.value ? mentor : filteredData;
-        });
-        setFilteredData(data);
-      }
-    } else if (event.target.name === "state") {
+      const data = mentorsData.filter((mentor) => {
+        return mentor.country === event.target.value ? mentor : filteredData;
+      });
+      setFilteredData(sortMentors(data));
+    } 
+    else if (event.target.name === "state") {
       setSelectedState(event.target.value);
       if (event.target.value === "") {
         setFilteredData(defaultMentors);
       }
       if (event.target.value === "all") {
+        console.log(selectedCountry);
         const data = mentorsData.filter((mentor) => {
           return mentor.country === selectedCountry ? mentor : "";
         });
-        setFilteredData(data);
-      } else {
+        setFilteredData(sortMentors(data));
+    }
+    else {
         const data = mentorsData.filter((mentor) => {
           return mentor.state === event.target.value ? mentor : "";
         });
-        setFilteredData(data);
+        setFilteredData(sortMentors(data));
       }
     }
   };
 
   const countries = [...new Set(mentorsData.map((mentor) => mentor.country))];
+
   const states = [
     ...new Set(
       mentorsData
@@ -49,7 +52,7 @@ const Mentors = () => {
         })
         .map((mentor) => mentor.state)
     ),
-  ];
+  ].sort();
 
   return (
     <section id="mentors" className="container mx-auto px-4 py-8">
@@ -57,9 +60,9 @@ const Mentors = () => {
         Our Featured Mentors
       </h2>
       <div class="flex flex-col md:flex-row items-center justify-center mb-10">
-        <label class="mr-2 font-medium">Filter by:</label>
+        <label class="mr-2 font-medium">Filter by :</label>
         <select
-          class="border rounded-md px-2 py-1 mr-4 mb-2 md:mb-0 md:mr-8"
+          class="border rounded-md px-5 py-1 mr-4 mb-2 md:mb-0 md:mr-8"
           value={selectedCountry}
           onChange={handleChange}
           name="country"
@@ -73,8 +76,10 @@ const Mentors = () => {
             </option>
           ))}
         </select>
+
         <select
-          class="border rounded-md px-2 py-1"
+          disabled = {selectedCountry ? false : true}
+          className={"border rounded-md px-5 py-1 mr-4 mb-2 md:mb-0 md:mr-8 " + (selectedCountry ? "cursor-default" :"cursor-no-drop")}
           value={selectedState}
           onChange={handleChange}
           name="state"
@@ -89,6 +94,7 @@ const Mentors = () => {
           ))}
           <option value={"all"}>All</option>
         </select>
+
       </div>
 
       <div className="grid lg:gap-x-9 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-32 gap-y-20 mx-4">
