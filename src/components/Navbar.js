@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { handleScroll } from "./utils/handleScroll";
+import { HiChevronDown } from "react-icons/hi";
 
 const Navbar = () => {
   let Links = [
@@ -9,6 +10,7 @@ const Navbar = () => {
     { name: "Contact", link: "#footer" },
   ];
   let [open, setOpen] = useState(false);
+  let [showLogin, setShowLogin] = useState(false);
   return (
     <div className="shadow-md w-full z-50 fixed top-0 left-0">
       <div className="md:flex mx-auto items-center  justify-between bg-white md:px-14 px-7">
@@ -30,7 +32,7 @@ const Navbar = () => {
         </div>
 
         <ul
-          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
+          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 h-96 md:h-5 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
             open ? "top-15" : "top-[-490px]"
           }`}
         >
@@ -48,6 +50,34 @@ const Navbar = () => {
               </a>
             </li>
           ))}
+          <div className=" md:ml-7 relative">
+            <button
+              type="button"
+              className="flex items-center text-black hover:text-gray-900"
+              onClick={() => setShowLogin(!showLogin)}
+            >
+              <span className="ml-2 font-medium text-xl">Login</span>
+              <HiChevronDown className="h-5 w-5" />
+            </button>
+            {showLogin && (
+              <div className="absolute left-0 md:right-0 mt-2 w-24 rounded-md shadow-lg">
+                <div className="py-1 rounded-md bg-white shadow-xs">
+                  <a
+                    href="https://vconnectglobe.com/booking/students-login/"
+                    className="block px-4 py-1 w-full text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  >
+                    Mentor
+                  </a>
+                  <a
+                    href="https://vconnectglobe.com/booking/students-login/"
+                    className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  >
+                    Student
+                  </a>
+                </div>
+              </div>
+            )}
+          </div>
         </ul>
       </div>
     </div>
