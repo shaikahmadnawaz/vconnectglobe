@@ -56,21 +56,21 @@ const Navbar = () => {
               className="flex items-center text-black hover:text-gray-900"
               onClick={() => setShowLogin(!showLogin)}
             >
-              <span className="ml-2 font-medium text-xl">Login</span>
+              <span className="font-medium text-xl">Login</span>
               <HiChevronDown className="h-5 w-5" />
             </button>
             {showLogin && (
-              <div className="absolute left-0 md:right-0 mt-2 w-24 rounded-md shadow-lg">
-                <div className="py-1 rounded-md bg-white shadow-xs">
-                  <a
+              <div className="absolute left-0 md:right-0 mt-2 w-32 rounded-md shadow-lg">
+                <div className="py-1 rounded-md bg-white">
+                 <a
                     href="https://vconnectglobe.com/booking/students-login/"
-                    className="block px-4 py-1 w-full text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                    className="block px-7 py-1 w-full text-lg text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                   >
-                    Mentor
+                     <h1>Mentor</h1>
                   </a>
                   <a
                     href="https://vconnectglobe.com/booking/students-login/"
-                    className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                    className="block px-7 py-1 text-lg text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                   >
                     Student
                   </a>

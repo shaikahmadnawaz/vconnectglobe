@@ -1,26 +1,8 @@
 import React from "react";
-
+import { testimonials } from "../Data/testimonialsData";
+import StarRating from "./StarRating";
 const Testimonials = () => {
-  const testimonials = [
-    {
-      name: "John Smith",
-      position: "UI/UX Designer",
-      testimonial:
-        "I had an amazing experience with the mentorship program. My mentor was very knowledgeable and helpful, and provided me with valuable insights and guidance.",
-    },
-    {
-      name: "John Smith",
-      position: "UI/UX Designer",
-      testimonial:
-        "I had an amazing experience with the mentorship program. My mentor was very knowledgeable and helpful, and provided me with valuable insights and guidance.",
-    },
-    {
-      name: "John Smith",
-      position: "UI/UX Designer",
-      testimonial:
-        "I had an amazing experience with the mentorship program. My mentor was very knowledgeable and helpful, and provided me with valuable insights and guidance.",
-    },
-  ];
+  
 
   return (
     <section className="bg-white py-16">
@@ -28,9 +10,38 @@ const Testimonials = () => {
         <h2 className="text-2xl text-center font-bold mb-8">
           What people are saying
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <div
+        <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-8">
+          {
+            testimonials.map((testimonial,index)=>{
+              return(
+                <div key={index} className="shadow-md rounded-2xl">
+                  <div className="photo flex justify-center py-2 rounded-md bg-white">
+                    <img src="./mentors/cartoon-illustration.jpg" alt="student" className="rounded-full w-32"/>
+                  </div>
+                  <div className="flex flex-col mt-4">
+                    <p className="font-bold text-center">{testimonial.name}</p>
+                    <p className="text-gray-500 text-center">{testimonial.position}</p>
+                  </div>
+                  <div className="flex italic justify-center px-10 mt-4">
+                    <p>{testimonial.testimonial}</p>
+                  </div>
+                  <div className="mt-4 flex justify-center my-4">
+                    <StarRating rating={testimonial.rating}/>
+                  </div>
+                </div>
+              )
+            })
+          }
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Testimonials;
+
+
+{/* <div
               key={index}
               className="bg-white hover:scale-105 duration-500 rounded-lg shadow-lg p-6"
             >
@@ -53,13 +64,5 @@ const Testimonials = () => {
                     {testimonial.position}
                   </p>
                 </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default Testimonials;
+              </div> */}
+            // </div>

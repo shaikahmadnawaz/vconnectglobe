@@ -1,4 +1,5 @@
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
+
 const StarRating = ({ rating, count }) => {
   const stars = [];
   for (let i = 1; i <= 5; i++) {
@@ -10,9 +11,19 @@ const StarRating = ({ rating, count }) => {
       stars.push(<FaRegStar className="text-yellow-400 text-lg" key={i} />);
     }
   }
+
   return (
     <div className="flex gap-0.5">
-      {stars}&nbsp;&nbsp;{count}&nbsp;Students&nbsp;&nbsp;({rating}/5)
+      {count ? (
+        <>
+          {stars}
+          &nbsp;&nbsp;
+          {count}&nbsp;Students&nbsp;&nbsp;
+          ({rating}/5)
+        </>
+      ) : (
+        <>{stars}</>
+      )}
     </div>
   );
 };
