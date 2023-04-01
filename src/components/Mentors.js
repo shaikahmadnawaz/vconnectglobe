@@ -87,12 +87,12 @@ const Mentors = () => {
           <option value="" disabled>
             State
           </option>
+          <option value={"all"}>All</option>
           {states.map((state, index) => (
             <option key={index} value={state}>
               {state}
             </option>
           ))}
-          <option value={"all"}>All</option>
         </select>
       </div>
 

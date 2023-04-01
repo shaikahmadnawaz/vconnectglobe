@@ -62,11 +62,11 @@ const Navbar = () => {
             {showLogin && (
               <div className="absolute left-0 md:right-0 mt-2 w-32 rounded-md shadow-lg">
                 <div className="py-1 rounded-md bg-white">
-                 <a
-                    href="https://vconnectglobe.com/booking/students-login/"
+                  <a
+                    href="https://vconnectglobe.com/booking/mentor-login/"
                     className="block px-7 py-1 w-full text-lg text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                   >
-                     <h1>Mentor</h1>
+                    <h1>Mentor</h1>
                   </a>
                   <a
                     href="https://vconnectglobe.com/booking/students-login/"

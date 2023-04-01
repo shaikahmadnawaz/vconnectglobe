@@ -2,8 +2,6 @@ import React from "react";
 import { testimonials } from "../Data/testimonialsData";
 import StarRating from "./StarRating";
 const Testimonials = () => {
-  
-
   return (
     <section className="bg-white py-16">
       <div id="testimonials" className="container md:px-14 mx-auto px-4">
@@ -11,27 +9,31 @@ const Testimonials = () => {
           What people are saying
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-8">
-          {
-            testimonials.map((testimonial,index)=>{
-              return(
-                <div key={index} className="shadow-md rounded-2xl">
-                  <div className="photo flex justify-center py-2 rounded-md bg-white">
-                    <img src="./mentors/cartoon-illustration.jpg" alt="student" className="rounded-full w-32"/>
-                  </div>
-                  <div className="flex flex-col mt-4">
-                    <p className="font-bold text-center">{testimonial.name}</p>
-                    <p className="text-gray-500 text-center">{testimonial.position}</p>
-                  </div>
-                  <div className="flex italic justify-center px-10 mt-4">
-                    <p>{testimonial.testimonial}</p>
-                  </div>
-                  <div className="mt-4 flex justify-center my-4">
-                    <StarRating rating={testimonial.rating}/>
-                  </div>
+          {testimonials.map((testimonial, index) => {
+            return (
+              <div key={index} className="shadow-md rounded-2xl">
+                <div className="photo flex justify-center py-2 rounded-md bg-white">
+                  <img
+                    src="./mentors/cartoon.jpg"
+                    alt="student"
+                    className="rounded-full w-32"
+                  />
                 </div>
-              )
-            })
-          }
+                <div className="flex flex-col mt-4">
+                  <p className="font-bold text-center">{testimonial.name}</p>
+                  <p className="text-gray-500 text-center">
+                    {testimonial.position}
+                  </p>
+                </div>
+                <div className="flex italic justify-center px-10 mt-4">
+                  <p>{testimonial.testimonial}</p>
+                </div>
+                <div className="mt-4 flex justify-center my-4">
+                  <StarRating rating={testimonial.rating} />
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
@@ -40,8 +42,8 @@ const Testimonials = () => {
 
 export default Testimonials;
 
-
-{/* <div
+{
+  /* <div
               key={index}
               className="bg-white hover:scale-105 duration-500 rounded-lg shadow-lg p-6"
             >
@@ -64,5 +66,6 @@ export default Testimonials;
                     {testimonial.position}
                   </p>
                 </div>
-              </div> */}
-            // </div>
+              </div> */
+}
+// </div>

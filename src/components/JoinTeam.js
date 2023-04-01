@@ -10,7 +10,7 @@ const JoinTeam = () => {
 
       <div className="flex flex-col md:flex-row  justify-center items-center">
         <div className="md:w-1/2 flex justify-center items-center mb-10 md:mb-0">
-          <img className="w-full" src={Team} alt="" />
+          <img className="w-full " src={Team} alt="" />
         </div>
 
         <div className="md:w-1/2 flex flex-col justify-center items-center md:pl-12">
