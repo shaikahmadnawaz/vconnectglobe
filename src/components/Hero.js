@@ -4,7 +4,7 @@ import { handleScroll } from "./utils/handleScroll";
 
 function Hero() {
   return (
-    <section className="flex w-full flex-wrap bg-gradient-to-r from-blue-500 to-cyan-500 h-full mx-auto mt-0 pt-12">
+    <section className="flex w-full flex-wrap bg-gradient-to-r from-blue-500 to-cyan-500 h-full mx-auto mt-0 pt-12 md:px-14">
       <div className="w-full md:w-1/2">
         <div
           id="home"

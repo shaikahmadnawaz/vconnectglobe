@@ -52,7 +52,7 @@ const Mentors = () => {
   ].sort();
 
   return (
-    <section id="mentors" className="container mx-auto px-4 py-8">
+    <section id="mentors" className="container md:px-14 mx-auto px-4 py-8">
       <h2 className="text-2xl font-bold mb-5 text-center">
         Our Featured Mentors
       </h2>

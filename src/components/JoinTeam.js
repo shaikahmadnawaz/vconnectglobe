@@ -3,13 +3,13 @@ import Team from "../assets/teams.jpg";
 
 const JoinTeam = () => {
   return (
-    <div className="container mx-auto my-6 px-4">
+    <div className="container md:px-14 mx-auto my-6 px-4">
       <h1 className="text-2xl text-center font-bold mb-2">
         Come Be A Part Of The Helping Community
       </h1>
 
-      <div className="flex flex-col md:flex-row items-center">
-        <div className="md:w-1/2 mb-10 md:mb-0">
+      <div className="flex flex-col md:flex-row  justify-center items-center">
+        <div className="md:w-1/2 flex justify-center items-center mb-10 md:mb-0">
           <img className="w-full" src={Team} alt="" />
         </div>
 
