@@ -132,7 +132,7 @@ const mentorsData = [
   },
 
   {
-    name: "Ms.Sahith",
+    name: "Mr.Sahith",
     university: "Cleveland State University, (OH)",
     education: "CIS and MIS",
     image: "./mentors/cartoon.jpg",
@@ -172,7 +172,7 @@ const mentorsData = [
   },
 
   {
-    name: "Ms.Pushyamithra",
+    name: "Mr.Pushyamithra",
     university: "Wichita State University, (KS)",
     education: "Engineering management",
     image: "./mentors/PushyamithraPabbaraju.jpg",
@@ -186,7 +186,7 @@ const mentorsData = [
   },
 
   {
-    name: "Ms.Nichith",
+    name: "Mr.Nichith",
     university: "Sacred Heart University, (CT)",
     education: "Computer Science",
     image: "./mentors/nichith.jpg",
@@ -291,7 +291,7 @@ const mentorsData = [
   },
 
   {
-    name: "Ms.Sufiyan",
+    name: "Mr.Sufiyan",
     university: "University of Texas at Arlington, (TX)",
     education: "Civil Egnieering (Structures)",
     image: "./mentors/sufiyaan.jpg",
