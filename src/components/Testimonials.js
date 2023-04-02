@@ -1,18 +1,58 @@
 import React from "react";
 import { testimonials } from "../Data/testimonialsData";
 import StarRating from "./StarRating";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 const Testimonials = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <section className="bg-white py-16">
       <div id="testimonials" className="container md:px-14 mx-auto px-4">
         <h2 className="text-2xl text-center font-bold mb-8">
           What people are saying
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-8">
+        <Slider {...settings}>
           {testimonials.map((testimonial, index) => {
             return (
-              <div key={index} className="shadow-md rounded-2xl">
-                <div className="photo flex justify-center py-2 rounded-md bg-white">
+              <div
+                key={index}
+                className="shadow-md rounded-2xl md:my-5 bg-slate-100 mx-4 p-2 hover:scale-105 duration-500"
+              >
+                <div className="photo flex justify-center py-2 rounded-md">
                   <img
                     src="./mentors/cartoon.jpg"
                     alt="student"
@@ -34,38 +74,10 @@ const Testimonials = () => {
               </div>
             );
           })}
-        </div>
+        </Slider>
       </div>
     </section>
   );
 };
 
 export default Testimonials;
-
-{
-  /* <div
-              key={index}
-              className="bg-white hover:scale-105 duration-500 rounded-lg shadow-lg p-6"
-            >
-              <p className="text-lg font-medium mb-4">
-                {testimonial.testimonial}
-              </p>
-              <div className="flex items-center">
-                <div className="mr-4">
-                  <div className="w-12 h-12 rounded-full bg-gray-300">
-                    <img
-                      className="w-12 h-12 rounded-full"
-                      src="https://picsum.photos/200/300"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div>
-                  <p className="text-base font-medium">{testimonial.name}</p>
-                  <p className="text-sm text-gray-500">
-                    {testimonial.position}
-                  </p>
-                </div>
-              </div> */
-}
-// </div>
