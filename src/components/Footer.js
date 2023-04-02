@@ -7,8 +7,11 @@ function Footer() {
       <div className="md:px-14 container mx-auto px-4 py-8 flex flex-wrap justify-between items-center">
         <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0">
           <h1 className="text-2xl font-bold mb-2">VConnect Globe</h1>
-          <p className="mt-4 text-gray-500 text-sm">
+          <p className="mt-2 text-gray-500 text-sm">
             Get clarification on study abroad topics from experienced people
+          </p>
+          <p className="mt-2 text-gray-500 text-sm">
+            Learn and grow with help from mentors
           </p>
         </div>
         <div className="w-full md:w-auto text-center md:text-right mx-10">
