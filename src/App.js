@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Testimonials from "./components/Testimonials";
 import JoinTeam from "./components/JoinTeam";
+import StudyAbroad from "./components/StudyAbroad";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <StudyAbroad />
       <Mentors />
       <Testimonials />
       <JoinTeam />
