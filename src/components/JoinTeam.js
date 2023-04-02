@@ -1,30 +1,56 @@
 import React from "react";
-import Team from "../assets/teams.jpg";
+import JoinUs from "../assets/joinus.png";
 
 const JoinTeam = () => {
+  let listItems = [
+    "Chance to make a positive impact on someone's life while building your own skills",
+    "Access to diverse perspectives and experiences from students all around the world",
+    "Ability to work from anywhere with an internet connection",
+    "Opportunities to develop leadership and mentorship skills",
+    "Exposure to new and innovative teaching methods and technologies",
+  ];
+
   return (
-    <div className="container md:px-14 mx-auto my-6 px-4">
-      <h1 className="text-2xl text-center font-bold mb-2">
+    <div class="md:px-14 mx-auto px-4 py-8">
+      <h1 className="text-2xl text-center font-bold mb-0">
         Come Be A Part Of The Helping Community
       </h1>
-
-      <div className="flex flex-col md:flex-row  justify-center items-center">
-        <div className="md:w-1/2 flex justify-center items-center mb-10 md:mb-0">
-          <img className="w-full " src={Team} alt="" />
+      <div className="flex flex-col md:h-[27rem] lg:flex-row items-center justify-center">
+        <div class="lg:w-1/2">
+          <img
+            src={JoinUs}
+            className="p-0 md:p-12 w-42 object-center"
+            alt="Mentor Team Illustration"
+          />
         </div>
 
-        <div className="md:w-1/2 flex flex-col justify-center items-center md:pl-12">
-          <h2 className="text-xl md:text-2xl font-medium text-gray-900 mb-3">
-            Our Team
-          </h2>
-          <p className="text-center md:text-base text-gray-600 mb-5">
-            We are a passionate group of individuals dedicated to making a
-            difference in our community. Our team consists of volunteers from
-            all walks of life, who share a common goal of helping those in need.
-          </p>
-          <button className="bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+        <div class="lg:w-1/2 lg:p-auto">
+          <div class="list-disc list-inside mb-6">
+            {listItems.map((item, index) => (
+              <div key={index} class="flex items-start mb-3">
+                <div class="w-6 h-6 mr-3 mt-1 text-blue-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    stroke="currentColor"
+                  >
+                    <circle cx="10" cy="10" r="8" fill="none" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="font-medium">{item}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <a
+            href="#"
+            class="bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md px-4 py-2 text-center inline-block"
+          >
             Join Our Team
-          </button>
+          </a>
         </div>
       </div>
     </div>
