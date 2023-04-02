@@ -1,6 +1,6 @@
 import React from "react";
 import JoinUs from "../assets/joinus.png";
-
+import {TbPointFilled} from "react-icons/tb"
 const JoinTeam = () => {
   let listItems = [
     "Chance to make a positive impact on someone's life while building your own skills",
@@ -15,11 +15,11 @@ const JoinTeam = () => {
       <h1 className="text-2xl text-center font-bold mb-0">
         Come Be A Part Of The Helping Community
       </h1>
-      <div className="flex flex-col md:h-[27rem] lg:flex-row items-center justify-center">
+      <div className="flex flex-col md:h-full lg:h-full lg:flex-row items-center justify-center">
         <div class="lg:w-1/2">
           <img
             src={JoinUs}
-            className="p-0 md:p-12 w-42 object-center"
+            className="p-0 md:pl-7  w-42 object-center"
             alt="Mentor Team Illustration"
           />
         </div>
@@ -29,14 +29,8 @@ const JoinTeam = () => {
             {listItems.map((item, index) => (
               <div key={index} class="flex items-start mb-3">
                 <div class="w-6 h-6 mr-3 mt-1 text-blue-600">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    stroke="currentColor"
-                  >
-                    <circle cx="10" cy="10" r="8" fill="none" />
-                  </svg>
+                  <TbPointFilled/>
+                    
                 </div>
                 <div>
                   <span class="font-medium">{item}</span>
