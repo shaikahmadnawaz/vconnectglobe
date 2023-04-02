@@ -28,7 +28,7 @@ function Footer() {
       <div className="bg-gray-800 py-2">
         <div className="container mx-auto px-4">
           <p className="text-center text-gray-500 text-sm">
-            © {new Date().getFullYear()} VConnectGlobe. All rights reserved.
+            © {new Date().getFullYear()} VConnect Globe. All rights reserved.
           </p>
         </div>
       </div>
