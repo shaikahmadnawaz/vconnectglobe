@@ -9,7 +9,6 @@ const JoinTeam = () => {
     "Opportunities to develop leadership and mentorship skills",
     "Exposure to new and innovative teaching methods and technologies",
   ];
-  const [formOpen,setFormOpen] = useState(false);
   return (
     <div class="md:px-14 mx-auto px-4 py-8">
       <h1 className="text-2xl text-center font-bold mb-0">
@@ -48,10 +47,6 @@ const JoinTeam = () => {
           </a>
         </div>
       </div>
-      {
-        formOpen && <JoinForm/>
-      } 
-      
     </div>
   );
 };
