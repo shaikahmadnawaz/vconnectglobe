@@ -1,8 +1,6 @@
 import React from "react";
 import JoinUs from "../assets/joinus.png";
-import {TbPointFilled} from "react-icons/tb";
-import JoinForm from "./JoinForm";
-import { useState } from "react";
+import { TbPointFilled } from "react-icons/tb";
 const JoinTeam = () => {
   let listItems = [
     "Chance to make a positive impact on someone's life while building your own skills",
@@ -31,8 +29,7 @@ const JoinTeam = () => {
             {listItems.map((item, index) => (
               <div key={index} class="flex items-start mb-3">
                 <div class="w-6 h-6 mr-3 mt-1 text-blue-600">
-                  <TbPointFilled/>
-                    
+                  <TbPointFilled />
                 </div>
                 <div>
                   <span class="font-medium">{item}</span>
@@ -42,12 +39,10 @@ const JoinTeam = () => {
           </div>
 
           <a
-            // href="https://forms.gle/YAafMk1ULHZvHKhQA"
-            // target="_blank"
-            onClick={(e)=>{setFormOpen(true)}}
+            href="https://forms.gle/YAafMk1ULHZvHKhQA"
+            target="_blank"
             rel="noreferrer"
-            
-            class="bg-blue-600 hover:bg-blue-700 cursor-pointer text-white font-medium rounded-md px-4 py-2 text-center inline-block"
+            class="bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md px-4 py-2 text-center inline-block"
           >
             Join Our Team
           </a>
