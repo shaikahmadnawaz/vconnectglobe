@@ -17,7 +17,7 @@ const Navbar = () => {
         <div class="text-md py-0 cursor-pointer flex items-center">
           <a href="/" class="text-md py-0 cursor-pointer flex items-center">
             <img
-              src="/vconnectglobal.png"
+              src="/VConnect_logo.png"
               alt="vconnectglobal"
               class="w-40 md:w-56"
             />
@@ -63,12 +63,16 @@ const Navbar = () => {
               <div className="absolute left-0 md:right-0 mt-2 w-32 rounded-md shadow-lg">
                 <div className="py-1 rounded-md bg-white">
                   <a
+                    target="_blank"
+                    rel="noreferrer"
                     href="https://vconnectglobe.com/booking/mentor-login/"
                     className="block px-7 py-1 w-full text-lg text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                   >
                     <h1>Mentor</h1>
                   </a>
                   <a
+                    target="_blank"
+                    rel="noreferrer"
                     href="https://vconnectglobe.com/booking/students-login/"
                     className="block px-7 py-1 text-lg text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                   >

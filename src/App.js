@@ -7,7 +7,7 @@ import About from "./components/About";
 import Testimonials from "./components/Testimonials";
 import JoinTeam from "./components/JoinTeam";
 import StudyAbroad from "./components/StudyAbroad";
-
+import googleForm from "./components/JoinForm";
 function App() {
   return (
     <main className="App">
@@ -17,7 +17,7 @@ function App() {
       <StudyAbroad />
       <Mentors />
       <Testimonials />
-      <JoinTeam />
+      <JoinTeam/>
       <Footer />
     </main>
   );

@@ -1,6 +1,8 @@
 import React from "react";
 import JoinUs from "../assets/joinus.png";
-import {TbPointFilled} from "react-icons/tb"
+import {TbPointFilled} from "react-icons/tb";
+import JoinForm from "./JoinForm";
+import { useState } from "react";
 const JoinTeam = () => {
   let listItems = [
     "Chance to make a positive impact on someone's life while building your own skills",
@@ -9,7 +11,7 @@ const JoinTeam = () => {
     "Opportunities to develop leadership and mentorship skills",
     "Exposure to new and innovative teaching methods and technologies",
   ];
-
+  const [formOpen,setFormOpen] = useState(false);
   return (
     <div class="md:px-14 mx-auto px-4 py-8">
       <h1 className="text-2xl text-center font-bold mb-0">
@@ -40,13 +42,21 @@ const JoinTeam = () => {
           </div>
 
           <a
-            href="#"
-            class="bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md px-4 py-2 text-center inline-block"
+            // href="https://forms.gle/YAafMk1ULHZvHKhQA"
+            // target="_blank"
+            onClick={(e)=>{setFormOpen(true)}}
+            rel="noreferrer"
+            
+            class="bg-blue-600 hover:bg-blue-700 cursor-pointer text-white font-medium rounded-md px-4 py-2 text-center inline-block"
           >
             Join Our Team
           </a>
         </div>
       </div>
+      {
+        formOpen && <JoinForm/>
+      } 
+      
     </div>
   );
 };
