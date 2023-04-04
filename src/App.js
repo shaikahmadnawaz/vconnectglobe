@@ -7,6 +7,7 @@ import About from "./components/About";
 import Testimonials from "./components/Testimonials";
 import JoinTeam from "./components/JoinTeam";
 import StudyAbroad from "./components/StudyAbroad";
+import FlipBook from "./components/FlipBook.js";
 function App() {
   return (
     <main className="App">
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <About /> 
       <StudyAbroad />
+      <FlipBook/>
       <Mentors />
       <Testimonials />
       <JoinTeam/>
