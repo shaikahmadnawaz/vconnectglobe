@@ -9,42 +9,42 @@ const topicsData = [
   {
     icon: <MdSchool className="text-5xl text-blue-500" />,
     title: "Course Work & Internship Opportunities",
-    text: "Discover a range of courses and internship opportunities at top universities.",
+    text: "Guidance on opting academic and non-academic programs that enhance your profile and identifying internship opportunities as per your professional goals",
   },
   {
     icon: <FaRegMoneyBillAlt className="text-5xl text-green-500" />,
-    title: "Application Process & Tuition Fee",
-    text: "Get clarity on the application process, deadlines, and tuition fees for various universities.",
+    title: "Application Process & Fee Structure",
+    text: "Tips in preparing strong and competitive application forms as well as understanding the cost structure and budgeting for tuition fee and other expenses",
   },
   {
     icon: <MdLocationOn className="text-5xl text-yellow-500" />,
-    title: "Accommodation near Universities",
-    text: "Explore job opportunities both on and off campus to fund your education and gain valuable work experience.",
+    title: "Best Accommodation Options",
+    text: "Insights into various accommodation options available and advice on best and safe option as per your financial standards and the location of university",
   },
   {
     icon: <FaRegHandshake className="text-5xl text-purple-500" />,
-    title: "On-Off Campus Job Opportunities",
-    text: "Get clarity on the application process, deadlines, and tuition fees for various universities.",
+    title: "On & Off Campus Job Opportunities",
+    text: "Suggestions on acquiring various competitive on-campus jobs through professional networking, as well as, knowledge on possibility of off-campus jobs in city ",
   },
   {
     icon: <FaRegBuilding className="text-5xl text-red-500" />,
-    title: "Visa Experience & Tips",
-    text: "Learn about the visa process, documents required, and tips to ensure a smooth visa experience.",
+    title: "Visa Experience & Interview Tips",
+    text: "Sharing experiences on complete procedure of procuring visa successfully as per regulations, right from application process to the effective interview preparation",
   },
   {
     icon: <FaRegMoneyBillAlt className="text-5xl text-green-500" />,
-    title: "Scholarships in Universities",
-    text: "Discover various scholarship options offered by universities and organizations to fund your education.",
+    title: "Scholarships and Grants",
+    text: "Advice on identifying various eligible university scholarships available and tips on preparation of an impressive profile and application that fetches grants",
   },
   {
     icon: <FaChalkboardTeacher className="text-5xl text-blue-500" />,
-    title: "Info & Assistance for RA / TA Opportunities",
-    text: "Learn about research and teaching assistantship opportunities, eligibility criteria, and how to apply.",
+    title: "RA & TA Opportunities",
+    text: "Guidance on meeting the eligibility criteria for Research & Teaching Assistant positions and strategies to achieve through association with potential faculty and research labs ",
   },
   {
     icon: <FaRegMoneyBillAlt className="text-4xl text-green-500" />,
-    title: "Financial Guidance",
-    text: "Learn about scholarships, financial aid, and student loans to help you pay for college expenses.",
+    title: "Financial Management",
+    text: "Insights into better management of tuition fee and living expenses abroad and advice on ways of acquiring additional financial support like educational loans ",
   },
 ];
 

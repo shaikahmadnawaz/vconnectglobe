@@ -43,7 +43,7 @@ const Testimonials = () => {
     <section className="bg-white py-16">
       <div id="testimonials" className="container md:px-14 mx-auto px-4">
         <h2 className="text-2xl text-center font-bold mb-8">
-          What people are saying
+        Users Response! 
         </h2>
         <div className="space-x-4">
           <Slider {...settings}>

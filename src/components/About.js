@@ -17,7 +17,7 @@ const About = () => {
   return (
     <div id="about" className="container md:px-14 mx-auto px-4 py-8">
       <h2 className="text-2xl font-bold mb-8 text-center">
-        Get clarity on important topics from experienced people
+      Insights and guidance offered by experienced mentors 
       </h2>
       <div className="grid md:gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         {topicsData.map((topic, index) => {

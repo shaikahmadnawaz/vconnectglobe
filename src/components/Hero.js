@@ -11,20 +11,18 @@ function Hero() {
           className="container flex justify-center items-center flex-col text-center mx-auto lg:py-40 lg:px-32 pt-24 px-4"
         >
           <h1 className="lg:text-4xl md:text-3xl text-2xl font-semibold text-white mb-4">
-            Learn and grow with help from mentors
+          1-2-1 Mentorship program for Study abroad 
           </h1>
-          <p className="text-lg text-white mb-4">
-            Book and meet mentors for 1:1 mentorship in our global community.
-          </p>
+         
           <p className="text-lg text-white mb-6">
-            Your next chapter, made possible with mentorship.
+          Avail the personalised mentorship on all the aspects of studying abroad by knowledgeable and passionate mentors, who are eager to share their wisdom and experience with you! 
           </p>
           <a
             href="#mentors"
             onClick={handleScroll}
             className="bg-white text-black text-xl py-2 px-3 rounded-xl font-medium hover:bg-black hover:text-white transition-all duration-300"
           >
-            Our Mentors
+            Meet our Mentors 
           </a>
         </div>
       </div>

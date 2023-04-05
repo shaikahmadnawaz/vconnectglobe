@@ -3,16 +3,17 @@ import JoinUs from "../assets/joinus.png";
 import { TbPointFilled } from "react-icons/tb";
 const JoinTeam = () => {
   let listItems = [
-    "Chance to make a positive impact on someone's life while building your own skills",
-    "Access to diverse perspectives and experiences from students all around the world",
-    "Ability to work from anywhere with an internet connection",
-    "Opportunities to develop leadership and mentorship skills",
-    "Exposure to new and innovative teaching methods and technologies",
+    	"Chance to enhance your skills having the potential to positively impact an aspirant life ",
+      "Access to diverse perspectives and experiences from students across the world",
+      "Exposure to cutting-edge technologies and innovative teaching techniques",
+      "Opportunities to practise mentorship and leadership",
+      "Ability to work from anywhere, with just an internet connection",
+
   ];
   return (
     <div class="md:px-14 mx-auto px-4 py-8">
       <h1 className="text-2xl text-center font-bold mb-0">
-        Come Be A Part Of The Helping Community
+      Join the Assisting Community Today! 
       </h1>
       <div className="flex flex-col md:h-full lg:h-full lg:flex-row items-center justify-center">
         <div class="lg:w-1/2">

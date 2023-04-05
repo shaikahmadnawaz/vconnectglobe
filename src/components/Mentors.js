@@ -54,7 +54,7 @@ const Mentors = () => {
   return (
     <section id="mentors" className="container md:px-14 mx-auto px-4 py-8">
       <h2 className="text-2xl font-bold mb-5 text-center">
-        Our Featured Mentors
+      Featured Mentors 
       </h2>
 
       <div class="flex flex-col md:flex-row items-center justify-center mb-10">
@@ -93,7 +93,7 @@ const Mentors = () => {
 
         <div class="relative">
           <select
-            className={`block appearance-none w-full border border-gray-400 rounded-md py-2 px-4 pr-8 leading-tight focus:outline-none focus:border-gray-500 bg-white ${selectedCountry == ""? "cursor-not-allowed" : "cursor-default"} md:cursor-auto`}
+            className={`block appearance-none w-full border border-gray-400 rounded-md py-2 px-4 pr-8 leading-tight focus:outline-none focus:border-gray-500 bg-white ${selectedCountry === ""? "cursor-not-allowed" : "cursor-default"} md:cursor-auto`}
             name="state"
             value={selectedState}
             onChange={handleChange}
