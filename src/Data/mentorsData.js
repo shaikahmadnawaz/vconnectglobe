@@ -358,7 +358,7 @@ const mentorsData = [
     name: "Mr.Srikanth",
     university: "Trine University, Detroit",
     education: "Information Studies",
-    image: "./mentors/tarun.jpg",
+    image: "./mentors/cartoon.jpg",
     studentsCount: 9,
     rating: 4.5,
     languages: "Telugu/English/Hindi",
