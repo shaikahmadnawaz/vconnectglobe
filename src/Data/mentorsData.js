@@ -28,7 +28,7 @@ const mentorsData = [
   {
     name: "Mr.Kowshik",
     university: "University of North Texas, (TX)",
-    education: "Computer Science",
+    education: "Business Analytics",
     image: "./mentors/kowshik.jpg",
     studentsCount: 9,
     rating: 4.5,
@@ -135,7 +135,7 @@ const mentorsData = [
     name: "Mr.Sahith",
     university: "Cleveland State University, (OH)",
     education: "CIS and MIS",
-    image: "./mentors/cartoon.jpg",
+    image: "./mentors/Sahith.jpg",
     studentsCount: 10,
     rating: 4.5,
     languages: "Telugu/English/Hindi",
@@ -327,6 +327,45 @@ const mentorsData = [
     country: "USA",
     appointmentLink:
       "https://vconnectglobe.com/booking/tarun-sai-narayan-gurram",
+  },
+  {
+    name: "Mr.Rushikesh",
+    university: "University of Houston,MC",
+    education: "Computer Systems Engineering",
+    image: "./mentors/rushikesh.jpg",
+    studentsCount: 9,
+    rating: 4.5,
+    languages: "Telugu/English/Hindi",
+    state: "Texas(TX)",
+    country: "USA",
+    appointmentLink:
+    "https://vconnectglobe.com/booking/rushikesh-vuppala",
+  },
+  {
+    name: "Mr.Ismail",
+    university: "University of South Florida",
+    education: "Civil Engineering (Structures)",
+    image: "./mentors/Ismail.jpg",
+    studentsCount: 9,
+    rating: 4.5,
+    languages: "English/Hindi",
+    state: "Florida(FL)",
+    country: "USA",
+    appointmentLink:
+      "https://vconnectglobe.com/booking/dummy",
+  },
+  {
+    name: "Mr.Srikanth",
+    university: "Trine University, Detroit",
+    education: "Information Studies",
+    image: "./mentors/tarun.jpg",
+    studentsCount: 9,
+    rating: 4.5,
+    languages: "Telugu/English/Hindi",
+    state: "Michigan(MI)",
+    country: "USA",
+    appointmentLink:
+      "https://vconnectglobe.com/booking/dummy",
   },
 ];
 export default mentorsData;

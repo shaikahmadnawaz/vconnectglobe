@@ -93,7 +93,7 @@ const Mentors = () => {
 
         <div class="relative">
           <select
-            class="block appearance-none w-full border border-gray-400 rounded-md py-2 px-4 pr-8 leading-tight focus:outline-none focus:border-gray-500 bg-white cursor-not-allowed md:cursor-auto"
+            className={`block appearance-none w-full border border-gray-400 rounded-md py-2 px-4 pr-8 leading-tight focus:outline-none focus:border-gray-500 bg-white ${selectedCountry == ""? "cursor-not-allowed" : "cursor-default"} md:cursor-auto`}
             name="state"
             value={selectedState}
             onChange={handleChange}

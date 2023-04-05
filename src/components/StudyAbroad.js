@@ -62,7 +62,7 @@ const StudyAbroad = () => {
           How do I begin my study abroad?
         </h2>
 
-        <div className="flowchart grid gap-2 sm:gap-x-5 sm:gap-y-10 text-center grid-cols-2 sm:grid-cols-5 w-full mx-auto my-4">
+        <div className="flowchart grid gap-2 sm:gap-x-5 sm:gap-y-10 text-center grid-cols-2 sm:grid-cols-5 w-full mx-auto my-4 md:gap-x-8">
           {steps.map((step, index) => (
             <div
               key={index}
