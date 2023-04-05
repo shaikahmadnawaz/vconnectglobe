@@ -6,7 +6,6 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 import Testimonials from "./components/Testimonials";
 import JoinTeam from "./components/JoinTeam";
-import StudyAbroad from "./components/StudyAbroad";
 import FlipBook from "./components/FlipBook.js";
 function App() {
   return (
@@ -14,7 +13,6 @@ function App() {
       <Navbar />
       <Hero />
       <About /> 
-      <StudyAbroad />
       <FlipBook/>
       <Mentors />
       <Testimonials />

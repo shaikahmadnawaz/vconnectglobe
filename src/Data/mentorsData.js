@@ -352,20 +352,33 @@ const mentorsData = [
     state: "Florida(FL)",
     country: "USA",
     appointmentLink:
-      "https://vconnectglobe.com/booking/dummy",
+      "https://vconnectglobe.com/booking/ismail-mohammed/",
   },
   {
     name: "Mr.Srikanth",
     university: "Trine University, Detroit",
     education: "Information Studies",
-    image: "./mentors/cartoon.jpg",
+    image: "./mentors/srikanth.jpg",
     studentsCount: 9,
     rating: 4.5,
     languages: "Telugu/English/Hindi",
     state: "Michigan(MI)",
     country: "USA",
     appointmentLink:
-      "https://vconnectglobe.com/booking/dummy",
+      "https://vconnectglobe.com/booking/srikanth-kotapati/",
+  },
+  {
+    name: "Mr.Akheel",
+    university: "Illinois Institute of Technology ",
+    education: "Construction Engineering and Management",
+    image: "./mentors/akheel.jpg",
+    studentsCount: 10,
+    rating: 4.5,
+    languages: "English/Hindi",
+    state: "IIIinois(IL)",
+    country: "USA",
+    appointmentLink:
+      "https://vconnectglobe.com/booking/dummy/",
   },
 ];
 export default mentorsData;

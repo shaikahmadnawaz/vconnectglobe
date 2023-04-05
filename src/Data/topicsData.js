@@ -4,6 +4,7 @@ import {
   FaRegHandshake,
   FaChalkboardTeacher,
 } from "react-icons/fa";
+import {BsBank} from 'react-icons/bs'
 import { MdSchool, MdLocationOn } from "react-icons/md";
 const topicsData = [
   {
@@ -42,7 +43,7 @@ const topicsData = [
     text: "Suggestions on acquiring various competitive on-campus jobs through professional networking, as well as, knowledge on possibility of off-campus jobs in city ",
   },
   {
-    icon: <FaRegMoneyBillAlt className="text-4xl text-green-500" />,
+    icon: <BsBank className="text-5xl text-green-500" />,
     title: "Financial Management",
     text: "Insights into better management of tuition fee and living expenses abroad and advice on ways of acquiring additional financial support like educational loans ",
   },
