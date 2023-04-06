@@ -41,7 +41,7 @@ const mentorsData = [
     name: "Mr.Balaji Charan",
     university: "University of Alab at Birmingham, (AL)",
     education: "Construction Management",
-    image: "./mentors/cartoon.jpg",
+    image: "./mentors/Balaji.jpg",
     studentsCount: 10,
     rating: 4.5,
     languages: "Telugu/English/Hindi",
@@ -255,7 +255,7 @@ const mentorsData = [
     name: "Mr.Sai Bhaskar",
     university: "Texas A&M University, (TX)",
     education: "Computer Science",
-    image: "./mentors/cartoon.jpg",
+    image: "./mentors/Bhasar.jpg",
     studentsCount: 8,
     rating: 4.5,
     languages: "Telugu/English",
@@ -338,8 +338,7 @@ const mentorsData = [
     languages: "Telugu/English/Hindi",
     state: "Texas(TX)",
     country: "USA",
-    appointmentLink:
-    "https://vconnectglobe.com/booking/rushikesh-vuppala",
+    appointmentLink: "https://vconnectglobe.com/booking/rushikesh-vuppala",
   },
   {
     name: "Mr.Ismail",
@@ -351,8 +350,7 @@ const mentorsData = [
     languages: "English/Hindi",
     state: "Florida(FL)",
     country: "USA",
-    appointmentLink:
-      "https://vconnectglobe.com/booking/ismail-mohammed/",
+    appointmentLink: "https://vconnectglobe.com/booking/ismail-mohammed/",
   },
   {
     name: "Mr.Srikanth",
@@ -364,8 +362,7 @@ const mentorsData = [
     languages: "Telugu/English/Hindi",
     state: "Michigan(MI)",
     country: "USA",
-    appointmentLink:
-      "https://vconnectglobe.com/booking/srikanth-kotapati/",
+    appointmentLink: "https://vconnectglobe.com/booking/srikanth-kotapati/",
   },
   {
     name: "Mr.Akheel",
@@ -377,8 +374,7 @@ const mentorsData = [
     languages: "English/Hindi",
     state: "IIIinois(IL)",
     country: "USA",
-    appointmentLink:
-      "https://vconnectglobe.com/booking/dummy/",
+    appointmentLink: "https://vconnectglobe.com/booking/dummy/",
   },
 ];
 export default mentorsData;
