@@ -65,7 +65,7 @@ const Navbar = () => {
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="https://vconnectglobe.com/booking/mentor-login/"
+                    href="https://vconnectglobe.com/booking/wp-admin"
                     className="block px-7 py-1 w-full text-lg text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                   >
                     <h1>Mentor</h1>
@@ -73,7 +73,7 @@ const Navbar = () => {
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="https://vconnectglobe.com/booking/students-login/"
+                    href="https://vconnectglobe.com/booking/customer-login-2/"
                     className="block px-7 py-1 text-lg text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                   >
                     Student

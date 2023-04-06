@@ -11,7 +11,7 @@ function Hero() {
           className="container flex justify-center items-center flex-col text-center mx-auto lg:py-40 lg:px-32 pt-24 px-4"
         >
           <h1 className="lg:text-4xl md:text-3xl text-2xl font-semibold text-white mb-4">
-          1-2-1 Mentorship program for Study abroad 
+          1-2-1 Mentorship for Study abroad 
           </h1>
          
           <p className="text-lg text-white mb-6">

@@ -370,7 +370,7 @@ const mentorsData = [
   {
     name: "Mr.Akheel",
     university: "Illinois Institute of Technology ",
-    education: "Construction Engineering and Management",
+    education: "Construction Management",
     image: "./mentors/akheel.jpg",
     studentsCount: 10,
     rating: 4.5,
