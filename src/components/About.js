@@ -3,7 +3,7 @@ import topicsData from "../Data/topicsData";
 
 const ContentCard = ({ icon, title, text }) => {
   return (
-    <div className="bg-white shadow-lg rounded-lg overflow-hidden my-3 md:my-0 md:mx-0 md:w-72 mx-8">
+    <div className="bg-white shadow-lg rounded-lg overflow-hidden my-3 md:my-0 md:mx-0 md:w-72 md:h-72 mx-8">
       <div className="flex items-center justify-center p-4 gap-x-2">
         <div>{icon}</div>
         <h3 className="text-xl font-semi-bold ml-2">{title}</h3>
@@ -17,9 +17,9 @@ const About = () => {
   return (
     <div id="about" className="container md:px-14 mx-auto px-4 py-8">
       <h2 className="text-2xl font-bold mb-8 text-center">
-      Insights and guidance offered by experienced mentors 
+        Insights and guidance offered by experienced mentors
       </h2>
-      <div className="grid md:gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid md:gap-x-10 md:gap-y-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         {topicsData.map((topic, index) => {
           return (
             <ContentCard
