@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaFacebookF, FaLinkedin } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -19,9 +19,10 @@ function Footer() {
             Connect with us on social media
           </p>
           <div className="flex justify-between mt-3">
-            <FaTwitter className="text-3xl cursor-pointer" />
-            <FaYoutube className="text-3xl cursor-pointer" />
-            <FaInstagram className="text-3xl cursor-pointer" />
+           <a href="https://www.instagram.com/vconnectglobe/" target="_blank" rel="noreferrer"><FaInstagram className="text-3xl cursor-pointer" /></a>
+           <a href="http://facebook.com/VconnectGlobe"  target="_blank" rel="noreferrer"> <FaFacebookF className="text-3xl cursor-pointer" /></a>
+           <a href="#" target="_blank" rel="noreferrer"> <FaLinkedin className="text-3xl cursor-pointer" /></a>
+            
           </div>
         </div>
       </div>
