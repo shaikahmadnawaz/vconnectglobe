@@ -21,7 +21,7 @@ function Footer() {
           <div className="flex justify-between mt-3">
            <a href="https://www.instagram.com/vconnectglobe/" target="_blank" rel="noreferrer"><FaInstagram className="text-3xl cursor-pointer" /></a>
            <a href="http://facebook.com/VconnectGlobe"  target="_blank" rel="noreferrer"> <FaFacebookF className="text-3xl cursor-pointer" /></a>
-           <a href="#" target="_blank" rel="noreferrer"> <FaLinkedin className="text-3xl cursor-pointer" /></a>
+          
             
           </div>
         </div>
