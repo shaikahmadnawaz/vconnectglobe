@@ -1,6 +1,5 @@
 import React from "react";
 import { testimonials } from "../Data/testimonialsData";
-import StarRating from "./StarRating";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -51,7 +50,7 @@ const Testimonials = () => {
               return (
                 <div
                   key={index}
-                  className="scale-75 md:scale-90 shadow-md rounded-2xl h-full md:my-5 bg-slate-100 mx-4 p-2 hover:scale-100 duration-500 mr-4"
+                  className="scale-75 sm:hover:scale-75 md:scale-90 lg:scale-90 lg:hover:scale-95 shadow-md rounded-2xl h-[200] md:my-5 bg-slate-100 mx-4 p-2 duration-500 mr-4"
                 >
                   <div className="photo flex justify-center py-2 rounded-md">
                     <img
@@ -70,7 +69,7 @@ const Testimonials = () => {
                     <p>{testimonial.testimonial}</p>
                   </div>
                   <div className="mt-4 flex justify-center my-4">
-                    <StarRating rating={testimonial.rating} />
+                    <p>My Mentor - {testimonial.mentorName} ({testimonial.rating}/5)</p>
                   </div>
                 </div>
               );

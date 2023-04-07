@@ -8,10 +8,10 @@ function Footer() {
         <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0">
           <h1 className="text-2xl font-bold mb-2">VConnect Globe</h1>
           <p className="mt-2 text-gray-500 text-sm">
-            Get clarification on study abroad topics from experienced people
+          Insights and guidance for study abroad by  experienced mentors
           </p>
           <p className="mt-2 text-gray-500 text-sm">
-            Learn and grow with help from mentors
+            Explore the path of global learning experience through VConnect Globe
           </p>
         </div>
         <div className="w-full md:w-auto text-center md:text-right mx-10">
