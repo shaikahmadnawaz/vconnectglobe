@@ -10,8 +10,8 @@ const Testimonials = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     autoplay: true,
     autoplaySpeed: 5000,
     responsive: [
@@ -51,7 +51,7 @@ const Testimonials = () => {
               return (
                 <div
                   key={index}
-                  className="scale-75 md:scale-90 shadow-md rounded-2xl md:my-5 bg-slate-100 mx-4 p-2 hover:scale-100 duration-500 mr-4"
+                  className="scale-75 md:scale-90 shadow-md rounded-2xl h-full md:my-5 bg-slate-100 mx-4 p-2 hover:scale-100 duration-500 mr-4"
                 >
                   <div className="photo flex justify-center py-2 rounded-md">
                     <img
