@@ -6,21 +6,24 @@ function Footer() {
   return (
     <footer id="footer" className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 md:px-24 py-8 md:py-12 flex flex-wrap justify-between items-center">
-        <div className="w-full md:w-auto text-center md:text-left mb-6 md:mb-0">
-          <h1 className="text-2xl font-bold mb-2">VConnect Globe</h1>
-          <p className="mt-2 text-gray-500 text-sm">
-            Insights and guidance for study abroad by experienced mentors
-          </p>
-          <p className="mt-2 text-gray-500 text-sm">
-            Explore the path of global learning experience through VConnect
-            Globe
-          </p>
-
-          <div className="w-full text-center mt-5 md:w-auto md:mt-8 md:text-right">
+        <div className="flex flex-col justify-start mb-10">
+          <div className="w-full md:w-auto text-center md:text-left mb-6 md:mb-0">
+            <h1 className="text-2xl text-center font-bold mb-2">
+              VConnect Globe
+            </h1>
+            <p className="mt-2 text-gray-500 text-sm">
+              Insights and guidance for study abroad by experienced mentors
+            </p>
+            <p className="mt-2 text-gray-500 text-sm">
+              Explore the path of global learning experience through VConnect
+              Globe
+            </p>
+          </div>
+          <div className="w-full items-center flex justify-center flex-col mt-5 md:w-auto md:mt-8 md:flex md:justify-start">
             <p className="text-gray-500 flex justify-items-start text-sm mb-2">
               Connect with us on social media
             </p>
-            <div className="flex md:justify-items-start mt-3">
+            <div className="md:flex flex flex-row md:justify-items-start mt-3">
               <a
                 href="https://www.instagram.com/vconnectglobe/"
                 target="_blank"
@@ -40,7 +43,7 @@ function Footer() {
           </div>
         </div>
         <div className="w-full md:w-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 flex-wrap items-center justify-between md:justify-end">
+          <div className="grid grid-cols-2 gap-3 flex-wrap items-center justify-between md:justify-end">
             <Link to="/pages/aboutus" className="block text-sm py-2">
               About us
             </Link>
