@@ -4,9 +4,9 @@ import { FaInstagram, FaFacebookF } from "react-icons/fa";
 function Footer() {
   return (
     <footer id="footer" className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 lg:px-24 py-8 lg:py-12 flex md:flex md:flex-col flex-wrap justify-between lg:grid lg:grid-cols-2 items-center">
+      <div className="container mx-auto px-4 lg:px-32 py-8 lg:py-12 flex md:flex md:flex-col flex-wrap justify-between lg:grid lg:grid-cols-2 items-center">
         <div className="flex flex-col justify-start mb-10 lg:mb-0">
-          <div className="w-full lg:w-auto text-center lg:text-left mb-6 lg:mb-0">
+          <div className="w-full lg:w-auto text-center mb-6 lg:mb-0">
             <h1 className="text-2xl text-center font-bold mb-2">
               VConnect Globe
             </h1>
@@ -18,7 +18,7 @@ function Footer() {
               Globe
             </p>
           </div>
-          <div className="w-full items-center flex justify-center flex-col mt-5 lg:w-auto lg:mt-8 lg:flex lg:justify-start">
+          <div className="w-full items-center flex justify-center flex-col mt-5 lg:w-auto lg:mt-8 lg:flex lg:justify-center">
             <p className="text-gray-500 flex justify-items-start text-sm mb-2">
               Connect with us on social media
             </p>
