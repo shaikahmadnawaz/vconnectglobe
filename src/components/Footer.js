@@ -5,30 +5,57 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer id="footer" className="bg-gray-900 text-white">
-      <div className="md:px-14 container mx-auto px-4 py-8 flex flex-wrap justify-between items-center">
-        <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0">
+      <div className="container mx-auto px-4 md:px-24 py-8 md:py-12 flex flex-wrap justify-between items-center">
+        <div className="w-full md:w-auto text-center md:text-left mb-6 md:mb-0">
           <h1 className="text-2xl font-bold mb-2">VConnect Globe</h1>
           <p className="mt-2 text-gray-500 text-sm">
-          Insights and guidance for study abroad by  experienced mentors
+            Insights and guidance for study abroad by experienced mentors
           </p>
           <p className="mt-2 text-gray-500 text-sm">
-            Explore the path of global learning experience through VConnect Globe
+            Explore the path of global learning experience through VConnect
+            Globe
           </p>
+
+          <div className="w-full text-center mt-5 md:w-auto md:mt-8 md:text-right">
+            <p className="text-gray-500 flex justify-items-start text-sm mb-2">
+              Connect with us on social media
+            </p>
+            <div className="flex md:justify-items-start mt-3">
+              <a
+                href="https://www.instagram.com/vconnectglobe/"
+                target="_blank"
+                rel="noreferrer"
+                className="mr-4"
+              >
+                <FaInstagram className="text-3xl cursor-pointer" />
+              </a>
+              <a
+                href="http://facebook.com/VconnectGlobe"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaFacebookF className="text-3xl cursor-pointer" />
+              </a>
+            </div>
+          </div>
         </div>
-        <div className="flex gap-x-3 flex-wrap items-center justify-between gap-y-2">
-          <Link to="/pages/aboutus">About us</Link>
-          <Link to="/pages/privacypolicy">Privacy Policy</Link>
-          <Link to="/pages/refundpolicy">Refund Policy</Link>
-          <Link to="/pages/termsandconditions">Terms and Conditions</Link>
-          <Link to="/pages/pricingpolicy">Pricing Policy</Link>
-        </div>
-        <div className="w-full md:w-auto text-center md:text-right mx-10">
-          <p className="text-gray-500 text-sm mb-2">
-            Connect with us on social media
-          </p>
-          <div className="flex justify-around mt-3">
-           <a href="https://www.instagram.com/vconnectglobe/" target="_blank" rel="noreferrer"><FaInstagram className="text-3xl cursor-pointer" /></a>
-           <a href="http://facebook.com/VconnectGlobe"  target="_blank" rel="noreferrer"> <FaFacebookF className="text-3xl cursor-pointer" /></a> 
+        <div className="w-full md:w-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 flex-wrap items-center justify-between md:justify-end">
+            <Link to="/pages/aboutus" className="block text-sm py-2">
+              About us
+            </Link>
+            <Link to="/pages/privacypolicy" className="block text-sm py-2">
+              Privacy Policy
+            </Link>
+            <Link to="/pages/refundpolicy" className="block text-sm py-2">
+              Refund Policy
+            </Link>
+            <Link to="/pages/termsandconditions" className="block text-sm py-2">
+              Terms and Conditions
+            </Link>
+            <Link to="/pages/pricingpolicy" className="block text-sm py-2">
+              Pricing Policy
+            </Link>
           </div>
         </div>
       </div>
