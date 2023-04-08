@@ -7,7 +7,7 @@ const Navbar = () => {
     { name: "Home", link: "#home" },
     { name: "About", link: "#about" },
     { name: "Mentors", link: "#mentors" },
-    { name: "Contact", link: "#footer" },
+    // { name: "Contact", link: "https://vconnectglobe.com/booking/contact-us/" },
   ];
   let [open, setOpen] = useState(false);
   let [showLogin, setShowLogin] = useState(false);
@@ -37,7 +37,7 @@ const Navbar = () => {
           }`}
         >
           {Links.map((link) => (
-            <li key={link.name} className="md:ml-4  text-lg md:my-0 my-7">
+            <li key={link.name} className="md:ml-4 text-lg md:my-0 my-7">
               <a
                 href={link.link}
                 onClick={(e) => {

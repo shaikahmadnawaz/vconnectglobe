@@ -1,13 +1,12 @@
 import React from "react";
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <footer id="footer" className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 md:px-24 py-8 md:py-12 flex flex-wrap justify-between items-center">
-        <div className="flex flex-col justify-start mb-10 md:mb-0">
-          <div className="w-full md:w-auto text-center md:text-left mb-6 md:mb-0">
+      <div className="container mx-auto px-4 lg:px-24 py-8 lg:py-12 flex md:flex md:flex-col flex-wrap justify-between lg:grid lg:grid-cols-2 items-center">
+        <div className="flex flex-col justify-start mb-10 lg:mb-0">
+          <div className="w-full lg:w-auto text-center lg:text-left mb-6 lg:mb-0">
             <h1 className="text-2xl text-center font-bold mb-2">
               VConnect Globe
             </h1>
@@ -19,11 +18,11 @@ function Footer() {
               Globe
             </p>
           </div>
-          <div className="w-full items-center flex justify-center flex-col mt-5 md:w-auto md:mt-8 md:flex md:justify-start">
+          <div className="w-full items-center flex justify-center flex-col mt-5 lg:w-auto lg:mt-8 lg:flex lg:justify-start">
             <p className="text-gray-500 flex justify-items-start text-sm mb-2">
               Connect with us on social media
             </p>
-            <div className="md:flex flex flex-row md:justify-items-start mt-3">
+            <div className="lg:flex flex flex-row lg:justify-items-start mt-3">
               <a
                 href="https://www.instagram.com/vconnectglobe/"
                 target="_blank"
@@ -42,23 +41,60 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="w-full md:w-auto">
-          <div className="grid grid-cols-2 gap-3 flex-wrap items-center justify-between md:justify-end">
-            <Link to="/pages/aboutus" className="block text-sm py-2">
-              About us
-            </Link>
-            <Link to="/pages/privacypolicy" className="block text-sm py-2">
-              Privacy Policy
-            </Link>
-            <Link to="/pages/refundpolicy" className="block text-sm py-2">
-              Refund Policy
-            </Link>
-            <Link to="/pages/termsandconditions" className="block text-sm py-2">
-              Terms and Conditions
-            </Link>
-            <Link to="/pages/pricingpolicy" className="block text-sm py-2">
-              Pricing Policy
-            </Link>
+        <div className="w-full lg:w-auto">
+          <div className="grid grid-cols-2 lg:gap-x-20 lg:grid-col-2 gap-3 md:flex md:justify-evenly flex-wrap items-center justify-between lg:justify-end">
+            <div>
+              <a
+                href="https://vconnectglobe.com/booking/about-us/"
+                target="_blank"
+                rel="noreferrer"
+                className="block text-sm py-2"
+              >
+                About us
+              </a>
+              <a
+                href="https://vconnectglobe.com/booking/privacy-policy/"
+                target="_blank"
+                rel="noreferrer"
+                className="block text-sm py-2"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="https://vconnectglobe.com/booking/refund-policy/"
+                target="_blank"
+                rel="noreferrer"
+                className="block text-sm py-2"
+              >
+                Refund Policy
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://vconnectglobe.com/booking/terms-and-conditions/"
+                target="_blank"
+                rel="noreferrer"
+                className="block text-sm py-2"
+              >
+                Terms and Conditions
+              </a>
+              <a
+                href="https://vconnectglobe.com/booking/pricing-policy/"
+                target="_blank"
+                rel="noreferrer"
+                className="block text-sm py-2"
+              >
+                Pricing Policy
+              </a>
+              <a
+                href="https://vconnectglobe.com/booking/contact-us/"
+                target="_blank"
+                rel="noreferrer"
+                className="block text-sm py-2"
+              >
+                Contact Us
+              </a>
+            </div>
           </div>
         </div>
       </div>
