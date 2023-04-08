@@ -19,7 +19,7 @@ export const testimonials = [
     name: "John Smith",
     position: "UI/UX Designer",
     testimonial:
-      "I had a fantastic experience with this mentorship program! My mentor was friendly, supportive, and incredibly knowledgeable. They helped me every step of the way, from choosing a program to navigating the visa process. Thanks to their guidance, I felt confident and prepared when I arrived in my host country. I would definitely recommend this program to anyone looking to study abroad!",
+      "I had a fantastic experience with this mentorship program! My mentor was friendly, supportive, and incredibly knowledgeable. They helped me every step of the way, from choosing a program to navigating the visa process. Thanks to their guidance, I felt confident and prepared when I arrived in my host country. I would definitely recommend this program.",
     rating: 4.5,
     mentorName : "Ms.Bhanurekha"
   },
@@ -28,7 +28,7 @@ export const testimonials = [
     name: "John Smith",
     position: "UI/UX Designer",
     testimonial:
-      "I cannot say enough positive things about this mentorship program. From the first call, I felt like I was in good hands. The mentor I worked with was incredibly knowledgeable and experienced, and they went above and beyond to ensure that I was prepared for my time abroad. They helped me with everything from applications to cultural immersion, and I am so grateful for their support.",
+      "From the first call, I felt like I was in good hands. The mentor I worked with was incredibly knowledgeable and experienced, and they went above and beyond to ensure that I was prepared for my time abroad. They helped me with everything from applications to cultural immersion, and I am so grateful for their support.",
     rating: 5,
     mentorName : "Mr.Ajaybhaskar"
   },

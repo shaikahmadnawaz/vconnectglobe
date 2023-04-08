@@ -4,7 +4,7 @@ import Hero from "./components/Hero";
 import Mentors from "./components/Mentors";
 import Footer from "./components/Footer";
 import About from "./components/About";
-import Testimonials from "./components/Testimonials";
+// import Testimonials from "./components/Testimonials";
 import JoinTeam from "./components/JoinTeam";
 import FlipBook from "./components/FlipBook.js";
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <About /> 
       <FlipBook/>
       <Mentors />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <JoinTeam/>
       <Footer />
     </main>
