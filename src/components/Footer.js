@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer id="footer" className="bg-gray-900 text-white bottom-0">
+    <footer id="footer" className="bg-gray-900 text-white">
       <div className="md:px-14 container mx-auto px-4 py-8 flex flex-wrap justify-between items-center">
         <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0">
           <h1 className="text-2xl font-bold mb-2">VConnect Globe</h1>

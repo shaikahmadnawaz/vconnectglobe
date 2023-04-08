@@ -58,12 +58,12 @@ const Mentors = () => {
     >
       <h2 className="text-2xl font-bold mb-5 text-center">Featured Mentors</h2>
 
-      <div class="flex flex-col md:flex-row items-center justify-center mb-10">
-        <label class="mr-2 mb-2 md:mb-0 font-medium">Filter by:</label>
+      <div class="flex flex-col md:flex-row items-center justify-center mb-10  p-5 gap-x-11">
+        <label class="mr-2 mb-2 md:mb-0 font-medium text-2xl">Filter by:</label>
 
         <div class="relative mb-2 md:mb-0 md:mr-4">
           <select
-            class="block appearance-none w-full border border-gray-400 rounded-md py-2 px-4 pr-8 leading-tight focus:outline-none focus:border-gray-500 bg-white"
+            className="text-2xl block appearance-none w-full border border-gray-400 rounded-md py-2 px-4 pr-8 leading-tight focus:outline-none focus:border-gray-500 bg-white"
             name="country"
             value={selectedCountry}
             onChange={handleChange}
@@ -94,7 +94,7 @@ const Mentors = () => {
 
         <div class="relative">
           <select
-            className={`block appearance-none w-full border border-gray-400 rounded-md py-2 px-4 pr-8 leading-tight focus:outline-none focus:border-gray-500 bg-white ${
+            className={`text-2xl block appearance-none w-full border border-gray-400 rounded-md py-2 px-4 pr-8 leading-tight focus:outline-none focus:border-gray-500 bg-white ${
               selectedCountry === "" ? "cursor-not-allowed" : "cursor-default"
             } md:cursor-auto`}
             name="state"
