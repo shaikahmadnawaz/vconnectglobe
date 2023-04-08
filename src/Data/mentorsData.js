@@ -374,7 +374,19 @@ const mentorsData = [
     languages: "English/Hindi",
     state: "IIIinois(IL)",
     country: "USA",
-    appointmentLink: "https://vconnectglobe.com/booking/dummy/",
+    appointmentLink: "https://vconnectglobe.com/booking/akheel-abbas/",
+  },
+  {
+    name: "Mr.Sai Satish",
+    university: "University of Houston,CL ",
+    education: "Management information systems ",
+    image: "./mentors/saisatish.jpg",
+    studentsCount: 10,
+    rating: 4.5,
+    languages: "Telugu, English",
+    state: "Texas(TX)",
+    country: "USA",
+    appointmentLink: "https://vconnectglobe.com/booking/sai-satish-masina/",
   },
 ];
 export default mentorsData;
