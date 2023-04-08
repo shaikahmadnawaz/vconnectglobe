@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer id="footer" className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 md:px-24 py-8 md:py-12 flex flex-wrap justify-between items-center">
-        <div className="flex flex-col justify-start mb-10">
+        <div className="flex flex-col justify-start mb-10 md:mb-0">
           <div className="w-full md:w-auto text-center md:text-left mb-6 md:mb-0">
             <h1 className="text-2xl text-center font-bold mb-2">
               VConnect Globe
