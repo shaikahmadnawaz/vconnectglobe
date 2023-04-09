@@ -1,6 +1,6 @@
 export const testimonials = [
   {
-    name: "Mr. prasad",
+    name: "Mr. Prasad",
     university: "University of New Haven",
     testimonial:
       "I was hesitant to study abroad, but this mentorship program made the entire process so much easier. The mentor I worked with was patient, supportive, and encouraging. They helped me identify my goals and find a program that was the perfect fit for me. I had an incredible experience studying abroad and would do it all over again in a heartbeat!",
@@ -23,7 +23,7 @@ export const testimonials = [
     testimonial:
       "I had a fantastic experience with this mentorship program! My mentor was friendly, supportive, and incredibly knowledgeable. They helped me every step of the way, from choosing a program to navigating the visa process. Thanks to their guidance, I felt confident and prepared when I arrived in my host country. I would definitely recommend this program.",
     rating: 4.5,
-    mentorName : "Ms.Bhanurekha",
+    mentorName : "Mr.Dinesh",
     image : "./mentors/cartoon.jpg"
   },
 

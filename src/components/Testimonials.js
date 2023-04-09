@@ -42,7 +42,7 @@ const Testimonials = () => {
     <section className="bg-white py-16">
       <div id="testimonials" className="container md:px-14 mx-auto px-4">
         <h2 className="text-2xl text-center font-bold mb-0 md:mb-2">
-          Users Response!
+          Our Students Success Stories
         </h2>
         <div className="space-x-4">
           <Slider {...settings}>
@@ -69,7 +69,7 @@ const Testimonials = () => {
                     <p>{testimonial.testimonial}</p>
                   </div>
                   <div className="mt-4 flex justify-center my-4">
-                    <p>My Mentor - {testimonial.mentorName} ({testimonial.rating}/5)</p>
+                    <p>My Mentor - <span className="font-bold">{testimonial.mentorName} ({testimonial.rating}/5)</span></p>
                   </div>
                 </div>
               );
