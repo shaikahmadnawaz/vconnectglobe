@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import About from "./About";
 import JoinTeam from "./JoinTeam";
 import FlipBook from "./FlipBook.js";
+import Testimonials from "./Testimonials";
 const Home = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const Home = () => {
       <About />
       <FlipBook />
       <Mentors />
+      <Testimonials/>
       <JoinTeam />
       <Footer />
     </>

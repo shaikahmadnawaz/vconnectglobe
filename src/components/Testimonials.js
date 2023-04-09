@@ -54,7 +54,7 @@ const Testimonials = () => {
                 >
                   <div className="photo flex justify-center py-2 rounded-md">
                     <img
-                      src="./mentors/cartoon.jpg"
+                      src={testimonial.image}
                       alt="student"
                       className="rounded-full w-32"
                     />
@@ -62,7 +62,7 @@ const Testimonials = () => {
                   <div className="flex flex-col mt-4">
                     <p className="font-bold text-center">{testimonial.name}</p>
                     <p className="text-gray-500 text-center">
-                      {testimonial.position}
+                      {testimonial.university}
                     </p>
                   </div>
                   <div className="flex italic justify-center px-10 mt-4">
