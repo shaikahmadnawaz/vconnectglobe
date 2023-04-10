@@ -44,13 +44,13 @@ const Testimonials = () => {
         <h2 className="text-2xl text-center font-bold mb-0 md:mb-2">
           Our Students Success Stories
         </h2>
-        <div className="space-x-4">
+        <div className="space-x-4"> 
           <Slider {...settings}>
             {testimonials.map((testimonial, index) => {
               return (
                 <div
                   key={index}
-                  className="scale-75 sm:hover:scale-75 md:scale-90 lg:scale-90 lg:hover:scale-95 shadow-md rounded-2xl h-[200] md:my-5 bg-slate-100 mx-4 p-2 duration-500 mr-4"
+                  className="scale-75 hover:scale-90 lg:hover:scale-95 shadow-md rounded-2xl h-[200] md:my-5 bg-slate-100 mx-4 p-2 duration-500 mr-4"
                 >
                   <div className="photo flex justify-center py-2 rounded-md">
                     <img
