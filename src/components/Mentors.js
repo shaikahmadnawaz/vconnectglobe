@@ -133,13 +133,13 @@ const Mentors = () => {
           return (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-lg hover:scale-105 duration-500"
+              className="bg-slate-100 rounded-lg shadow-lg hover:scale-105 duration-500"
             >
               <div className="flex justify-center">
                 <img
                   src={mentor.image}
                   alt={mentor.name}
-                  className="w-56 h-56 object-cover rounded-full"
+                  className="w-52 h-52 object-cover rounded-full mt-4"
                 />
               </div>
               <div className="px-6 py-4">

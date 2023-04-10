@@ -330,7 +330,7 @@ const mentorsData = [
   },
   {
     name: "Mr.Rushikesh",
-    university: "University of Houston,MC",
+    university: "University of Houston, (TX)",
     education: "Computer Systems Engineering",
     image: "./mentors/rushikesh.jpg",
     studentsCount: 9,
@@ -342,7 +342,7 @@ const mentorsData = [
   },
   {
     name: "Mr.Ismail",
-    university: "University of South Florida",
+    university: "University of South Florida, (FL)",
     education: "Civil Engineering (Structures)",
     image: "./mentors/Ismail.jpg",
     studentsCount: 9,
@@ -354,7 +354,7 @@ const mentorsData = [
   },
   {
     name: "Mr.Srikanth",
-    university: "Trine University, Detroit",
+    university: "Trine University, Detroit, (MI)",
     education: "Information Studies",
     image: "./mentors/srikanth.jpg",
     studentsCount: 9,
@@ -366,7 +366,7 @@ const mentorsData = [
   },
   {
     name: "Mr.Akheel",
-    university: "Illinois Institute of Technology ",
+    university: "Illinois Institute of Technology, (IL)",
     education: "Construction Management",
     image: "./mentors/akheel.jpg",
     studentsCount: 10,
@@ -378,12 +378,12 @@ const mentorsData = [
   },
   {
     name: "Mr.Sai Satish",
-    university: "University of Houston,CL ",
-    education: "Management information systems ",
+    university: "University of Houston,CL (TX)",
+    education: "Management Information Systems",
     image: "./mentors/saisatish.jpg",
     studentsCount: 10,
     rating: 4.5,
-    languages: "Telugu, English",
+    languages: "English/Telugu",
     state: "Texas(TX)",
     country: "USA",
     appointmentLink: "https://vconnectglobe.com/booking/sai-satish-masina/",
