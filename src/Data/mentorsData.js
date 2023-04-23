@@ -388,5 +388,35 @@ const mentorsData = [
     country: "USA",
     appointmentLink: "https://vconnectglobe.com/booking/sai-satish-masina/",
   },
+
+
+
+
+
+  {
+    name: "Mr.Jagadeesh",
+    university: "Oklahoma Christian University, (OK)",
+    education: "Science in Engineering",
+    image: "./mentors/jagadeesh.png",
+    studentsCount: 8,
+    rating: 4.5,
+    languages: "English/Telugu/Hindi",
+    state: "Oklahoma(OK)",
+    country: "USA",
+    appointmentLink: "https://vconnectglobe.com/booking/jagadeesh-vadlamudi/",
+  },
+
+  {
+    name: "Mr.Bharath",
+    university: "Kent State University",
+    education: "Construction Management",
+    image: "./mentors/bharath.jpg",
+    studentsCount: 10,
+    rating: 4.5,
+    languages: "English/Telugu",
+    state: "Ohio(OH)",
+    country: "USA",
+    appointmentLink: "https://vconnectglobe.com/booking/bharath-nimmalapudi",
+  },
 ];
 export default mentorsData;
