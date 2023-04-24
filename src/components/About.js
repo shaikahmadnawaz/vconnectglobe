@@ -6,7 +6,7 @@ const ContentCard = ({ icon, title, text }) => {
     <div className="bg-white shadow-lg rounded-lg overflow-hidden my-3 md:my-0 md:mx-0 md:w-72 md:h-72 mx-8">
       <div className="flex items-center justify-center p-4 gap-x-2">
         <div>{icon}</div>
-        <h3 className="text-xl font-semi-bold ml-2">{title}</h3>
+        <h3 className="text-xl font-bold ml-2">{title}</h3>
       </div>
       <p className="text-gray-700 text-base px-4 py-2">{text}</p>
     </div>

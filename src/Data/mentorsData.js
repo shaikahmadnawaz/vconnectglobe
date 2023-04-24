@@ -408,7 +408,7 @@ const mentorsData = [
 
   {
     name: "Mr.Bharath",
-    university: "Kent State University",
+    university: "Kent State University,(OH)",
     education: "Construction Management",
     image: "./mentors/bharath.jpg",
     studentsCount: 10,
