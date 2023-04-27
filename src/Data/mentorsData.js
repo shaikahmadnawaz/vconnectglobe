@@ -418,5 +418,18 @@ const mentorsData = [
     country: "USA",
     appointmentLink: "https://vconnectglobe.com/booking/bharath-nimmalapudi",
   },
+
+  {
+    name: "Mrs. Maheshwari",
+    university: "University of Houston,(MC)",
+    education: "Data Science",
+    image: "./mentors/maheswari.jpeg",
+    studentsCount: 8,
+    rating: 4.6,
+    languages: "English/Telugu/Hindi",
+    state: "Texas(TX)",
+    country: "USA",
+    appointmentLink: "https://vconnectglobe.com/booking/maheswari-korra",
+  }
 ];
 export default mentorsData;
