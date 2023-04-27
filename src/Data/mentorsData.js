@@ -420,8 +420,8 @@ const mentorsData = [
   },
 
   {
-    name: "Mrs. Maheshwari",
-    university: "University of Houston,(MC)",
+    name: "Ms. Maheshwari",
+    university: "University of Houston,MC, (TX)",
     education: "Data Science",
     image: "./mentors/maheswari.jpeg",
     studentsCount: 8,
