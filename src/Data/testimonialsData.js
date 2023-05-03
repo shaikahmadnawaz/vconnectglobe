@@ -5,17 +5,17 @@ export const testimonials = [
     testimonial:
       "I was hesitant to study abroad, but this mentorship program made the entire process so much easier. The mentor I worked with was patient, supportive, and encouraging. They helped me identify my goals and find a program that was the perfect fit for me. I had an incredible experience studying abroad and would do it all over again in a heartbeat!",
     rating: 5,
-    mentorName : "Mr.Srinivasa Reddy",
-    image : "./testimonials_photos/prasad.jpg"
+    mentorName: "Mr.Srinivasa Reddy",
+    image: "./testimonials_photos/prasad.jpg",
   },
   {
     name: "Ms. Prithee",
     university: "University of Houston",
     testimonial:
-    "Everything is good , the value of service can be raised with what the value it brings to customer . Make sure u give something extra to customer that come to which will make an unexpected impact on them that mesmerises them and Inturn they value your service more than just money and that is when they will bring efforts to share with others . So, rather than time spent -30 mins /40 mins - mentor should concentrate on the value they bring to the student . So I think how the student come with a belief in themselves - 'session is worth more than money and it is gonna help them'.",
+      "Everything is good , the value of service can be raised with what the value it brings to customer . Make sure u give something extra to customer that come to which will make an unexpected impact on them that mesmerize them and Inturn they value your service more than just money and that is when they will bring efforts to share with others. ",
     rating: 4,
-    mentorName : "Ms.Maheswari",
-    image : "./testimonials_photos/preethi.jpeg"
+    mentorName: "Ms.Maheswari",
+    image: "./testimonials_photos/preethi.jpeg",
   },
   {
     name: "Mr. Varun",
@@ -23,8 +23,8 @@ export const testimonials = [
     testimonial:
       "I had a fantastic experience with this mentorship program! My mentor was friendly, supportive, and incredibly knowledgeable. They helped me every step of the way, from choosing a program to navigating the visa process. Thanks to their guidance, I felt confident and prepared when I arrived in my host country. I would definitely recommend this program.",
     rating: 4.5,
-    mentorName : "Mr.Dinesh",
-    image : "./mentors/cartoon.jpg"
+    mentorName: "Mr.Dinesh",
+    image: "./mentors/cartoon.jpg",
   },
 
   {
@@ -33,8 +33,8 @@ export const testimonials = [
     testimonial:
       "From the first call, I felt like I was in good hands. The mentor I worked with was incredibly knowledgeable and experienced, and they went above and beyond to ensure that I was prepared for my time abroad. They helped me with everything from applications to cultural immersion, and I am so grateful for their support.I would like to thank them so much.",
     rating: 5,
-    mentorName : "Mr.Ajaybhaskar",
-    image : "./mentors/cartoon.jpg"
+    mentorName: "Mr.Ajaybhaskar",
+    image: "./mentors/cartoon.jpg",
   },
   // {
   //   name: "John Smith",
