@@ -400,7 +400,7 @@ const mentorsData = [
     image: "./mentors/jagadeesh.png",
     studentsCount: 8,
     rating: 4.5,
-    languages: "English/Telugu/Hindi",
+    languages: "Telugu/English/Hindi",
     state: "Oklahoma(OK)",
     country: "USA",
     appointmentLink: "https://vconnectglobe.com/booking/jagadeesh-vadlamudi/",
@@ -426,10 +426,24 @@ const mentorsData = [
     image: "./mentors/maheswari.jpeg",
     studentsCount: 8,
     rating: 4.6,
-    languages: "English/Telugu/Hindi",
+    languages:"Telugu/English/Hindi",
     state: "Texas(TX)",
     country: "USA",
     appointmentLink: "https://vconnectglobe.com/booking/maheswari-korra",
+  },
+
+
+  {
+    name: "Mr. Sreevishakkanth",
+    university: "University of North Carolina, (NC)",
+    education: "Data Science & Business Analytics",
+    image: "./mentors/vishakkanth.jpg",
+    studentsCount: 7,
+    rating: 4.5,
+    languages: "Telugu/English/Hindi",
+    state: "North Carolina(NC)",
+    country: "USA",
+    appointmentLink: "https://vconnectglobe.com/booking/sreevishakkanth/",
   }
 ];
 export default mentorsData;

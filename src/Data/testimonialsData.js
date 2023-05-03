@@ -9,13 +9,13 @@ export const testimonials = [
     image : "./testimonials_photos/prasad.jpg"
   },
   {
-    name: "Ms. Lalitha",
-    university: "University of Dayton",
+    name: "Ms. Prithee",
+    university: "University of Houston",
     testimonial:
-      "I cannot say enough positive things about this mentorship program. From the first call, I felt like I was in good hands. The mentor I worked with was incredibly knowledgeable and experienced, and they went above and beyond to ensure that I was prepared for my time abroad. They helped me with everything from applications to cultural immersion, and I am so grateful for their support.",
-    rating: 4.8,
-    mentorName : "Mr.Srinivasa Reddy",
-    image : "./mentors/wcar.jpg"
+    "Everything is good , the value of service can be raised with what the value it brings to customer . Make sure u give something extra to customer that come to which will make an unexpected impact on them that mesmerises them and Inturn they value your service more than just money and that is when they will bring efforts to share with others . So, rather than time spent -30 mins /40 mins - mentor should concentrate on the value they bring to the student . So I think how the student come with a belief in themselves - 'session is worth more than money and it is gonna help them'.",
+    rating: 4,
+    mentorName : "Ms.Maheswari",
+    image : "./testimonials_photos/preethi.jpeg"
   },
   {
     name: "Mr. Varun",
