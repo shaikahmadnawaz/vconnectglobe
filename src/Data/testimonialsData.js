@@ -12,7 +12,7 @@ export const testimonials = [
     name: "Ms. Prithee",
     university: "University of Houston",
     testimonial:
-      "Everything is good , the value of service can be raised with what the value it brings to customer . Make sure u give something extra to customer that come to which will make an unexpected impact on them that mesmerize them and Inturn they value your service more than just money and that is when they will bring efforts to share with others. ",
+      "Very informative session. Insights are so specific to the requirement and the guidance is good, all the queries are resolved. Would definitely recommend to take a notes of questions prior to the session clear all the doubts. They help to give even after support to clear also unsliced queries. This session is recommended to the people who are seeing information related to studies, part time , assistantships and any personal queries like safety such. Thank you Maheshwari for giving the required information",
     rating: 4,
     mentorName: "Ms.Maheswari",
     image: "./testimonials_photos/preethi.jpeg",
