@@ -8,6 +8,7 @@ import RefundPolicy from "./components/pages/RefundPolicy";
 import TermsAndConditions from "./components/pages/TermsAndConditions";
 import ErrorPage from "./components/pages/ErrorPage";
 import LayOut from "./components/LayOut";
+import VisaInterviews from "./components/VisaInterviews";
 function App() {
   return (
     <Router>
@@ -19,6 +20,7 @@ function App() {
           <Route path="privacypolicy" element={<PrivacyPolicy/>}/>
           <Route path="refundpolicy" element={<RefundPolicy/>}/>
           <Route path="termsandconditions" element={<TermsAndConditions/>}/>
+          <Route path="visainterviews" element={<VisaInterviews/>}/>
           <Route path="*" element={<ErrorPage/>}/>
         </Route>
       </Routes>
