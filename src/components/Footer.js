@@ -41,7 +41,7 @@ function Footer() {
                 <FaInstagram className="text-3xl cursor-pointer" />
               </a>
               <a
-                href="https://www.youtube.com/vconnectglobe/"
+                href="https://youtube.com/@civilengineerinus"
                 target="_blank"
                 rel="noreferrer"
                 className="mr-4"
