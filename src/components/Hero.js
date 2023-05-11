@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import HeroImage1 from "../assets/study-abroad.png";
 import HeroImage2 from "../assets/virtual-assistant.svg";
+import HeroImage3 from "../assets/visa.png";
 import { handleScroll } from "./utils/handleScroll";
 
 const heroData = [
@@ -19,7 +20,7 @@ const heroData = [
       "These mock interviews simulate the real visa interview experience and provide an opportunity for applicants to familiarize themselves with the process, improve their communication skills, and gain confidence!",
     buttonText: "Meet our Interviewers",
     buttonLink: "#Interview",
-    image: HeroImage2,
+    image: HeroImage3,
     backgroundColor: "from-green-400 to-green-600", // Add background color
   },
   // Add more hero sections as needed
