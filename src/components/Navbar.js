@@ -7,6 +7,7 @@ const Navbar = () => {
     { name: "Home", link: "#home" },
     { name: "About", link: "#about" },
     { name: "Mentors", link: "#mentors" },
+    { name: "Visa", link: "#visa" },
     // { name: "Contact", link: "https://vconnectglobe.com/booking/contact-us/" },
   ];
   let [open, setOpen] = useState(false);

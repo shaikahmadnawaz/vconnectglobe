@@ -1,10 +1,11 @@
 import React from "react";
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
+import { BsWhatsapp, BsYoutube } from "react-icons/bs";
 
 function Footer() {
   return (
     <footer id="footer" className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 lg:px-32 py-8 lg:py-12 flex md:flex md:flex-col flex-wrap justify-between lg:grid lg:grid-cols-2 items-center">
+      <div className="container w-screen mx-auto px-4 lg:px-32 py-8 lg:py-12 flex md:flex md:flex-col flex-wrap justify-between lg:grid lg:grid-cols-2 items-center">
         <div className="flex flex-col justify-start mb-10 lg:mb-0">
           <div className="w-full lg:w-auto text-center mb-6 lg:mb-0">
             <h1 className="text-2xl text-center font-bold mb-2">
@@ -29,7 +30,23 @@ function Footer() {
                 rel="noreferrer"
                 className="mr-4"
               >
+                <BsWhatsapp className="text-3xl cursor-pointer" />
+              </a>
+              <a
+                href="https://www.instagram.com/vconnectglobe/"
+                target="_blank"
+                rel="noreferrer"
+                className="mr-4"
+              >
                 <FaInstagram className="text-3xl cursor-pointer" />
+              </a>
+              <a
+                href="https://www.youtube.com/vconnectglobe/"
+                target="_blank"
+                rel="noreferrer"
+                className="mr-4"
+              >
+                <BsYoutube className="text-3xl cursor-pointer" />
               </a>
               <a
                 href="http://facebook.com/VconnectGlobe"
