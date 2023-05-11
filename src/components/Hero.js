@@ -21,7 +21,7 @@ const heroData = [
     buttonText: "Meet our Interviewers",
     buttonLink: "#Interview",
     image: HeroImage3,
-    backgroundColor: "from-green-400 to-green-600", // Add background color
+    backgroundColor: "from-green-600 to-green-400", // Add background color
   },
   // Add more hero sections as needed
 ];
