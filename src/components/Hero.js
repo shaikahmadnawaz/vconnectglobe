@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import HeroImage1 from "../assets/study-abroad.png";
-import HeroImage2 from "../assets/virtual-assistant.svg";
 import HeroImage3 from "../assets/visa.png";
-import community from "../assets/community.webp"
+import community from "../assets/community.png";
 import { handleScroll } from "./utils/handleScroll";
 
 const heroData = [
@@ -22,7 +22,7 @@ const heroData = [
     buttonText: "Meet our Interviewers",
     buttonLink: "#Interview",
     image: HeroImage3,
-    backgroundColor: "bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-200" // Add background color
+    backgroundColor: "from-green-400 to-green-500", // Add background color
   },
   {
     title: "Join our growing Community",
@@ -31,8 +31,8 @@ const heroData = [
     buttonText: "Join Now",
     buttonLink: "https://vconnectglobe.com/community/",
     image: community,
-    backgroundColor: "bg-lime-400" // Add background color
-  }
+    backgroundColor: "from-purple-400 to-purple-500", // Add background color
+  },
   // Add more hero sections as needed
 ];
 
@@ -42,10 +42,20 @@ function Hero() {
   useEffect(() => {
     const timer = setInterval(() => {
       setActiveHeroIndex((prevIndex) => (prevIndex + 1) % heroData.length);
-    }, 20000);
+    }, 2000);
 
     return () => clearInterval(timer);
   }, []);
+
+  const handlePrev = () => {
+    setActiveHeroIndex(
+      (prevIndex) => (prevIndex - 1 + heroData.length) % heroData.length
+    );
+  };
+
+  const handleNext = () => {
+    setActiveHeroIndex((prevIndex) => (prevIndex + 1) % heroData.length);
+  };
 
   const { title, description, buttonText, buttonLink, image, backgroundColor } =
     heroData[activeHeroIndex];
@@ -76,6 +86,14 @@ function Hero() {
         <div className="container ml-0 px-4">
           <img src={image} alt="abroad study mentorship" />
         </div>
+      </div>
+      <div className="carousel-arrows flex justify-between absolute bottom-0 left-0 right-0 mx-auto mb-4">
+        <button className="arrow prev" onClick={handlePrev}>
+          <BsArrowLeft />
+        </button>
+        <button className="arrow next" onClick={handleNext}>
+          <BsArrowRight />
+        </button>
       </div>
     </section>
   );
