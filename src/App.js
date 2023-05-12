@@ -9,11 +9,13 @@ import TermsAndConditions from "./components/pages/TermsAndConditions";
 import ErrorPage from "./components/pages/ErrorPage";
 import LayOut from "./components/LayOut";
 import VisaInterviews from "./components/VisaInterviews";
+import MentorsPage from "./components/MentorsPage";
 function App() {
   return (
     <Router>
       <Routes>
         <Route index element={<Home/>}></Route>
+        <Route path="mentorspage" element={<MentorsPage/>}></Route>
         <Route path="/pages" element={<LayOut/>}>
           <Route path="aboutus" element={<AboutPage/>}/>
           <Route path="pricingpolicy" element={<PricingPolicy/>}/>
@@ -21,6 +23,7 @@ function App() {
           <Route path="refundpolicy" element={<RefundPolicy/>}/>
           <Route path="termsandconditions" element={<TermsAndConditions/>}/>
           <Route path="visainterviews" element={<VisaInterviews/>}/>
+          
           <Route path="*" element={<ErrorPage/>}/>
         </Route>
       </Routes>

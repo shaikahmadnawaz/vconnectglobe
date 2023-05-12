@@ -32,7 +32,7 @@ function Hero() {
   useEffect(() => {
     const timer = setInterval(() => {
       setActiveHeroIndex((prevIndex) => (prevIndex + 1) % heroData.length);
-    }, 4000);
+    }, 10000);
 
     return () => clearInterval(timer);
   }, []);

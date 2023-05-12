@@ -7,7 +7,7 @@ const Navbar = () => {
     { name: "Home", link: "#home" },
     { name: "About", link: "#about" },
     { name: "Mentors", link: "#mentors" },
-    { name: "Visa", link: "#visa" },
+    { name: "Mock Interviews", link: "#visa" },
     // { name: "Contact", link: "https://vconnectglobe.com/booking/contact-us/" },
   ];
   let [open, setOpen] = useState(false);
@@ -15,12 +15,12 @@ const Navbar = () => {
   return (
     <div className="shadow-md w-full z-50 fixed top-0 left-0">
       <div className="md:flex mx-auto items-center  justify-between bg-white md:px-14 px-7">
-        <div class="text-md py-0 cursor-pointer flex items-center">
-          <a href="/" class="text-md py-0 cursor-pointer flex items-center">
+        <div className="text-md py-0 cursor-pointer flex items-center">
+          <a href="/" className="text-md py-0 cursor-pointer flex items-center">
             <img
               src="/VConnect_logo.png"
               alt="vconnectglobal"
-              class="w-40 md:w-56"
+              className="w-40 md:w-56"
             />
           </a>
         </div>

@@ -63,21 +63,13 @@ const settings = {
 const VisaInterviews = () => {
   return (
     // overall div
-    <div className="grid grid-cols-1 lg:grid-cols-2">
+    <div className="flex items-center justify-center">
       {/* Video div */}
       <div className="p-10">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/s8aQ1UOCMvg?start=70"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ss_7sZl3vCQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
       {/* Visa interview mentor cards */}
-      <div className="grid lg:gap-x-9 grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-x-32 gap-y-20 mx-4">
+      {/* <div className="grid lg:gap-x-9 grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-x-32 gap-y-20 mx-4">
         <Slider {...settings}>
         {
           interviewers.map((mentor, index) => {
@@ -126,7 +118,7 @@ const VisaInterviews = () => {
           })
         }
         </Slider>
-      </div>
+      </div> */}
     </div>
   );
 };
