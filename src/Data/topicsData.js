@@ -4,12 +4,14 @@ import {
   FaRegHandshake,
   FaChalkboardTeacher,
 } from "react-icons/fa";
-import {BsBank} from 'react-icons/bs'
+import { BsBank } from "react-icons/bs";
 import { MdSchool, MdLocationOn } from "react-icons/md";
-import {SiReacthookform} from "react-icons/si"
+import { SiReacthookform } from "react-icons/si";
 const topicsData = [
   {
-    icon: <SiReacthookform className="text-5xl text-green-500 stroke-1 stroke-green-500" />,
+    icon: (
+      <SiReacthookform className="text-5xl text-green-500 stroke-1 stroke-green-500" />
+    ),
     title: "Application Process & Fee Structure",
     text: "Tips in preparing strong and competitive application forms as well as understanding the cost structure and budgeting for tuition fee and other expenses",
   },
@@ -40,7 +42,7 @@ const topicsData = [
   },
   {
     icon: <FaRegHandshake className="text-5xl text-purple-500" />,
-    title: "On & Off Campus Job Opportunities",
+    title: "Part-time Job Opportunities",
     text: "Suggestions on acquiring various competitive on-campus jobs through professional networking, as well as, knowledge on possibility of off-campus jobs in city ",
   },
   {
