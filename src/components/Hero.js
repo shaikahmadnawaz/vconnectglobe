@@ -21,7 +21,7 @@ const heroData = [
     buttonText: "Meet our Interviewers",
     buttonLink: "#Interview",
     image: HeroImage3,
-    backgroundColor: "from-green-600 to-green-400", // Add background color
+    backgroundColor: "bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-200" // Add background color
   },
   // Add more hero sections as needed
 ];
@@ -32,7 +32,7 @@ function Hero() {
   useEffect(() => {
     const timer = setInterval(() => {
       setActiveHeroIndex((prevIndex) => (prevIndex + 1) % heroData.length);
-    }, 10000);
+    }, 2000);
 
     return () => clearInterval(timer);
   }, []);

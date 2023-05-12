@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import StarRating from "./StarRating";
 import mentorsData from "../Data/mentorsData";
 import sortMentors from "./utils/sortMentors";
+import { Link } from "react-router-dom";
 
 const Mentors = () => {
   const [selectedCountry, setSelectedCountry] = useState("");
@@ -54,11 +55,11 @@ const Mentors = () => {
   return (
     <section
       id="mentors"
-      className="container md:px-14 mx-auto px-4 py-8 md:mt-28"
+      className="container md:px-14 mx-auto py-8 md:mt-28 grid gap-y-10"
     >
-      <h2 className="text-2xl font-bold mb-5 text-center">Featured Mentors</h2>
+      <h2 className="text-2xl font-bold mb-10 text-center">Featured Mentors</h2>
 
-      <div class="flex flex-col md:flex-row items-center justify-center mb-10  p-5 gap-x-11">
+      {/* <div class="flex flex-col md:flex-row items-center justify-center mb-10  p-5 gap-x-11">
         <label class="mr-2 mb-2 md:mb-0 font-medium text-2xl">Filter by:</label>
 
         <div class="relative mb-2 md:mb-0 md:mr-4">
@@ -126,7 +127,7 @@ const Mentors = () => {
             </svg>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="grid lg:gap-x-9 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-32 gap-y-20 mx-4">
         {filteredData.map((mentor, index) => {
@@ -173,7 +174,11 @@ const Mentors = () => {
             </div>
           );
         })}
+        
       </div>
+      <div className="flex items-center justify-center mt-10">
+						<Link to={"/mentorspage"}><button type="submit" className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-lg px-10 py-3 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">View More Mentors</button></Link>
+			</div>
     </section>
   );
 };
