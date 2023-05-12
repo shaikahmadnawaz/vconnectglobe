@@ -41,7 +41,7 @@ const JoinTeam = () => {
               href="https://forms.gle/q8iUkKbXcxZHZj6B9"
               target="_blank"
               rel="noreferrer"
-              class="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 text-white font-medium rounded-md px-4 py-2 text-center inline-block"
+              class="focus:outline-none bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-purple-300 text-lg mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 text-white font-medium rounded-md px-4 py-2 text-center inline-block"
             >
               Join Our Team
             </a>
