@@ -18,13 +18,13 @@ export const testimonials = [
     image: "./testimonials_photos/preethi.jpeg",
   },
   {
-    name: "Mr. Varun",
-    university: "Oklahoma Christian University",
+    name: "Ms. Lalitha",
+    university: "University of New Haven",
     testimonial:
-      "I had a fantastic experience with this mentorship program! My mentor was friendly, supportive, and incredibly knowledgeable. They helped me every step of the way, from choosing a program to navigating the visa process. Thanks to their guidance, I felt confident and prepared when I arrived in my host country. I would definitely recommend this program.",
-    rating: 4.5,
-    mentorName: "Mr.Dinesh",
-    image: "./mentors/cartoon.jpg",
+    "My experience with the session was  amazing! He has taught me valuable information and given me a great advice for my masters  . I am extremely grateful to this opportunity and the knowledge I have gained . As a result I feel  more comfortable to clear all doubts about my assistantships, part-times and as well as course work . Thank you Avinash Reddy for giving the grateful knowledge and information .",
+    rating: 5,
+    mentorName: "Mr.Avinash reddy ",
+    image: "./testimonials_photos/lalitha.jpg",
   },
 
   {

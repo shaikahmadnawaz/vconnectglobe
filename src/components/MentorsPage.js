@@ -85,7 +85,7 @@ const MentorsPage = () => {
             </select>
           </div>
           {/* university filter */}
-          <div className="grid justify-center items-center grid-cols-2">
+          {/* <div className="grid justify-center items-center grid-cols-2">
             <label
               htmlFor="university filter"
               className="sm:text-sm md:text-md lg:text-lg font-semibold flex items-center justify-center"
@@ -98,21 +98,9 @@ const MentorsPage = () => {
                 return <option value={countryName}>{countryName}</option>;
               })}
             </select>
-          </div>
+          </div> */}
           {/* gender filter */}
-          <div className="grid justify-center items-center grid-cols-2">
-            <label
-              htmlFor="gender filter"
-              className="sm:text-sm md:text-md lg:text-lg font-semibold flex items-center justify-center"
-            >
-              Gender
-            </label>
-            <select className="border-gray-400 border-2 rounded-md p-2 w-3/4 lg:w-2/3" name="gender" onChange={handleFilterChange} defaultValue={"all"}>
-              <option value="all">All</option>
-							<option value={"male"}>Male</option>
-							<option value={"female"}>Female</option>
-            </select>
-          </div>
+          
 					{/* Filter button */}
 					
         </div>

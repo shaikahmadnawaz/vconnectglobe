@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import HeroImage1 from "../assets/study-abroad.png";
 import HeroImage2 from "../assets/virtual-assistant.svg";
 import HeroImage3 from "../assets/visa.png";
+import community from "../assets/community.webp"
 import { handleScroll } from "./utils/handleScroll";
 
 const heroData = [
@@ -23,6 +24,15 @@ const heroData = [
     image: HeroImage3,
     backgroundColor: "bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-200" // Add background color
   },
+  {
+    title: "Join our growing Community",
+    description:
+      "Joining our community can be a valuable resource for anyone interested in studying abroad. You'll have the opportunity to ask questions, share your concerns, and connect with others who have already gone through the process. ",
+    buttonText: "Join Now",
+    buttonLink: "https://vconnectglobe.com/community/",
+    image: community,
+    backgroundColor: "bg-lime-400" // Add background color
+  }
   // Add more hero sections as needed
 ];
 
@@ -32,7 +42,7 @@ function Hero() {
   useEffect(() => {
     const timer = setInterval(() => {
       setActiveHeroIndex((prevIndex) => (prevIndex + 1) % heroData.length);
-    }, 2000);
+    }, 20000);
 
     return () => clearInterval(timer);
   }, []);
