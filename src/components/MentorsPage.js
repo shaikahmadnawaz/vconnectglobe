@@ -110,36 +110,40 @@ const MentorsPage = () => {
         </h3>
         {/* Filter options */}
 				<form>
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-y-4 mt-4">
           {/* country filter */}
-          <div className="grid justify-center items-center grid-cols-2">
+          <div className="flex justify-center flex-col gap-y-2">
             <label
               htmlFor="country filter"
               className="sm:text-sm md:text-md lg:text-lg font-semibold flex items-center justify-center"
             >
               Country
             </label>
-            <select className="border-gray-400 border-2 rounded-md p-2 w-3/4 lg:w-2/3" name="country"onChange={handleChange} defaultValue={"all"}>
+            <div className="flex justify-center">
+            <select className="border-gray-400 border-2 rounded-md p-2 w-1/2" name="country"onChange={handleChange} defaultValue={"all"}>
               <option value="all">All</option>
               {countries.map((countryName, key) => {
                 return <option value={countryName}>{countryName}</option>;
               })}
             </select>
+            </div>
           </div>
           {/* state filter */}
-          <div className="grid justify-center items-center grid-cols-2">
+          <div className="flex justify-center flex-col gap-y-2">
             <label
               htmlFor="state filter"
               className="sm:text-sm md:text-md lg:text-lg font-semibold flex items-center justify-center"
             >
               State
             </label>
-            <select className="border-gray-400 border-2 rounded-md p-2 w-3/4 lg:w-2/3" name="state" onChange={handleChange} defaultValue={"all"}>
+            <div className="flex justify-center">
+            <select className="border-gray-400 border-2 rounded-md p-2 w-1/2" name="state" onChange={handleChange} defaultValue={"all"}>
               <option value="all">All</option>
               {states.map((stateName, key) => {
                 return <option value={stateName}>{stateName}</option>;
               })}
             </select>
+            </div>
           </div>
           {/* university filter */}
           {/* <div className="grid justify-center items-center grid-cols-2">
