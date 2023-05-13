@@ -73,7 +73,6 @@ const HeroSection = () => {
                     </p>
                     <a
                       href={buttonLink}
-                      onClick={handleScroll}
                       className="bg-white text-black text-md md:text-xl py-1 md:py-2 px-1 md:px-3 rounded-lg md:rounded-xl font-medium hover:bg-black hover:text-white transition-all duration-300"
                     >
                       {buttonText}

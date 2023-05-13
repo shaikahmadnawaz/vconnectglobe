@@ -1,6 +1,6 @@
 import HeroImage1 from "../assets/study-abroad.png";
-import HeroImage3 from "../assets/visa.png";
-import community from "../assets/community.png";
+import HeroImage3 from "../assets/visa-resized-transparent.png";
+import community from "../assets/community-resized-transparent.png";
 export const heroData = [
     {
       title: "1-2-1 Mentorship for Study Abroad",
