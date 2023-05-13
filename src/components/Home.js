@@ -8,11 +8,12 @@ import JoinTeam from "./JoinTeam";
 import FlipBook from "./FlipBook.js";
 import Testimonials from "./Testimonials";
 import VisaInterviews from "./VisaInterviews";
+import HeroSection from "./HeroSection";
 const Home = () => {
   return (
     <>
       <Navbar />
-      <Hero />
+      <HeroSection />
       <About />
       <FlipBook />
       <Mentors />

@@ -65,9 +65,9 @@ function Hero() {
       className={`flex w-full h-screen flex-wrap bg-gradient-to-r ${backgroundColor} mx-auto mt-0 md:pt-12 md:px-14`}
     >
       <div className="flex">
-        <button className="arrow prev" onClick={handlePrev}>
+        {/* <button className="arrow prev" onClick={handlePrev}>
           <BsArrowLeft className="bg-white ml-2 w-5 md:w-8 md:h-6 rounded-xl" />
-        </button>
+        </button> */}
         <div className="flex flex-col md:flex-row mx-8 h-screen">
           <div className="flex h-full mt-10 md:mt-0 items-center justify-center flex-col w-full md:w-1/2">
             <div
