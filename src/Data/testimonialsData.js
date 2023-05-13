@@ -28,12 +28,12 @@ export const testimonials = [
   },
 
   {
-    name: "Mr. Ravi Kumar",
-    university: "Sacred Heart University",
+    name: "Mr. Pavana Chary",
+    university: "University of Houston",
     testimonial:
-      "From the first call, I felt like I was in good hands. The mentor I worked with was incredibly knowledgeable and experienced, and they went above and beyond to ensure that I was prepared for my time abroad. They helped me with everything from applications to cultural immersion, and I am so grateful for their support.I would like to thank them so much.",
+      "I wanted to take a moment to express my gratitude for the time you've spent with me discussing college and courses. Your explanations have been incredibly helpful and have provided me with a deeper understanding of the enrollment process.I also appreciate the way you have patiently answered all of my queries. Your responses have been clear and concise, and have helped to alleviate any concerns I had.I feel much more confident about starting my abroad masters journey thanks to your guidance. Thank you again for your dedication and support.",
     rating: 5,
-    mentorName: "Mr.Ajaybhaskar",
-    image: "./mentors/cartoon.jpg",
+    mentorName: "Mr.Srinivasa Reddy",
+    image: "./testimonials_photos/pavanachary.png",
   },
 ];
