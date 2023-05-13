@@ -9,6 +9,8 @@ import FlipBook from "./FlipBook.js";
 import Testimonials from "./Testimonials";
 import VisaInterviews from "./VisaInterviews";
 import HeroSection from "./HeroSection";
+import CommunitySection from "./CommunitySection";
+import { MockVisaInterview } from "./MockVisaInterview";
 const Home = () => {
   return (
     <>
@@ -18,9 +20,9 @@ const Home = () => {
       <FlipBook />
       <Mentors />
       <Testimonials/>
+      <MockVisaInterview/>
       {/* <VisaInterviews/> */}
-
-      <JoinTeam />
+      <CommunitySection />
       <Footer />
     </>
   );

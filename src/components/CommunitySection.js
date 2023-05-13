@@ -1,7 +1,7 @@
 import React from "react";
 import JoinUs from "../assets/joinus.png";
 import { TbPointFilled } from "react-icons/tb";
-const JoinTeam = () => {
+const CommunitySection = () => {
   const points = [
     "Connect with like-minded individuals and expand your network.",
     "Gain valuable insights and tips from experienced members.",
@@ -11,9 +11,9 @@ const JoinTeam = () => {
     "Give back to others by sharing your own experiences and insights.",
 ]
   return (
-    <div class="md:px-14 mx-auto px-4 py-8">
+    <div class="md:px-14 mx-auto px-4 py-8" id="community">
       <h1 className="text-2xl text-center font-bold mb-0">
-        Join the Assisting Community Today!
+        Join the Study Abroad Community
       </h1>
       <div className="flex flex-col md:h-full lg:h-full lg:flex-row items-center justify-center">
         <div class="lg:w-1/2">
@@ -32,19 +32,19 @@ const JoinTeam = () => {
                   <TbPointFilled />
                 </div>
                 <div>
-                  <span class="font-medium">{item}</span>
+                  <span class="font-medium sm:text-sm lg:text-lg">{item}</span>
                 </div>
               </div>
             ))}
           </div>
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center ">
             <a
-              href="https://forms.gle/q8iUkKbXcxZHZj6B9"
+              href="https://vconnectglobe.com/community"
               target="_blank"
               rel="noreferrer"
-              class="focus:outline-none bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-purple-300 text-lg mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 text-white font-medium rounded-md px-4 py-2 text-center inline-block"
+              className="focus:outline-none bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-purple-300 text-lg mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 text-white font-medium rounded-md px-4 py-2 text-center inline-block hover:scale-105 ease-in-out duration-300"
             >
-              Join Our Team
+              Join Our Community
             </a>
           </div>
         </div>
@@ -53,4 +53,4 @@ const JoinTeam = () => {
   );
 };
 
-export default JoinTeam;
+export default CommunitySection;

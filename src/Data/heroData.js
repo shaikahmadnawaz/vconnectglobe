@@ -24,8 +24,8 @@ export const heroData = [
       title: "Join our growing Community",
       description:
         "Joining our community can be a valuable resource for anyone interested in studying abroad. You'll have the opportunity to ask questions, share your concerns, and connect with others who have already gone through the process. ",
-      buttonText: "Join Now",
-      buttonLink: "https://vconnectglobe.com/community/",
+      buttonText: "Discover our community",
+      buttonLink: "#community",
       image: community,
       backgroundColor: "from-purple-400 to-purple-500", // Add background color
     },

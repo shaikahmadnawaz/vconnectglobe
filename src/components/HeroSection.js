@@ -59,7 +59,7 @@ const HeroSection = () => {
               {/* <button className="arrow prev" onClick={handlePrev}>
           <BsArrowLeft className="bg-white ml-2 w-5 md:w-8 md:h-6 rounded-xl" />
         </button> */}
-              <div className="flex flex-col md:flex-row mx-8 h-screen">
+              <div className="flex flex-col md:flex-row mx-8 h-4/5">
                 <div className="flex h-full mt-10 md:mt-0 items-center justify-center flex-col w-full md:w-1/2">
                   <div
                     id="home"
@@ -73,6 +73,7 @@ const HeroSection = () => {
                     </p>
                     <a
                       href={buttonLink}
+                      onClick={handleScroll}
                       className="bg-white text-black text-md md:text-xl py-1 md:py-2 px-1 md:px-3 rounded-lg md:rounded-xl font-medium hover:bg-black hover:text-white transition-all duration-300"
                     >
                       {buttonText}

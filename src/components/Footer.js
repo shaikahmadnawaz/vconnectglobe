@@ -59,6 +59,16 @@ function Footer() {
           </div>
         </div>
         <div className="w-full lg:w-auto">
+        <div className="flex justify-center items-center ">
+            <a
+              href="https://vconnectglobe.com/community"
+              target="_blank"
+              rel="noreferrer"
+              className="focus:outline-none bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-purple-300 text-lg mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 text-white font-medium rounded-md px-4 py-2 text-center inline-block hover:scale-105 ease-in-out duration-300"
+            >
+              Join As Mentor
+            </a>
+          </div>
           <div className="grid grid-cols-2 lg:gap-x-20 lg:grid-col-2 gap-3 md:flex md:justify-evenly flex-wrap items-center justify-between lg:justify-end">
             <div>
               <a
