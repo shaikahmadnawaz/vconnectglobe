@@ -166,7 +166,7 @@ const Mentors = () => {
                   href={mentor.appointmentLink}
                   target="_blank"
                   rel="noreferrer"
-                  className="block my-4 bg-blue-500 text-white font-medium rounded-md px-4 py-2 text-center"
+                  className="block my-4 focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-purple-300 text-lg mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 font-medium rounded-md px-4 py-2 text-center"
                 >
                   Schedule Appointment
                 </a>
@@ -174,11 +174,17 @@ const Mentors = () => {
             </div>
           );
         })}
-        
       </div>
-      <div className="flex items-center justify-center mt-10">
-						<Link to={"/mentorspage"}><button type="submit" className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-lg px-10 py-3 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">View More Mentors</button></Link>
-			</div>
+      <div className="flex items-center justify-center mt-5">
+        <Link to={"/mentorspage"}>
+          <button
+            type="submit"
+            className="focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-lg px-10 py-3 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900"
+          >
+            View More Mentors
+          </button>
+        </Link>
+      </div>
     </section>
   );
 };
