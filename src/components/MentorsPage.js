@@ -4,46 +4,94 @@ import Footer from "./Footer";
 import mentorsData from "../Data/mentorsData";
 import { useState } from "react";
 import StarRating from "./StarRating";
+import sortMentors from "./utils/sortMentors";
 const MentorsPage = () => {
-  const [filteredMentors,setFilteredMentors] = useState(mentorsData);
-  const [filters,setFilters] = useState({
-		country : "",
-		state : "",
-		university : "",
-		gender : ""
-	});
+  // const [filteredMentors,setFilteredMentors] = useState(mentorsData);
+  // const [filters,setFilters] = useState({
+	// 	country : "",
+	// 	state : "",
+	// 	university : "",
+	// 	gender : ""
+	// });
+
+  // const countries = [...new Set(mentorsData.map((mentor) => mentor.country))];
+  // const states = [...new Set(mentorsData.map((mentor)=>mentor.state))].sort();
+	// const universities = [...new Set(mentorsData.map((mentor)=>mentor.university))].sort();
+
+
+	// const handleFilterChange = (e) => {
+	// 	console.log(e.target.name +" : "+ e.target.value);
+		
+	// 	setFilters({...filters ,[e.target.name] : e.target.value});
+	// }
+
+	// const handleSubmit = (e) => {
+	// 	e.preventDefault();
+	// 	const validFilters = {}
+	// 	for (const [key, value] of Object.entries(filters)) {
+	// 		if (value !== null && value !== "") {
+	// 			validFilters[key] = value;
+	// 		}
+	// 	}
+		
+	// 	const filteredData = mentorsData.filter((mentor)=>{
+	// 		for (const [key, value] of Object.entries(validFilters)) {
+	// 			if (mentor[key] !== value) {
+	// 				return false;
+	// 			}
+	// 		}
+	// 		return true;
+	// 	})
+	// 	console.log(filteredData);
+	// 	setFilteredMentors(filteredData);
+	// }
+
+  const [selectedCountry, setSelectedCountry] = useState("");
+  const [selectedState, setSelectedState] = useState("");
+
+  const defaultMentors = sortMentors(mentorsData).slice(0, 9);
+
+  const [filteredData, setFilteredData] = useState(defaultMentors);
+
+  const handleChange = (event) => {
+    if (event.target.name === "country") {
+      setSelectedCountry(event.target.value);
+      setSelectedState("");
+      const data = mentorsData.filter((mentor) => {
+        return mentor.country === event.target.value ? mentor : filteredData;
+      });
+      setFilteredData(sortMentors(data));
+    } else if (event.target.name === "state") {
+      setSelectedState(event.target.value);
+      if (event.target.value === "") {
+        setFilteredData(defaultMentors);
+      }
+      if (event.target.value === "all") {
+        console.log(selectedCountry);
+        const data = mentorsData.filter((mentor) => {
+          return mentor.country === selectedCountry ? mentor : "";
+        });
+        setFilteredData(sortMentors(data));
+      } else {
+        const data = mentorsData.filter((mentor) => {
+          return mentor.state === event.target.value ? mentor : "";
+        });
+        setFilteredData(sortMentors(data));
+      }
+    }
+  };
 
   const countries = [...new Set(mentorsData.map((mentor) => mentor.country))];
-  const states = [...new Set(mentorsData.map((mentor)=>mentor.state))].sort();
-	const universities = [...new Set(mentorsData.map((mentor)=>mentor.university))].sort();
 
-
-	const handleFilterChange = (e) => {
-		console.log(e.target.name +" : "+ e.target.value);
-		
-		setFilters({...filters ,[e.target.name] : e.target.value});
-	}
-
-	const handleSubmit = (e) => {
-		e.preventDefault();
-		const validFilters = {}
-		for (const [key, value] of Object.entries(filters)) {
-			if (value !== null && value !== "") {
-				validFilters[key] = value;
-			}
-		}
-		
-		const filteredData = mentorsData.filter((mentor)=>{
-			for (const [key, value] of Object.entries(validFilters)) {
-				if (mentor[key] !== value) {
-					return false;
-				}
-			}
-			return true;
-		})
-		console.log(filteredData);
-		setFilteredMentors(filteredData);
-	}
+  const states = [
+    ...new Set(
+      mentorsData
+        .filter((mentor) => {
+          return mentor.country === selectedCountry;
+        })
+        .map((mentor) => mentor.state)
+    ),
+  ].sort();
 
   return (
     <div className="pt-24">
@@ -52,7 +100,7 @@ const MentorsPage = () => {
       <section id="#mentors">
 				<h3 className="text-center text-2xl font-bold m-3">Filter by your choice</h3>
         {/* Filter options */}
-				<form onSubmit={handleSubmit}>
+				<form>
         <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-y-4">
           {/* country filter */}
           <div className="grid justify-center items-center grid-cols-2">
@@ -62,12 +110,20 @@ const MentorsPage = () => {
             >
               Country
             </label>
-            <select className="border-gray-400 border-2 rounded-md p-2 w-3/4 lg:w-2/3" name="country"onChange={handleFilterChange} defaultValue={"all"}>
-              <option value="all">All</option>
-              {countries.map((countryName, key) => {
-                return <option value={countryName}>{countryName}</option>;
-              })}
-            </select>
+            <select className="border-gray-400 border-2 rounded-md p-2 w-3/4 lg:w-2/3"
+             name="country"
+             value={selectedCountry}
+             onChange={handleChange}
+           >
+             <option value="" disabled selected>
+               Country
+             </option>
+             {countries.map((country, index) => (
+               <option key={index} value={country}>
+                 {country}
+               </option>
+             ))}
+           </select>
           </div>
           {/* state filter */}
           <div className="grid justify-center items-center grid-cols-2">
@@ -77,7 +133,7 @@ const MentorsPage = () => {
             >
               State
             </label>
-            <select className="border-gray-400 border-2 rounded-md p-2 w-3/4 lg:w-2/3" name="state" onChange={handleFilterChange} defaultValue={"all"}>
+            <select className="border-gray-400 border-2 rounded-md p-2 w-3/4 lg:w-2/3" name="state" onChange={handleChange} defaultValue={"all"}>
               <option value="all">All</option>
               {states.map((stateName, key) => {
                 return <option value={stateName}>{stateName}</option>;
@@ -105,7 +161,7 @@ const MentorsPage = () => {
 					
         </div>
 				<div className="flex items-center justify-center mt-5 gap-x-4">
-						<button type="submit" className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-lg px-10 py-3 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Filter</button>
+						{/* <button type="submit" className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-lg px-10 py-3 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Filter</button> */}
             {/* <button type="button" className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-lg px-10 py-3 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Reset</button> */}
 				</div>
 				</form>
@@ -113,7 +169,7 @@ const MentorsPage = () => {
 				<div className="p-4 lg:px-20">
 					<h3 className="text-center text-2xl font-bold m-5">Our Featured Mentors</h3>
         <div className="grid lg:gap-x-9 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-32 gap-y-20 mx-4">
-        {filteredMentors.map((mentor, index) => {
+        {filteredData.map((mentor, index) => {
           return (
             <div
               key={index}

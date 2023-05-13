@@ -15,7 +15,7 @@ export const testimonials = [
       "Very informative session. Insights are so specific to the requirement and the guidance is good, all the queries are resolved. Would definitely recommend to take a notes of questions prior to the session clear all the doubts. They help to give even after support to clear also unsliced queries. This session is recommended to the people who are seeing information related to studies, part time , assistantships and any personal queries like safety such. Thank you Maheshwari for giving the required information.",
     rating: 4,
     mentorName: "Ms.Maheswari",
-    image: "./testimonials_photos/preethi.jpeg",
+    image: "./testimonials_photos/preethi.jpg",
   },
   {
     name: "Ms. Lalitha",
@@ -23,7 +23,7 @@ export const testimonials = [
     testimonial:
     "My experience with the session was  amazing! He has taught me valuable information and given me a great advice for my masters  . I am extremely grateful to this opportunity and the knowledge I have gained . As a result I feel  more comfortable to clear all doubts about my assistantships, part-times and as well as course work . Thank you Avinash Reddy for giving the grateful knowledge and information .",
     rating: 5,
-    mentorName: "Mr.Avinash reddy ",
+    mentorName: "Mr.Avinash Reddy ",
     image: "./testimonials_photos/lalitha.jpg",
   },
 
