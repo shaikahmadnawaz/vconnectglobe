@@ -55,11 +55,11 @@ const HeroSection = () => {
             <section
               className={`flex w-full h-screen flex-wrap bg-gradient-to-r ${backgroundColor} mx-auto mt-0 md:pt-12 md:px-14`}
             >
-              <div className="flex">
+              <div className="flex ">
                 {/* <button className="arrow prev" onClick={handlePrev}>
           <BsArrowLeft className="bg-white ml-2 w-5 md:w-8 md:h-6 rounded-xl" />
         </button> */}
-                <div className="flex flex-col md:flex-row mx-8 h-4/5">
+                <div className="flex flex-col md:flex-row mx-8 h-4/5 pt-16 md:pt-0">
                   <div className="flex h-full mt-10 md:mt-0 items-center justify-center flex-col w-full md:w-1/2">
                     <div
                       id="home"
@@ -83,7 +83,7 @@ const HeroSection = () => {
                   <div className="w-full flex items-center justify-center md:w-1/2 md:py-24">
                     <img
                       src={image}
-                      className="w-80 md:w-full mb-10"
+                      className="w-80 md:w-full mt-10 md:mb-10"
                       alt="abroad study mentorship"
                     />
                   </div>
