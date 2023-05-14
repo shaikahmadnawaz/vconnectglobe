@@ -80,7 +80,7 @@ export const MockVisaInterview = () => {
           <div className="flex justify-start text-base">
             <p
               onClick={() => handleClick(1)}
-              className={`cursor-pointer px-2 py-3 mr-8 border-2 rounded ${
+              className={`cursor-pointer px-2 py-3 text-sm md:text-lg mr-8 border-2 rounded ${
                 active["heading-1"] ? "border-red-400" : "border-gray-300"
               }`}
             >
@@ -88,7 +88,7 @@ export const MockVisaInterview = () => {
             </p>
             <p
               onClick={() => handleClick(2)}
-              className={`cursor-pointer px-2 py-3 border-2 rounded ${
+              className={`cursor-pointer px-2 py-3 text-sm md:text-lg border-2 rounded ${
                 active["heading-2"] ? "border-red-400" : "border-gray-300"
               }`}
             >
@@ -96,7 +96,7 @@ export const MockVisaInterview = () => {
             </p>
             <p
               onClick={() => handleClick(3)}
-              className={`cursor-pointer px-2 py-3 ml-8 border-2 rounded ${
+              className={`cursor-pointer px-2 py-3 text-sm md:text-lg ml-8 border-2 rounded ${
                 active["heading-3"] ? "border-red-400" : "border-gray-300"
               }`}
             >
