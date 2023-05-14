@@ -5,61 +5,67 @@ import { BsWhatsapp, BsYoutube } from "react-icons/bs";
 function Footer() {
   return (
     <footer id="footer" className="bg-gray-900 text-white">
-      <div className="container w-screen mx-auto px-4 lg:px-32 py-8 lg:py-12 flex md:flex md:flex-col flex-wrap justify-between lg:grid lg:grid-cols-2 items-center">
-        <div className="flex flex-col justify-start mb-10 lg:mb-0">
-          <div className="w-full lg:w-auto text-center mb-6 lg:mb-0">
-            <h1 className="text-2xl text-center font-bold mb-2">
-              VConnect Globe
-            </h1>
-            <p className="mt-2 text-gray-500 text-sm">
+      <div className="container mx-auto px-4 lg:px-32 py-6 lg:py-12 grid lg:grid-cols-2">
+        <div className="flex flex-col">
+          <div className="text-center mb-6">
+            <h1 className="text-2xl font-bold mb-2">VConnect Globe</h1>
+            <p className="text-gray-500 text-sm">
               Insights and guidance for study abroad by experienced mentors
             </p>
             <p className="mt-2 text-gray-500 text-sm">
               Explore the path of global learning experience through VConnect
               Globe
             </p>
-          </div>
-          <div className="w-full items-center flex justify-center flex-col mt-5 lg:w-auto lg:mt-8 lg:flex lg:justify-center">
-            <p className="text-gray-500 flex justify-items-start text-sm mb-2">
-              Connect with us on social media
-            </p>
-            <div className="lg:flex flex flex-row lg:justify-items-start mt-3">
-              <a
-                href="https://www.instagram.com/vconnectglobe/"
-                target="_blank"
-                rel="noreferrer"
-                className="mr-4"
-              >
-                <BsWhatsapp className="text-3xl cursor-pointer" />
-              </a>
-              <a
-                href="https://www.instagram.com/vconnectglobe/"
-                target="_blank"
-                rel="noreferrer"
-                className="mr-4"
-              >
-                <FaInstagram className="text-3xl cursor-pointer" />
-              </a>
-              <a
-                href="https://youtube.com/@civilengineerinus"
-                target="_blank"
-                rel="noreferrer"
-                className="mr-4"
-              >
-                <BsYoutube className="text-3xl cursor-pointer" />
-              </a>
-              <a
-                href="http://facebook.com/VconnectGlobe"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaFacebookF className="text-3xl cursor-pointer" />
-              </a>
+            <div className="flex flex-col items-center mt-8 lg:flex-col lg:justify-start">
+              <p className="text-gray-500 text-sm mb-2">
+                Connect with us on social media
+              </p>
+              <div className="flex mt-3">
+                <a
+                  href="https://www.instagram.com/vconnectglobe/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mr-4"
+                >
+                  <BsWhatsapp className="text-3xl cursor-pointer" />
+                </a>
+                <a
+                  href="https://www.instagram.com/vconnectglobe/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mr-4"
+                >
+                  <FaInstagram className="text-3xl cursor-pointer" />
+                </a>
+                <a
+                  href="https://youtube.com/@civilengineerinus"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mr-4"
+                >
+                  <BsYoutube className="text-3xl cursor-pointer" />
+                </a>
+                <a
+                  href="http://facebook.com/VconnectGlobe"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaFacebookF className="text-3xl cursor-pointer" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-auto">
-          <div className="grid grid-cols-2 lg:gap-x-20 lg:grid-col-2 gap-3 md:flex md:justify-evenly flex-wrap items-center justify-between lg:justify-end">
+        <div className="flex flex-col">
+          <div className="flex justify-center mb-8">
+            <a
+              href="/"
+              className="bg-white text-black text-xl py-2 px-4 rounded-xl font-medium transition-all duration-300"
+            >
+              Join As Mentor
+            </a>
+          </div>
+          <div className="grid grid-cols-1 gap-3 md:flex md:justify-evenly">
             <div>
               <a
                 href="https://vconnectglobe.com/booking/about-us/"
@@ -67,7 +73,7 @@ function Footer() {
                 rel="noreferrer"
                 className="block text-sm py-2"
               >
-                About us
+                About Us
               </a>
               <a
                 href="https://vconnectglobe.com/booking/privacy-policy/"

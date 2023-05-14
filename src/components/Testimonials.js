@@ -44,7 +44,7 @@ const Testimonials = () => {
         <h2 className="text-2xl text-center font-bold mb-0 md:mb-2">
           Our Students Success Stories
         </h2>
-        <div className="space-x-4"> 
+        <div className="space-x-4">
           <Slider {...settings}>
             {testimonials.map((testimonial, index) => {
               return (
@@ -69,7 +69,12 @@ const Testimonials = () => {
                     <p>{testimonial.testimonial}</p>
                   </div>
                   <div className="mt-4 flex justify-center my-4">
-                    <p>My Mentor - <span className="font-bold">{testimonial.mentorName} ({testimonial.rating}/5)</span></p>
+                    <p>
+                      My Mentor -{" "}
+                      <span className="font-bold">
+                        {testimonial.mentorName} ({testimonial.rating}/5)
+                      </span>
+                    </p>
                   </div>
                 </div>
               );
