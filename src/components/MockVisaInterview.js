@@ -65,11 +65,11 @@ export const MockVisaInterview = () => {
       {/* About Mock Visa Interviews */}
       <div className="flex flex-col justify-between bg-white rounded-lg">
         <div>
-          <h2 className="text-4xl lg:text-5xl font-semibold leading-tight">
+          <h2 className="text-2xl lg:text-5xl font-semibold leading-tight">
             Nail the <span className="text-red-700 font-bold">toughest</span>{" "}
             <br /> USA Visa interviews
           </h2>
-          <p className="mt-4 text-lg">
+          <p className="mt-4 text-md">
             Get ready for your USA visa interview with our mock interview
             service. Practice with{" "}
             <span className="font-semibold">experienced professionals</span> and
@@ -80,7 +80,7 @@ export const MockVisaInterview = () => {
           <div className="flex justify-start text-base">
             <p
               onClick={() => handleClick(1)}
-              className={`cursor-pointer px-2 py-3 text-sm md:text-lg mr-8 border-2 rounded ${
+              className={`cursor-pointer px-2 py-3 text-sm md:text-lg md:mr-8 border-2 rounded ${
                 active["heading-1"] ? "border-red-400" : "border-gray-300"
               }`}
             >
@@ -88,7 +88,7 @@ export const MockVisaInterview = () => {
             </p>
             <p
               onClick={() => handleClick(2)}
-              className={`cursor-pointer px-2 py-3 text-sm md:text-lg border-2 rounded ${
+              className={`cursor-pointer px-2 py-3 text-sm mx-2 md:mx-0 md:text-lg border-2 rounded ${
                 active["heading-2"] ? "border-red-400" : "border-gray-300"
               }`}
             >
@@ -96,7 +96,7 @@ export const MockVisaInterview = () => {
             </p>
             <p
               onClick={() => handleClick(3)}
-              className={`cursor-pointer px-2 py-3 text-sm md:text-lg ml-8 border-2 rounded ${
+              className={`cursor-pointer px-2 py-3 text-sm md:text-lg md:ml-8 border-2 rounded ${
                 active["heading-3"] ? "border-red-400" : "border-gray-300"
               }`}
             >
@@ -105,7 +105,7 @@ export const MockVisaInterview = () => {
           </div>
           <div className="mt-6">
             {content.map((point, index) => (
-              <div key={index} className="flex items-start mb-3">
+              <div key={index} className="flex items-start mb-1 md:mb-3">
                 <div className="w-6 h-6 mr-3 mt-1 text-blue-600">
                   <TbPointFilled />
                 </div>
@@ -123,7 +123,7 @@ export const MockVisaInterview = () => {
             href="https://vconnectglobe.com/community"
             target="_blank"
             rel="noreferrer"
-            className="focus:outline-none bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-purple-300 text-lg mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 text-white font-medium rounded-md px-4 py-2 text-center inline-block hover:scale-105 ease-in-out duration-300"
+            className="focus:outline-none bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-purple-300 text-lg mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 text-white font-medium rounded-md px-3  py-2 md:px-4 md:py-2 text-center inline-block hover:scale-105 ease-in-out duration-300"
           >
             Register now
           </a>

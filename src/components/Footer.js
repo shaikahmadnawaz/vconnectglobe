@@ -60,7 +60,7 @@ function Footer() {
           <div className="flex justify-center mb-8">
             <a
               href="/"
-              className="bg-white text-black text-xl py-2 px-4 rounded-xl font-medium transition-all duration-300"
+              className="bg-white text-black text-xl py-2 md:px-4 px-3 rounded-xl font-medium transition-all duration-300"
             >
               Join As Mentor
             </a>
