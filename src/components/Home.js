@@ -19,8 +19,8 @@ const Home = () => {
       <About />
       <FlipBook />
       <Mentors />
-      <Testimonials/>
-      <MockVisaInterview/>
+      <Testimonials />
+      <MockVisaInterview />
       {/* <VisaInterviews/> */}
       <CommunitySection />
       <Footer />
