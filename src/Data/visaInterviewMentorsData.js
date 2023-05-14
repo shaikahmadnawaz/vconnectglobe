@@ -1,0 +1,26 @@
+export const visaInterviewMentors = [
+    {
+      name: "Mr.Kowshik",
+      university: "University of North Texas, (TX)",
+      education: "Business Analytics",
+      image: "./mentors/kowshik.jpg",
+      studentsCount: 9,
+      rating: 4.5,
+      languages: "Telugu/English/Hindi",
+      state: "Texas(TX)",
+      country: "USA",
+      appointmentLink: "https://vconnectglobe.com/booking/kowshik-gondala/",
+    },
+    {
+      name: "Mr.Akheel",
+      university: "Illinois Institute of Technology, (IL)",
+      education: "Construction Management",
+      image: "./mentors/akheel.jpg",
+      studentsCount: 10,
+      rating: 4.5,
+      languages: "English/Hindi",
+      state: "IIIinois(IL)",
+      country: "USA",
+      appointmentLink: "https://vconnectglobe.com/booking/akheel-abbas/",
+    },
+  ];
