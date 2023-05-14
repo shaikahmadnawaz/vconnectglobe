@@ -14,7 +14,7 @@ const MentorsPage = () => {
   const [selectedCountry, setSelectedCountry] = useState("");
   const [selectedState, setSelectedState] = useState("");
 
-  const defaultMentors = sortMentors(mentorsData).slice(0, 9);
+  const defaultMentors = sortMentors(mentorsData)
 
   const [filteredData, setFilteredData] = useState(defaultMentors);
 
