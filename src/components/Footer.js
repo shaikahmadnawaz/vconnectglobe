@@ -65,7 +65,7 @@ function Footer() {
               Join As Mentor
             </a>
           </div>
-          <div className="grid grid-cols-1 gap-3 md:flex md:justify-evenly">
+          <div className="grid grid-cols-2 md:grid-cols-1 gap-3 md:flex md:justify-evenly">
             <div>
               <a
                 href="https://vconnectglobe.com/booking/about-us/"
