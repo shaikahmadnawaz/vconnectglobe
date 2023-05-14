@@ -40,7 +40,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="overflow-x-hidden overflow-y-hidden">
+    <section className="overflow-x-hidden">
       <Slider {...settings}>
         {heroData.map((item) => {
           const {
