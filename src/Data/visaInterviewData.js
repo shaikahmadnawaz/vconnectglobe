@@ -1,20 +1,14 @@
 export const data = {
     1: [
-      "This is line-1 in Heading-1 section",
-      "This is line-2 in Heading-1 section",
-      "This is line-3 in Heading-1 section",
-      "This is line-4 in Heading-1 section",
+      "DS-160 Form Review and Advice",
+      "Essential Documents Check",
+      "Financial Planning and Support",
+      "Unlimited 1-2-1 Zoom Mock Visa Interviews"
     ],
     2: [
-      "This is line-1 in Heading-2 section",
-      "This is line-2 in Heading-2 section",
-      "This is line-3 in Heading-2 section",
-      "This is line-4 in Heading-2 section",
-    ],
-    3: [
-      "This is line-1 in Heading-3 section",
-      "This is line-2 in Heading-3 section",
-      "This is line-3 in Heading-3 section",
-      "This is line-4 in Heading-3 section",
+      "Visa Slot Booking Assistance",
+      "All the Materials You Need to Prepare",
+      "Free Access to Visa Community",
+      "Recordings of Your Mock Interviews"
     ],
   };

@@ -59,7 +59,9 @@ function Footer() {
         <div className="flex flex-col">
           <div className="flex justify-center mb-8">
             <a
-              href="/"
+              href="https://forms.gle/q8iUkKbXcxZHZj6B9"
+              target="_blank"
+              rel="noreferrer"
               className="bg-white text-black text-xl py-2 md:px-4 px-3 rounded-xl font-medium transition-all duration-300"
             >
               Join As Mentor

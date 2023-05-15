@@ -16,7 +16,7 @@ export const heroData = [
       description:
         "These mock interviews simulate the real visa interview experience and provide an opportunity for applicants to familiarize themselves with the process, improve their communication skills, and gain confidence!",
       buttonText: "Meet our Interviewers",
-      buttonLink: "#Interview",
+      buttonLink: "#interviews",
       image: HeroImage3,
       backgroundColor: "from-green-400 to-green-500", // Add background color
     },

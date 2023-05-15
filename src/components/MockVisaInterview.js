@@ -61,7 +61,7 @@ export const MockVisaInterview = () => {
     }
   };
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-10 p-10">
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-10 p-10" id="interviews">
       {/* About Mock Visa Interviews */}
       <div className="flex flex-col justify-between bg-white rounded-lg">
         <div>
@@ -77,14 +77,14 @@ export const MockVisaInterview = () => {
           </p>
         </div>
         <div className="flex flex-col mt-8">
-          <div className="flex justify-start text-base">
+          <div className="flex justify-between md:justify-around text-base">
             <p
               onClick={() => handleClick(1)}
               className={`cursor-pointer px-2 py-3 text-sm md:text-lg md:mr-8 border-2 rounded ${
                 active["heading-1"] ? "border-red-400" : "border-gray-300"
               }`}
             >
-              Heading-1
+              What we offer
             </p>
             <p
               onClick={() => handleClick(2)}
@@ -92,16 +92,9 @@ export const MockVisaInterview = () => {
                 active["heading-2"] ? "border-red-400" : "border-gray-300"
               }`}
             >
-              Heading-2
+              Why choose us
             </p>
-            <p
-              onClick={() => handleClick(3)}
-              className={`cursor-pointer px-2 py-3 text-sm md:text-lg md:ml-8 border-2 rounded ${
-                active["heading-3"] ? "border-red-400" : "border-gray-300"
-              }`}
-            >
-              Heading-3
-            </p>
+            
           </div>
           <div className="mt-6">
             {content.map((point, index) => (
@@ -136,7 +129,7 @@ export const MockVisaInterview = () => {
           {visaInterviewMentors.map((mentor, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-lg hover:shadow-xl duration-500 m-5"
+              className="bg-white rounded-lg shadow-lg hover:shadow-xl duration-500 m-5 scale-90 hover:scale-105"
             >
               <div className="flex justify-center">
                 <img
