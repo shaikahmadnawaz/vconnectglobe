@@ -53,14 +53,14 @@ const HeroSection = () => {
           } = item;
           return (
             <section
-              className={`flex w-full h-full md:h-full bg-gradient-to-r ${backgroundColor} mx-auto mt-0 md:px-14`}
+              className={`flex w-full h-full md:h-[80vh] bg-gradient-to-r ${backgroundColor} mx-auto mt-0 md:px-14`}
             >
-              <div className="flex ">
+              <div className="flex md:pt-32">
                 {/* <button className="arrow prev" onClick={handlePrev}>
           <BsArrowLeft className="bg-white ml-2 w-5 md:w-8 md:h-6 rounded-xl" />
         </button> */}
-                <div className="flex flex-col md:flex-row mx-8 h-4/5 pt-16 md:pt-0">
-                  <div className="flex h-full mt-10 md:mt-0 items-center justify-center flex-col w-full md:w-1/2">
+                <div className="flex flex-col md:flex-row mx-8 pt-16 md:pt-0">
+                  <div className="flex h-[50vh] mt-10 md:mt-0 items-center justify-center flex-col w-full md:w-1/2">
                     <div
                       id="home"
                       className="container flex justify-center items-center flex-col text-center mx-auto lg:py-40 lg:px-32 md:pt-24 px-4"
@@ -80,10 +80,10 @@ const HeroSection = () => {
                       </a>
                     </div>
                   </div>
-                  <div className="w-full flex items-center justify-center md:w-1/2 md:py-24">
+                  <div className="w-full flex h-[50vh] items-center justify-center md:w-1/2 md:py-24">
                     <img
                       src={image}
-                      className="w-80 md:w-full mt-10 md:mb-10"
+                      className="w-80 md:w-full mt-10 md:mb-1"
                       alt="abroad study mentorship"
                     />
                   </div>
