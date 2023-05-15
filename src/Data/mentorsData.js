@@ -454,7 +454,7 @@ const mentorsData = [
   {
     name: "Ms. Amreen",
     university: "Illinois Institute of Technology, (IL)",
-    education: "Information & Technology Management",
+    education: "Info & Tech Management (ITM)",
     image: "./mentors/Amreen.jpg",
     studentsCount: 7,
     rating: 4.5,
@@ -464,12 +464,12 @@ const mentorsData = [
     appointmentLink: "https://vconnectglobe.com/booking/amreen-siddiqua/",
   },
   {
-    name: "Mr. Alekhya",
+    name: "Ms. Alekhya",
     university: "University of New Haven, (CT)",
     education: "Business Analytics",
     image: "./mentors/alekhya.jpeg",
     studentsCount: 7,
-    rating: 4.5,
+    rating: 4.7,
     languages: "Telugu/English/Hindi",
     state: "Connecticut(CT)",
     country: "USA",
