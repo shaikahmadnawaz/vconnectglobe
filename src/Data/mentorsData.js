@@ -471,7 +471,7 @@ const mentorsData = [
     studentsCount: 7,
     rating: 4.5,
     languages: "Telugu/English/Hindi",
-    state: "Connecticut (CT)",
+    state: "Connecticut(CT)",
     country: "USA",
     appointmentLink: "https://vconnectglobe.com/booking/alekhya-bhagavathi/",
   },
