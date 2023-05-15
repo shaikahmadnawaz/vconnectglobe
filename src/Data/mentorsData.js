@@ -1,7 +1,7 @@
 const mentorsData = [
   {
     name: "Mr. Srinivasa Reddy",
-    university: "University of Houston,MC, (TX)",
+    university: "University of Houston, (TX)",
     education: "Civil Engineering (Structures)",
     image: "./mentors/srinivasaReddy.jpg",
     studentsCount: 10,

@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const HeroSection = () => {
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -53,7 +53,7 @@ const HeroSection = () => {
           } = item;
           return (
             <section
-              className={`flex w-full h-screen md:h-full flex-wrap bg-gradient-to-r ${backgroundColor} mx-auto mt-0 md:pt-12 md:px-14`}
+              className={`flex w-full h-full md:h-full bg-gradient-to-r ${backgroundColor} mx-auto mt-0 md:px-14`}
             >
               <div className="flex ">
                 {/* <button className="arrow prev" onClick={handlePrev}>
