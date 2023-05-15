@@ -389,10 +389,6 @@ const mentorsData = [
     appointmentLink: "https://vconnectglobe.com/booking/sai-satish-masina/",
   },
 
-
-
-
-
   {
     name: "Mr.Jagadeesh",
     university: "Oklahoma Christian University, (OK)",
@@ -426,13 +422,11 @@ const mentorsData = [
     image: "./mentors/maheswari.jpeg",
     studentsCount: 8,
     rating: 4.6,
-    languages:"Telugu/English/Hindi",
+    languages: "Telugu/English/Hindi",
     state: "Texas(TX)",
     country: "USA",
     appointmentLink: "https://vconnectglobe.com/booking/maheswari-korra",
   },
-
-
   {
     name: "Mr. Sreevishakkanth",
     university: "University of North Carolina, (NC)",
@@ -444,6 +438,42 @@ const mentorsData = [
     state: "North Carolina(NC)",
     country: "USA",
     appointmentLink: "https://vconnectglobe.com/booking/sreevishakkanth/",
-  }
+  },
+  {
+    name: "Mr. Harish",
+    university: "Florida Atlantic University, (FL)",
+    education: "Computer Science",
+    image: "./mentors/Harish.jpg",
+    studentsCount: 7,
+    rating: 4.5,
+    languages: "Telugu/English/Hindi",
+    state: "Florida(FL)",
+    country: "USA",
+    appointmentLink: "https://vconnectglobe.com/booking/harish-eedala-2/",
+  },
+  {
+    name: "Ms. Amreen",
+    university: "Illinois Institute of Technology, (IL)",
+    education: "Information & Technology Management",
+    image: "./mentors/Amreen.jpg",
+    studentsCount: 7,
+    rating: 4.5,
+    languages: "Telugu/English/Hindi",
+    state: "IIIinois(IL)",
+    country: "USA",
+    appointmentLink: "https://vconnectglobe.com/booking/amreen-siddiqua/",
+  },
+  {
+    name: "Mr. Alekhya",
+    university: "University of New Haven, (CT)",
+    education: "Business Analytics",
+    image: "./mentors/alekhya.jpeg",
+    studentsCount: 7,
+    rating: 4.5,
+    languages: "Telugu/English/Hindi",
+    state: "Connecticut (CT)",
+    country: "USA",
+    appointmentLink: "https://vconnectglobe.com/booking/alekhya-bhagavathi/",
+  },
 ];
 export default mentorsData;

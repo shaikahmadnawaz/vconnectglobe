@@ -61,11 +61,14 @@ export const MockVisaInterview = () => {
     }
   };
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-10 p-10" id="interviews">
+    <section
+      className="grid grid-cols-1 md:grid-cols-2 gap-10 p-10"
+      id="interviews"
+    >
       {/* About Mock Visa Interviews */}
       <div className="flex flex-col justify-between bg-white rounded-lg">
         <div>
-          <h2 className="text-2xl lg:text-5xl font-semibold leading-tight">
+          <h2 className="text-2xl lg:text-4xl font-semibold leading-tight">
             Nail the <span className="text-red-700 font-bold">toughest</span>{" "}
             <br /> USA Visa interviews
           </h2>
@@ -77,7 +80,7 @@ export const MockVisaInterview = () => {
           </p>
         </div>
         <div className="flex flex-col mt-8">
-          <div className="flex justify-between md:justify-around text-base">
+          <div className="flex justify-between md:justify-start text-base">
             <p
               onClick={() => handleClick(1)}
               className={`cursor-pointer px-2 py-3 text-sm md:text-lg md:mr-8 border-2 rounded ${
@@ -94,7 +97,6 @@ export const MockVisaInterview = () => {
             >
               Why choose us
             </p>
-            
           </div>
           <div className="mt-6">
             {content.map((point, index) => (
