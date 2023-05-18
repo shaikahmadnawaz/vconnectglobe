@@ -1,10 +1,10 @@
 import React from "react";
-
 import { heroData } from "../Data/heroData";
 import { handleScroll } from "./utils/handleScroll";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 const HeroSection = () => {
   const settings = {
     dots: true,
@@ -40,7 +40,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="overflow-x-hidden">
+    <div className="overflow-x-hidden mt-8 md:mt-14 h-screen md:h-[90vh]">
       <Slider {...settings}>
         {heroData.map((item) => {
           const {
@@ -53,50 +53,40 @@ const HeroSection = () => {
           } = item;
           return (
             <section
-              className={`flex w-full h-full md:h-[80vh] bg-gradient-to-r ${backgroundColor} mx-auto mt-0 md:px-14`}
+              key={title}
+              className={`flex w-full h-full justify-center items-center bg-gradient-to-r ${backgroundColor} mx-auto px-4 md:px-8 lg:px-12`}
             >
-              <div className="flex md:pt-32">
-                {/* <button className="arrow prev" onClick={handlePrev}>
-          <BsArrowLeft className="bg-white ml-2 w-5 md:w-8 md:h-6 rounded-xl" />
-        </button> */}
-                <div className="flex flex-col md:flex-row mx-8 pt-16 md:pt-0">
-                  <div className="flex h-[50vh] mt-10 md:mt-0 items-center justify-center flex-col w-full md:w-1/2">
-                    <div
-                      id="home"
-                      className="container flex justify-center items-center flex-col text-center mx-auto lg:py-40 lg:px-32 md:pt-24 px-4"
+              <div className="flex flex-col md:flex-row h-full mx-4 md:mx-8">
+                <div className="flex h-full items-center justify-start flex-col w-full py-12 px-14 md:px-20 md:py-32 md:w-1/2">
+                  <div className="container mx-auto text-center lg:text-left">
+                    <h1 className="text-2xl md:text-4xl font-semibold text-white mb-4">
+                      {title}
+                    </h1>
+                    <p className="text-md md:text-xl lg:text-xl text-white mb-6">
+                      {description}
+                    </p>
+                    <a
+                      href={buttonLink}
+                      onClick={handleScroll}
+                      className="bg-white text-black text-md lg:text-xl py-1 md:py-2 px-2 md:px-3 rounded-lg font-medium hover:bg-black hover:text-white transition-all duration-300"
                     >
-                      <h1 className="lg:text-4xl md:text-3xl text-2xl font-semibold text-white mb-4">
-                        {title}
-                      </h1>
-                      <p className="text-sm md:text-lg text-white mb-6">
-                        {description}
-                      </p>
-                      <a
-                        href={buttonLink}
-                        onClick={handleScroll}
-                        className="bg-white text-black text-md md:text-xl py-1 md:py-2 px-1 md:px-3 rounded-lg md:rounded-xl font-medium hover:bg-black hover:text-white transition-all duration-300"
-                      >
-                        {buttonText}
-                      </a>
-                    </div>
-                  </div>
-                  <div className="w-full flex h-[50vh] items-center justify-center md:w-1/2 md:py-24">
-                    <img
-                      src={image}
-                      className="w-80 md:w-full mt-10 md:mb-1"
-                      alt="abroad study mentorship"
-                    />
+                      {buttonText}
+                    </a>
                   </div>
                 </div>
-                {/* <button className="arrow next inline" onClick={handleNext}>
-                <BsArrowRight className="bg-white mr-2 w-5 md:w-8 md:h-6 rounded-xl" />
-              </button> */}
+                <div className="flex items-center px-10 justify-center w-full pb-5 md:pb-0 md:w-1/2">
+                  <img
+                    src={image}
+                    className="w-full h-auto max-h-96"
+                    alt="abroad study mentorship"
+                  />
+                </div>
               </div>
             </section>
           );
         })}
       </Slider>
-    </section>
+    </div>
   );
 };
 

@@ -5,7 +5,7 @@ export const heroData = [
   {
     title: "1-2-1 Mentorship for Study Abroad",
     description:
-      "Avail the personalised mentorship on all the aspects of studying abroad by knowledgeable and passionate mentors, who are eager to share their wisdom and experience with you!",
+      "Get expert mentorship from passionate and knowledgeable mentors who will guide you through every aspect of studying abroad. Benefit from their wisdom and experience in personalized sessions.",
     buttonText: "Meet our Mentors",
     buttonLink: "#mentors",
     image: HeroImage1,
@@ -14,7 +14,7 @@ export const heroData = [
   {
     title: "Unlimited Mock Interviews for Visa",
     description:
-      "These mock interviews simulate the real visa interview experience and provide an opportunity for applicants to familiarize themselves with the process, improve their communication skills, and gain confidence!",
+      "Experience realistic mock interviews that simulate the visa interview process, helping you improve your communication skills and gain confidence. Familiarize yourself with the requirements.",
     buttonText: "Meet our Interviewers",
     buttonLink: "#interviews",
     image: HeroImage1,
@@ -24,8 +24,8 @@ export const heroData = [
   {
     title: "Join our growing Community",
     description:
-      "Joining our community can be a valuable resource for anyone interested in studying abroad. You'll have the opportunity to ask questions, share your concerns, and connect with others who have already gone through the process. ",
-    buttonText: "Discover our community",
+      "Join our supportive community for a wealth of resources and connections related to studying abroad. Connect with others who have gone through the process, ask questions, and share your concerns.",
+    buttonText: "Join our Community",
     buttonLink: "#community",
     image: HeroImage1,
     // backgroundColor: "from-purple-400 to-purple-500", // Add background color

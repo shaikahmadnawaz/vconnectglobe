@@ -68,7 +68,7 @@ export const MockVisaInterview = () => {
       {/* About Mock Visa Interviews */}
       <div className="flex flex-col justify-between bg-white rounded-lg">
         <div>
-          <h2 className="text-2xl lg:text-4xl font-semibold leading-tight">
+          <h2 className="text-2xl md:text-3xl font-semibold leading-tight">
             Nail the <span className="text-red-700 font-bold">toughest</span>{" "}
             <br /> USA Visa interviews
           </h2>
@@ -105,7 +105,7 @@ export const MockVisaInterview = () => {
                   <TbPointFilled />
                 </div>
                 <div>
-                  <span className="font-medium text-sm lg:text-base">
+                  <span className="font-small text-sm lg:text-base">
                     {point}
                   </span>
                 </div>
