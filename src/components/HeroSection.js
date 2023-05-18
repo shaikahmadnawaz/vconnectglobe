@@ -57,7 +57,7 @@ const HeroSection = () => {
               className={`flex w-full h-full justify-center items-center bg-gradient-to-r ${backgroundColor} mx-auto px-4 md:px-8 lg:px-12`}
             >
               <div className="flex flex-col md:flex-row h-full mx-4 md:mx-8">
-                <div className="flex h-full items-center justify-start flex-col w-full py-12 px-14 md:px-20 md:py-32 md:w-1/2">
+                <div className="flex h-full items-center justify-start flex-col w-full py-12 px-4 md:px-20 md:py-32 md:w-1/2">
                   <div className="container mx-auto text-center lg:text-left">
                     <h1 className="text-2xl md:text-4xl font-semibold text-white mb-4">
                       {title}
