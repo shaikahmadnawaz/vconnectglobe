@@ -40,7 +40,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="overflow-x-hidden mt-8 md:mt-14 h-[95vh]">
+    <div id="home" className="overflow-x-hidden mt-8 md:mt-14 h-[95vh]">
       <Slider {...settings}>
         {heroData.map((item) => {
           const {
