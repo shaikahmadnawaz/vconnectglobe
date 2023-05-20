@@ -57,10 +57,10 @@ const HeroSection = () => {
           return (
             <section
               key={title}
-              className={`flex w-full h- justify-center items-center bg-gradient-to-r ${backgroundColor} mx-auto px-4 md:px-8 lg:px-12`}
+              className={`flex w-full h-[90vh] md:h-full justify-center items-center bg-gradient-to-r ${backgroundColor} mx-auto px-4 md:px-8 lg:px-12`}
             >
               <div className="flex flex-col md:flex-row h-full mx-4 md:mx-8">
-                <div className="flex h-full items-center justify-start flex-col w-full py-12 px-4 md:px-20 md:py-32 md:w-1/2">
+                <div className="flex h-full items-center justify-start flex-col w-full pt-12 pb-5 px-4 md:px-20 md:py-32 md:w-1/2">
                   <div className="container mx-auto text-center lg:text-left">
                     <h1 className="text-2xl md:text-4xl font-semibold text-white mb-2  md:mb-4">
                       {title}
@@ -77,10 +77,10 @@ const HeroSection = () => {
                     </a>
                   </div>
                 </div>
-                <div className="flex items-center px-10 justify-center w-full pb-5 md:pb-0 md:w-1/2">
+                <div className="flex items-center px-10 justify-center w-full pb-24 md:pb-0 md:w-1/2">
                   <img
                     src={image}
-                    className="w-full h-[10rem] md:h-[25rem]"
+                    className="w-full h-[14rem] md:h-[25rem]"
                     alt="abroad study mentorship"
                   />
                 </div>
