@@ -40,7 +40,10 @@ const HeroSection = () => {
   };
 
   return (
-    <div id="home" className="overflow-x-hidden mt-8 md:mt-14 h-[95vh]">
+    <div
+      id="home"
+      className="overflow-x-hidden mt-7 md:mt-14 h-[95vh] md:h-[80vh]"
+    >
       <Slider {...settings}>
         {heroData.map((item) => {
           const {
@@ -54,15 +57,15 @@ const HeroSection = () => {
           return (
             <section
               key={title}
-              className={`flex w-full h-full justify-center items-center bg-gradient-to-r ${backgroundColor} mx-auto px-4 md:px-8 lg:px-12`}
+              className={`flex w-full h- justify-center items-center bg-gradient-to-r ${backgroundColor} mx-auto px-4 md:px-8 lg:px-12`}
             >
               <div className="flex flex-col md:flex-row h-full mx-4 md:mx-8">
                 <div className="flex h-full items-center justify-start flex-col w-full py-12 px-4 md:px-20 md:py-32 md:w-1/2">
                   <div className="container mx-auto text-center lg:text-left">
-                    <h1 className="text-2xl md:text-4xl font-semibold text-white mb-4">
+                    <h1 className="text-2xl md:text-4xl font-semibold text-white mb-2  md:mb-4">
                       {title}
                     </h1>
-                    <p className="text-md md:text-xl lg:text-xl text-white mb-6">
+                    <p className="text-md md:text-xl lg:text-xl text-white leading-5 mb-3 md:mb-6">
                       {description}
                     </p>
                     <a
@@ -77,7 +80,7 @@ const HeroSection = () => {
                 <div className="flex items-center px-10 justify-center w-full pb-5 md:pb-0 md:w-1/2">
                   <img
                     src={image}
-                    className="w-full h-auto max-h-96"
+                    className="w-full h-[10rem] md:h-[25rem]"
                     alt="abroad study mentorship"
                   />
                 </div>

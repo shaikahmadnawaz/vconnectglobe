@@ -1,6 +1,6 @@
 import HeroImage1 from "../assets/study-abroad.png";
-import HeroImage3 from "../assets/visa-resized-transparent.png";
-import community from "../assets/community-resized-transparent.png";
+import Interview from "../assets/Interview.png";
+import Connect from "../assets/Connected.png";
 export const heroData = [
   {
     title: "1-2-1 Mentorship for Study Abroad",
@@ -17,17 +17,17 @@ export const heroData = [
       "Experience realistic mock interviews that simulate the visa interview process, helping you improve your communication skills and gain confidence. Familiarize yourself with the requirements.",
     buttonText: "Meet our Interviewers",
     buttonLink: "#interviews",
-    image: HeroImage1,
+    image: Interview,
     // backgroundColor: "from-green-400 to-green-500", // Add background color
     backgroundColor: "from-blue-500 to-cyan-500",
   },
   {
     title: "Join our growing Community",
     description:
-      "Join our supportive community for a wealth of resources and connections related to studying abroad. Connect with others who have gone through the process, ask questions, and share your concerns.",
+      "Join our supportive community for resources and connections related to studying abroad. Connect with others who have gone through the process, ask questions, and share your doubts here.",
     buttonText: "Join our Community",
     buttonLink: "#community",
-    image: HeroImage1,
+    image: Connect,
     // backgroundColor: "from-purple-400 to-purple-500", // Add background color
     backgroundColor: "from-blue-500 to-cyan-500",
   },
