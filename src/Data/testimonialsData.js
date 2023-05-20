@@ -21,7 +21,7 @@ export const testimonials = [
     name: "Ms. Lalitha",
     university: "University of New Haven",
     testimonial:
-    "My experience with the session was  amazing! He has taught me valuable information and given me a great advice for my masters  . I am extremely grateful to this opportunity and the knowledge I have gained . As a result I feel  more comfortable to clear all doubts about my assistantships, part-times and as well as course work . Thank you Avinash Reddy for giving the grateful knowledge and information .",
+      "My experience with the session was  amazing! He has taught me valuable information and given me a great advice for my masters  . I am extremely grateful to this opportunity and the knowledge I have gained . As a result I feel  more comfortable to clear all doubts about my assistantships, part-times and as well as course work . Thank you Avinash Reddy for giving the grateful knowledge and information .",
     rating: 5,
     mentorName: "Mr.Avinash Reddy ",
     image: "./testimonials_photos/lalitha.jpg",
@@ -31,7 +31,7 @@ export const testimonials = [
     name: "Mr. Pavana Chary",
     university: "University of Houston",
     testimonial:
-      "I wanted to take a moment to express my gratitude for the time you've spent with me discussing college and courses. Your explanations have been incredibly helpful and have provided me with a deeper understanding of the enrollment process.I also appreciate the way you have patiently answered all of my queries. Your responses have been clear and concise, and have helped to alleviate any concerns I had.I feel much more confident about starting my abroad masters journey thanks to your guidance. Thank you again for your dedication and support.",
+      "I wanted to take a moment to express my gratitude for the time you've spent with me discussing college and courses. Your explanations have been incredibly helpful and have provided me with a deeper understanding of the enrollment process.I also appreciate the way you have patiently answered all of my queries. Your responses have been clear and concise, and have helped to alleviate any concerns I had.I feel much more confident about starting my abroad masters journey thanks to your guidance.",
     rating: 5,
     mentorName: "Mr.Srinivasa Reddy",
     image: "./testimonials_photos/pavanachary.png",
