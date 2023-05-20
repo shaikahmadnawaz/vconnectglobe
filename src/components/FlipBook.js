@@ -2,7 +2,7 @@ import React from "react";
 
 const FlipBook = () => {
   return (
-    <div className="h-96">
+    <div className="h-96 mt-7 md:mt-14">
       <h2 className="text-xl sm:text-3xl font-bold text-center mb-0 md:mb-3">
         How do I begin my study abroad?
       </h2>
