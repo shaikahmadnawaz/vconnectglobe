@@ -81,8 +81,8 @@ export const MockVisaInterview = () => {
         </div>
         <div className="flex justify-start items-center mt-2">
           <a
-            href="https://vconnectglobe.com/community"
-            target="_blank"
+            href="https://rzp.io/l/r34JdXLJB"
+            target="_blank" 
             rel="noreferrer"
             className="focus:outline-none bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-purple-300 text-lg mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 text-white font-medium rounded-md px-3  py-2 md:px-4 md:py-2 text-center inline-block hover:scale-105 ease-in-out duration-300"
           >
