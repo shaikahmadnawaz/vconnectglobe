@@ -477,7 +477,7 @@ const mentorsData = [
   },
   {
     name: "Ms. Divya Reddy",
-    university: "George Mason University ",
+    university: "George Mason University (VA)",
     education: "Health Informatics ",
     image: "./mentors/divyareddy.jpg",
     studentsCount: 6,
