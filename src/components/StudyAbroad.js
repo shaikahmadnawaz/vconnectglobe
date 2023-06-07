@@ -57,7 +57,7 @@ const steps = [
 const StudyAbroad = () => {
   return (
     <section className="bg-white py-8 sm:py-16">
-      <div className="container mx-auto px-4">
+      <div className="mx-auto px-4">
         <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">
           How do I begin my study abroad?
         </h2>
@@ -78,7 +78,6 @@ const StudyAbroad = () => {
           ))}
         </div>
       </div>
-      
     </section>
   );
 };

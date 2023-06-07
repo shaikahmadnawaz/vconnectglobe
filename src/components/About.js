@@ -15,7 +15,7 @@ const ContentCard = ({ icon, title, text }) => {
 
 const About = () => {
   return (
-    <div id="about" className="container md:px-14 mx-auto px-4 mt-7">
+    <div id="about" className="md:px-14 mx-auto px-4 mt-7">
       <h2 className="text-2xl font-bold mb-8 text-center">
         Insights and guidance offered by experienced mentors
       </h2>
