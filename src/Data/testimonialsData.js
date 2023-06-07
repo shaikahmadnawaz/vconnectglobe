@@ -3,7 +3,7 @@ export const testimonials = [
     name: "Mr. Prasad",
     university: "University of New Haven",
     testimonial:
-      "The mentorship program made studying abroad easier. My mentor was patient, supportive, and helped me find the perfect program. I had an incredible experience and would do it all again in a heartbeat!",
+      "I was hesitant to study abroad, but this mentorship program made the entire process so much easier. The mentor I worked with was patient, supportive, and encouraging. They helped me identify my goals and find a program that was the perfect fit for me.",
     rating: 5,
     mentorName: "Mr.Srinivasa Reddy",
     image: "./testimonials_photos/prasad.jpg",
@@ -31,7 +31,7 @@ export const testimonials = [
     name: "Mr. Pavana Chary",
     university: "University of Houston",
     testimonial:
-      "I am grateful for the time you spent discussing college and courses with me. Your explanations were incredibly helpful and provided a deeper understanding of the enrollment process. Thank you for patiently answering all my queries and alleviating my concerns. Your guidance has boosted my confidence for my abroad masters journey.",
+      "I am grateful for the time you spent discussing college and courses with me. Your explanations were incredibly helpful and provided a deeper understanding of the enrollment process. Thank you for patiently answering all my queries.",
     rating: 5,
     mentorName: "Mr.Srinivasa Reddy",
     image: "./testimonials_photos/pavanachary.png",
@@ -40,7 +40,7 @@ export const testimonials = [
     name: "Mr. Tajuddin",
     university: "Illinois Institute of Technology",
     testimonial:
-      "They provided valuable information about universities, program suitability, and fees. They assisted in finding a bank consultant for a loan without collateral. Mr. Akheel explained top priority colleges and job prospects in construction management. They covered travel, visa, expenses, accommodations, and safety comprehensively.",
+      "They provided valuable information about universities, program suitability, and fees. They assisted in finding a bank consultant for a loan without collateral. Mr. Akheel explained top priority colleges and job prospects in construction management. They covered travel, visa, expenses, accommodations.",
     rating: 5,
     mentorName: "Mr. Akheel",
     image: "./testimonials_photos/tajuddin-taj.jpg",

@@ -40,17 +40,17 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="bg-white py-16">
+    <section className="bg-white py-8 lg:py-16">
       <div id="testimonials" className="container md:px-14 mx-auto px-4">
         <h2 className="text-2xl text-center font-bold mb-0 md:mb-2">
           Our Students Success Stories
         </h2>
-        <Slider {...settings}>
+        <Slider {...settings} className="">
           {testimonials.map((testimonial, index) => {
             return (
               <div
                 key={index}
-                className="scale-75 hover:scale-90 lg:hover:scale-95 shadow-md rounded-2xl h-full bg-slate-100 lg:mx-4 duration-500 lg:p-4"
+                className="scale-75 hover:scale-90 lg:hover:scale-95 shadow-md rounded-2xl h-full bg-slate-100 lg:mx-4 duration-300"
               >
                 <div className="photo flex justify-center py-2 rounded-md">
                   <img
