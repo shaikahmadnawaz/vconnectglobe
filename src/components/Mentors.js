@@ -55,7 +55,7 @@ const Mentors = () => {
   return (
     <section
       id="mentors"
-      className="container md:px-14 mx-auto py-8 md:mt-28 grid gap-y-10"
+      className="md:px-14 mx-auto py-8 md:mt-28 grid gap-y-10"
     >
       <h2 className="text-2xl font-bold mb-10 text-center">Featured Mentors</h2>
 
@@ -181,7 +181,7 @@ const Mentors = () => {
             type="submit"
             className="focus:outline-none bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-purple-300 text-lg mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 text-white font-medium rounded-md px-4 py-2 text-center inline-block hover:scale-105 ease-in-out duration-300"
           >
-             More Mentors
+            More Mentors
           </button>
         </Link>
       </div>

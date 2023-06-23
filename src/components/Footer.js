@@ -5,7 +5,7 @@ import { BsWhatsapp, BsYoutube } from "react-icons/bs";
 function Footer() {
   return (
     <footer id="footer" className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 lg:px-32 py-6 lg:py-12 grid lg:grid-cols-2">
+      <div className="mx-auto px-4 lg:px-32 py-6 lg:py-12 grid lg:grid-cols-2">
         <div className="flex flex-col">
           <div className="text-center mb-6">
             <h1 className="text-2xl font-bold mb-2">VConnect Globe</h1>

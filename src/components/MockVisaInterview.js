@@ -28,11 +28,11 @@ export const MockVisaInterview = () => {
   };
   return (
     <section
-      className="flex flex-col md:flex-row px-6 md:px-16 md:pb-3"
+      className="flex flex-col md:flex-row px-6 md:px-10 lg:px-16 md:pb-3"
       id="interviews"
     >
       {/* About Mock Visa Interviews */}
-      <div className="flex flex-col justify-between md:w-1/2 bg-white rounded-lg">
+      <div className="flex flex-col justify-between lg:w-1/2 bg-white rounded-lg">
         <div>
           <h2 className="text-2xl md:text-3xl font-semibold leading-tight">
             Nail the <span className="text-red-700 font-bold">toughest</span>{" "}
@@ -82,7 +82,7 @@ export const MockVisaInterview = () => {
         <div className="flex justify-start items-center mt-2">
           <a
             href="https://rzp.io/l/r34JdXLJB"
-            target="_blank" 
+            target="_blank"
             rel="noreferrer"
             className="focus:outline-none bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-purple-300 text-lg mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 text-white font-medium rounded-md px-3  py-2 md:px-4 md:py-2 text-center inline-block hover:scale-105 ease-in-out duration-300"
           >
@@ -91,10 +91,10 @@ export const MockVisaInterview = () => {
         </div>
       </div>
 
-      <div className="flex items-center px-10 justify-center w-full md:w-1/2">
+      <div className="flex items-center px-10 justify-center w-full lg:w-1/2">
         <img
           src={VI}
-          className="w-full h-[20rem] md:h-[30rem]"
+          className="w-full object-cover h-full md:h-[22rem] lg:h-[30rem]"
           alt="Visa Interview"
         />
       </div>

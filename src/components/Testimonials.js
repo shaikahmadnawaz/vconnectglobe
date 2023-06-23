@@ -40,48 +40,46 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="bg-white py-16">
-      <div id="testimonials" className="container md:px-14 mx-auto px-4">
+    <section className="bg-white py-8 lg:py-16">
+      <div id="testimonials" className="lg:px-14 mx-auto px-4">
         <h2 className="text-2xl text-center font-bold mb-0 md:mb-2">
           Our Students Success Stories
         </h2>
-        <div className="space-x-4">
-          <Slider {...settings}>
-            {testimonials.map((testimonial, index) => {
-              return (
-                <div
-                  key={index}
-                  className="scale-75 hover:scale-90 lg:hover:scale-95 shadow-md rounded-2xl h-[200] md:my-5 bg-slate-100 mx-4 p-2 duration-500 mr-4"
-                >
-                  <div className="photo flex justify-center py-2 rounded-md">
-                    <img
-                      src={testimonial.image}
-                      alt="student"
-                      className="rounded-full w-32"
-                    />
-                  </div>
-                  <div className="flex flex-col mt-4">
-                    <p className="font-bold text-center">{testimonial.name}</p>
-                    <p className="text-gray-500 text-center">
-                      {testimonial.university}
-                    </p>
-                  </div>
-                  <div className="flex italic justify-center px-10 mt-4">
-                    <p>{testimonial.testimonial}</p>
-                  </div>
-                  <div className="mt-4 flex justify-center my-4">
-                    <p>
-                      My Mentor -{" "}
-                      <span className="font-bold">
-                        {testimonial.mentorName} ({testimonial.rating}/5)
-                      </span>
-                    </p>
-                  </div>
+        <Slider {...settings} className="">
+          {testimonials.map((testimonial, index) => {
+            return (
+              <div
+                key={index}
+                className="scale-75 hover:scale-90 lg:hover:scale-95 shadow-md rounded-2xl h-full bg-slate-100 lg:mx-4 duration-300"
+              >
+                <div className="photo flex justify-center py-2 rounded-md">
+                  <img
+                    src={testimonial.image}
+                    alt="student"
+                    className="rounded-full w-32"
+                  />
                 </div>
-              );
-            })}
-          </Slider>
-        </div>
+                <div className="flex flex-col mt-4">
+                  <p className="font-bold text-center">{testimonial.name}</p>
+                  <p className="text-gray-500 text-center">
+                    {testimonial.university}
+                  </p>
+                </div>
+                <div className="flex italic justify-center px-10 mt-4">
+                  <p>{testimonial.testimonial}</p>
+                </div>
+                <div className="mt-4 flex justify-center px-4 my-4">
+                  <p>
+                    My Mentor -{" "}
+                    <span className="font-bold">
+                      {testimonial.mentorName} ({testimonial.rating}/5)
+                    </span>
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+        </Slider>
       </div>
     </section>
   );

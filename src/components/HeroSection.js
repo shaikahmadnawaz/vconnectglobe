@@ -42,7 +42,7 @@ const HeroSection = () => {
   return (
     <div
       id="home"
-      className="overflow-x-hidden mt-7 md:mt-14 h-[95vh] md:h-[80vh]"
+      className="overflow-x-hidden mt-7 md:mt-14 h-[95vh] md:h-[70vh] lg:h-[80vh]"
     >
       <Slider {...settings}>
         {heroData.map((item) => {
@@ -60,12 +60,12 @@ const HeroSection = () => {
               className={`flex w-full h-[90vh] md:h-full justify-center items-center bg-gradient-to-r ${backgroundColor} mx-auto px-4 md:px-8 lg:px-12`}
             >
               <div className="flex flex-col md:flex-row h-full mx-4 md:mx-8">
-                <div className="flex h-full items-center justify-start flex-col w-full pt-12 pb-5 px-4 md:px-20 md:py-32 md:w-1/2">
-                  <div className="container mx-auto text-center lg:text-left">
-                    <h1 className="text-2xl md:text-4xl font-semibold text-white mb-2  md:mb-4">
+                <div className="flex h-full items-center justify-start flex-col w-full pt-12 pb-5 px-4 lg:px-20 md:py-10 lg:py-32 md:w-1/2">
+                  <div className="mx-auto text-center lg:text-left">
+                    <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-white mb-2 md:mb-3 lg:mb-4">
                       {title}
                     </h1>
-                    <p className="text-md md:text-xl lg:text-xl text-white leading-5 mb-3 md:mb-6">
+                    <p className="text-md md:text-lg lg:text-xl text-white leading-5 mb-3 lg:mb-6 md:mb-4">
                       {description}
                     </p>
                     <a
