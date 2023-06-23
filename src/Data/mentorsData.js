@@ -499,5 +499,17 @@ const mentorsData = [
     country: "USA",
     appointmentLink: "https://vconnectglobe.com/booking/mohammed-wasim/",
   },
+  {
+    name: "Mr. Sankeerthan",
+    university: "California State University (CA)",
+    education: "Construction Management ",
+    image: "./mentors/Sankeerthan.png",
+    studentsCount: 8,
+    rating: 4.5,
+    languages: "Telugu/English",
+    state: "California(CA)",
+    country: "USA",
+    appointmentLink: "https://vconnectglobe.com/booking/sankeerthan/",
+  },
 ];
 export default mentorsData;
