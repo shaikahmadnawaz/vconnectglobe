@@ -513,7 +513,7 @@ const mentorsData = [
   },
   {
     name: "Ms. Salma Sultana",
-    university: "University Of Houston (CA)",
+    university: "University Of Houston (TX)",
     education: "Network Commications",
     image: "./mentors/salmasultana.jpg",
     studentsCount: 6,
