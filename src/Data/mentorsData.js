@@ -511,5 +511,17 @@ const mentorsData = [
     country: "USA",
     appointmentLink: "https://vconnectglobe.com/booking/sankeerthan/",
   },
+  {
+    name: "Ms. Salma Sultana",
+    university: "University Of Houston (CA)",
+    education: "Network Commications",
+    image: "./mentors/salmasultana.jpg",
+    studentsCount: 6,
+    rating: 4.5,
+    languages: "Telugu/English/Hindi",
+    state: "Texas(TX)",
+    country: "USA",
+    appointmentLink: "https://vconnectglobe.com/booking/salmasultana/",
+  },
 ];
 export default mentorsData;
